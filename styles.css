@@ -12,12 +12,12 @@ body, ul {
 body {
     padding: 0px;
     margin: 0px;
-    font-family: monospace;
+    font-family: 'Oswald', sans-serif;
     background-color: white;
 }
 
 
-/* NAVBAR */
+/* NAVBAR  DESKTOP*/
 
 nav {
     position: fixed;
@@ -46,10 +46,39 @@ a {
     font-size: 1.2rem;
 }
 
-.nav-right {
-    justify-self: end;
+.pseudonym {
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1rem;
 }
+
+.nav-right {
+    justify-self: end;
+    align-self: center;
+    font-size: 1rem;
+}
+
+/* NAVBAR  MEDIA*/
+
+@media (max-width: 426px) {
+
+    nav {
+        padding: 0.5rem 2rem;
+    }
+
+    .nav-left {
+        font-size: 1rem;
+    }
+
+    .pseudonym {
+        font-size: 0.8rem;
+    }
+
+    .nav-right {
+        font-size: 0.8rem;
+    }
+}
+
+/*_____________________________________________________________________________________________________________________________________________*/
 
 
 /* MAIN */
@@ -59,14 +88,15 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-
+    position: absolute;
+    top: 2rem;
     padding: 0rem 2rem;
 }
 
 .img-container {
     padding: 3.5rem 0rem 0rem 0rem;
     width: 20vw;
-
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 img {
@@ -74,4 +104,25 @@ img {
 }
 
 
-/* MEDIA */
+/* MAIN  MEDIA*/
+
+@media (max-width: 426px) {
+
+    main {
+        top: 1rem;
+    }
+
+    .img-container {
+        padding: 2.5rem 0rem 0rem 0rem;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 427px) {
+
+    .img-container {
+        width: 25vw;
+    }
+}
+
+/*_____________________________________________________________________________________________________________________________________________*/
