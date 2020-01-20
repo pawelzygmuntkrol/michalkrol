@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 
@@ -22,8 +23,33 @@
                 <li class='pseudonym'>Structuralist</li>
             </a>
             <a href='#' class='nav-right'>
-                <li>Menu</li>
+                <li id='menu-button' onclick='openSideMenu()'>                    
+                    <script>
+                        window.screen.width > 426 ? 
+                        document.getElementById('menu-button').innerHTML='Menu': 
+                        document.getElementById('menu-button').innerHTML='&#9776;'
+                        document.getElementById('menu-button').style.fontSize = '1rem'      
+                    </script>
+                </li> 
             </a>
+            <div id='menu' class='sidemenu'>
+                <a href='#' id="close-button" onclick='closeSideMenu()'>
+                    <script>
+                        window.screen.width > 426 ?       
+                            document.getElementById('close-button').innerHTML='Zamknij':
+                            document.getElementById('close-button').innerHTML='&times;'
+                    </script>
+                </a>
+                <div class='sidemenu-links'>
+                    <a href='#'>biography</a>
+                    <a href='#'>contact</a>
+                    <div class='language'>
+                        <a href='#'>pl</a>
+                        <a href='#'>en</a>
+                        <a href='#'>de</a>
+                    </div>
+                </div>
+            </div>
         </ul>
     </nav>
 
@@ -90,4 +116,29 @@
         </div>
     </main>
 </body>
+
+
+
+<script type='text/javascript'>
+
+
+    function openSideMenu() {
+        if(window.screen.width < 426){
+            document.getElementById('menu').style.width = '100%';
+        } else {
+            document.getElementById('menu').style.width = '23.5rem';
+        }
+        document.getElementById('menu-button').style.visibility = 'hidden';
+    }
+
+    function closeSideMenu() {
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('menu-button').style.visibility = 'visible';
+    }
+
+
+</script>
+
+
+
 </html>

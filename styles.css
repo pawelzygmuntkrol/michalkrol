@@ -21,71 +21,7 @@ body {
   }
 
 
-/* NAVBAR  DESKTOP*/
-
-nav {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    padding: 1rem 2rem;
-    border: none;
-    margin: 0px;
-    z-index: 1;
-    border-bottom: solid red 1px; /* do usunieca pozniej */
-}
-
-ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.nav-left {
-    justify-self: start;
-    font-size: 1.2rem;
-}
-
-.pseudonym {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1rem;
-}
-
-.nav-right {
-    justify-self: end;
-    align-self: center;
-    font-size: 1rem;
-}
-
-/* NAVBAR  MEDIA*/
-
-@media (max-width: 426px) {
-
-    nav {
-        padding: 0.5rem 2rem;
-    }
-
-    .nav-left {
-        font-size: 1rem;
-    }
-
-    .pseudonym {
-        font-size: 0.8rem;
-    }
-
-    .nav-right {
-        font-size: 0.8rem;
-    }
-}
-
-/*_____________________________________________________________________________________________________________________________________________*/
-
-
-/* MAIN */
+  /* MAIN */
 
 main {
     display: flex;
