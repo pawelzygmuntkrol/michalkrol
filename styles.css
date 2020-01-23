@@ -13,7 +13,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Oswald', sans-serif;
-    background-color: white;
+    background-color: rgba(255, 255, 255)
 }
 
 @-ms-viewport{
@@ -22,6 +22,28 @@ body {
 
 
   /* MAIN */
+
+.popUpImgContainer {
+    height: 100%;
+    width: 100%;
+    align-self: auto;
+    position: fixed;
+    visibility: visible;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#popUpImg {
+    height: 90vh;
+    width: auto;
+    padding: 3rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 main {
     display: flex;
@@ -47,6 +69,11 @@ img {
 /* MAIN  MEDIA*/
 
 @media (max-width: 426px) {
+  
+    #popUpImg {
+        height: 60vh;
+        padding: 0.5rem;
+    }
 
     main {
         top: 1rem;

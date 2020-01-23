@@ -19,7 +19,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0);
 }
 
 .nav-left {
@@ -44,7 +44,7 @@ a {
     right: 0px;
     height: 100%;
     width: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0);
     opacity: 0.8;
     z-index: 2;
     overflow-x: hidden;
@@ -58,7 +58,7 @@ a {
 }
 
 .sidemenu a:hover {
-    color: white;
+    color: rgba(255, 255, 255);
 }
 
 .sidemenu #close-button {
@@ -105,7 +105,11 @@ a {
     .nav-right {
         font-size: 0.8rem;
     }
-    
+
+    .sidemenu #close-button {
+        top: -0.4rem;
+        font-size: 3rem;
+    }   
 
 }
 

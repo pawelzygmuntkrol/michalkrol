@@ -16,6 +16,8 @@
 
 
 <body>
+    
+
     <nav>
         <ul>
             <a href='#' class='nav-left'>
@@ -54,8 +56,9 @@
     </nav>
 
     <main>
+        <!-- FIRST IMG IS USED IN POPUP IMG -->
         <div class='img-container'>
-            <img src='./photos/i1.jpg'>
+            <img src='./photos/i1.jpg' id='popUpImgPrototype'>
             <h4>Arctic new moon</h4>
             <h5>Structuralist</h5>
         </div>
@@ -115,12 +118,22 @@
             <h5>Structuralist</h5>
         </div>
     </main>
+
+    <div class='popUpImgContainer' 
+        onclick = "this.style.transitionDuration = '0.8s'; 
+        onclick = this.style.animationTimingFunction = 'ease-in'; 
+        onclick = this.style.opacity = '0';
+        onclick = this.style.visibility = 'hidden';">
+        <img id='popUpImg' src=''>
+    </div>
+  
 </body>
 
 
 
-<script type='text/javascript'>
-
+<script type='text/javascript'> 
+    
+    document.getElementById("popUpImg").src = document.getElementById("popUpImgPrototype").src;
 
     function openSideMenu() {
         if(window.screen.width < 426){
