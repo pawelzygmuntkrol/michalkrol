@@ -5,50 +5,52 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="nav.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
+        <link rel="stylesheet" href="./css/artworks.css">
+            <link rel="stylesheet" href="./css/artworksitem.css">
+        <link rel="stylesheet" href="./css/biography.css">
+        <link rel="stylesheet" href="./css/contact.css">
 
-    <title>Document</title>  
+    <script src="./js/app.js"></script>
+
+    <title>Michał Król | Structuralist </title>  
 </head>
 
 
 
-<body>
-    
+<body onload='showPopUpImg()' onclick='closePopUpImg()'>
+
 
     <nav>
         <ul>
             <a href='#' class='nav-left'>
-                <li><strong>Michał Król</strong></li>
+                <li class='name'>Michał Król</li>
                 <li class='pseudonym'>Structuralist</li>
             </a>
             <a href='#' class='nav-right'>
-                <li id='menu-button' onclick='openSideMenu()'>                    
-                    <script>
-                        window.screen.width > 426 ? 
-                        document.getElementById('menu-button').innerHTML='Menu': 
-                        document.getElementById('menu-button').innerHTML='&#9776;'
-                        document.getElementById('menu-button').style.fontSize = '1rem'      
-                    </script>
+                <li id='menu-button' onclick='openSideMenu()'>
+                    <p class='large-screens'>Menu</p>
+                    <p class='small-screens'>&#9776;</p>
                 </li> 
             </a>
             <div id='menu' class='sidemenu'>
-                <a href='#' id="close-button" onclick='closeSideMenu()'>
-                    <script>
-                        window.screen.width > 426 ?       
-                            document.getElementById('close-button').innerHTML='Zamknij':
-                            document.getElementById('close-button').innerHTML='&times;'
-                    </script>
-                </a>
+                <li href='#' id="close-button" onclick='closeSideMenu()'>
+                    <p class='large-screens'>Zamknij</p>
+                    <p class='small-screens'>&times;</p>
+                </li>
                 <div class='sidemenu-links'>
-                    <a href='#'>biography</a>
-                    <a href='#'>contact</a>
-                    <div class='language'>
-                        <a href='#'>pl</a>
-                        <a href='#'>en</a>
-                        <a href='#'>de</a>
+                    <a href='#' active>Artworks</a>
+                    <a href='#'>Biography</a>
+                    <a href='#'>Contact</a>
+                    <div class='sidemenu-language'>
+                        <a href='#' id='pl'>pl</a>
+                        <a href='#' id='en'>en</a>
+                        <a href='#' id='de'>de</a>
                     </div>
                 </div>
             </div>
@@ -58,100 +60,71 @@
     <main>
         <!-- FIRST IMG IS USED IN POPUP IMG -->
         <div class='img-container'>
-            <img src='./photos/i1.jpg' id='popUpImgPrototype'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i1.jpg' id='popUpImgPrototype'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i2.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i2.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i3.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i3.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i4.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i4.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i5.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i5.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i6.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i6.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i7.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i7.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i8.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i8.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i9.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i9.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i10.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i10.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i11.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i11.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./photos/i12.jpg'>
-            <h4>Arctic new moon</h4>
-            <h5>Structuralist</h5>
+            <img src='./images/i12.jpg'>
+            <p class='author'>Arctic new moon</p>
+            <p class='title'>Structuralist</p>
         </div>
     </main>
 
-    <div class='popUpImgContainer' 
-        onclick = "this.style.transitionDuration = '0.8s'; 
-        onclick = this.style.animationTimingFunction = 'ease-in'; 
-        onclick = this.style.opacity = '0';
-        onclick = this.style.visibility = 'hidden';">
+    <div id='popUpImgContainer'>
         <img id='popUpImg' src=''>
     </div>
   
+
 </body>
-
-
-
-<script type='text/javascript'> 
-    
-    document.getElementById("popUpImg").src = document.getElementById("popUpImgPrototype").src;
-
-    function openSideMenu() {
-        if(window.screen.width < 426){
-            document.getElementById('menu').style.width = '100%';
-        } else {
-            document.getElementById('menu').style.width = '23.5rem';
-        }
-        document.getElementById('menu-button').style.visibility = 'hidden';
-    }
-
-    function closeSideMenu() {
-        document.getElementById('menu').style.width = '0';
-        document.getElementById('menu-button').style.visibility = 'visible';
-    }
-
-
-</script>
-
-
-
 </html>

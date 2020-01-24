@@ -1,48 +1,25 @@
-/* UNIVERSAL */
+/* DESKTOP */
 
-body, nav, main, .img-container  {
-    box-sizing: border-box;
-}
-
-body, ul {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Oswald', sans-serif;
-    background-color: rgba(255, 255, 255)
-}
-
-@-ms-viewport{
-    width: device-width;
-  }
-
-
-  /* MAIN */
-
-.popUpImgContainer {
+#popUpImgContainer {
     height: 100%;
     width: 100%;
     align-self: auto;
     position: fixed;
     visibility: visible;
-    z-index: 1;
+    z-index: 3;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 #popUpImg {
     height: 90vh;
     width: auto;
-    padding: 3rem;
+    padding: 2rem 0;
     position: absolute;
-    margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    margin: auto;
 }
 
 main {
@@ -51,12 +28,11 @@ main {
     justify-content: space-between;
     align-items: flex-end;
     position: absolute;
-    top: 2rem;
-    padding: 0rem 2rem;
+    padding: 2rem;
 }
 
 .img-container {
-    padding: 3.5rem 0rem 0rem 0rem;
+    padding: 3.5rem 0rem 0rem;
     width: 20vw;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -65,8 +41,19 @@ img {
     width: 100%;
 }
 
+.author {
+    padding: 0.3rem 0;
+    font-weight: 900;
+    font-size: 1rem;
+}
 
-/* MAIN  MEDIA*/
+.title {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+
+/* MOBILE */
 
 @media (max-width: 426px) {
   
@@ -80,9 +67,10 @@ img {
     }
 
     .img-container {
-        padding: 2.5rem 0rem 0rem 0rem;
+        padding: 2.5rem 0rem 0rem;
         width: 90vw;
     }
+    
 }
 
 @media (max-width: 800px) and (min-width: 427px) {
@@ -90,6 +78,7 @@ img {
     .img-container {
         width: 25vw;
     }
+
 }
 
-/*_____________________________________________________________________________________________________________________________________________*/
+

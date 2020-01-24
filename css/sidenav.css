@@ -1,0 +1,58 @@
+/* DESKTOP */
+
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0);
+    opacity: 0.8;
+    z-index: 2;
+    overflow-x: hidden;
+    transition: 0.35s;
+}
+
+.sidemenu a {
+    color: rgba(128, 128, 128);
+}
+
+.sidemenu a:hover {
+    color: rgba(255, 255, 255);
+    transition: 0.35s;
+}
+
+.sidemenu #close-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1rem;
+    color: dimgray;
+}
+
+.sidemenu-links {
+    padding-top: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-row-gap: 2.5rem;
+    justify-items: center;
+}
+
+.sidemenu-language {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 426px) {
+
+    .sidemenu #close-button {
+        top: -0.4rem;
+        font-size: 3rem;
+    }   
+
+}

@@ -1,0 +1,68 @@
+/* DESKTOP*/
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 1rem 2rem;
+    /* border: none;    na koniec odkomentować   */ 
+    z-index: 1;
+    border-bottom: solid black 1px; /* do usunięcia pozniej */
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-left .name {
+    justify-self: start;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.nav-left .pseudonym {
+    justify-self: start;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+.nav-right {
+    justify-self: end;
+    align-self: center;
+    font-size: 1rem;
+}
+
+.small-screens {
+    display: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 426px) {
+
+    nav {
+        padding: 0.5rem 2rem;
+    }
+
+    .nav-left .name {
+        font-size: 1rem;
+    }
+
+    .nav-left .pseudonym {
+        font-size: 0.8rem;
+    }
+
+    .large-screens {
+        display: none;
+    }
+
+    .small-screens {
+        display: block;
+    }
+
+}
+
+
+
