@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
     <link rel="stylesheet" href="./css/universal.css">
     <link rel="stylesheet" href="./css/nav.css">
@@ -17,6 +18,9 @@
         <link rel="stylesheet" href="./css/contact.css">
 
     <script src="./js/app.js"></script>
+    <script src="./js/pl.js"></script>
+    <script src="./js/en.js"></script>
+    <script src="./js/de.js"></script>
 
     <title>Michał Król | Structuralist </title>  
 </head>
@@ -40,17 +44,23 @@
             </a>
             <div id='menu' class='sidemenu'>
                 <li href='#' id="close-button" onclick='closeSideMenu()'>
-                    <p class='large-screens'>Zamknij</p>
+                    <p class='large-screens' id='closeButton'>Zamknij</p>
                     <p class='small-screens'>&times;</p>
                 </li>
                 <div class='sidemenu-links'>
-                    <a href='#' active>Artworks</a>
-                    <a href='#'>Biography</a>
-                    <a href='#'>Contact</a>
+                    <a href='#' id='artworksButton' active>Prace</a>
+                    <a href='#' id='exhibitionButton'>Wystawy</a>
+                    <a href='#' id='biographyButton'>Biografia</a>
+                    <a href='#' id='contactButton'>Kontakt</a>
                     <div class='sidemenu-language'>
-                        <a href='#' id='pl'>pl</a>
-                        <a href='#' id='en'>en</a>
-                        <a href='#' id='de'>de</a>
+                        <a href='#' id='pl' onclick='changeToPl()'>pl</a>
+                        <a href='#' id='en' onclick='changeToEn()'>en</a>
+                        <a href='#' id='de' onclick='changeToDe()'>de</a>
+                    </div>
+                    <div class='sidemenu-icons'>
+                        <a href='#'><i class="fab fa-facebook-square"></i></a>
+                        <a href='#'><i class="fab fa-instagram"></i></a>
+                        <a href='#'><i class="fab fa-behance-square"></i></a>
                     </div>
                 </div>
             </div>

@@ -13,6 +13,10 @@
     transition: 0.35s;
 }
 
+#close-button a:hover {
+    color: rgba(255, 255, 255);    
+}
+
 .sidemenu a {
     color: rgba(128, 128, 128);
 }
@@ -43,6 +47,23 @@
     width: 40%;
     display: flex;
     justify-content: space-evenly;
+}
+
+#pl {
+    color: rgba(255, 255, 255);
+}
+
+.sidemenu-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.sidemenu-icons a {
+    padding: 0 2rem;
+    font-size: 1.3rem;
 }
 
 
