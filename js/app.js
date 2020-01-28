@@ -49,6 +49,9 @@ function changeToPl() {
         document.getElementById('artworksButton').innerHTML = pl.menu.artworksButton;
         document.getElementById('biographyButton').innerHTML = pl.menu.biographyButton;
         document.getElementById('contactButton').innerHTML = pl.menu.contactButton;
+
+        document.getElementById('biographyHeader').innerHTML = pl.biography.biographyHeader;
+        document.getElementById('biographyParagraph').innerHTML = pl.biography.biographyParagraph;
 };
 
 function changeToEn() {
@@ -62,6 +65,9 @@ function changeToEn() {
         document.getElementById('artworksButton').innerHTML = en.menu.artworksButton;
         document.getElementById('biographyButton').innerHTML = en.menu.biographyButton;
         document.getElementById('contactButton').innerHTML = en.menu.contactButton;
+
+        document.getElementById('biographyHeader').innerHTML = en.biography.biographyHeader;
+        document.getElementById('biographyParagraph').innerHTML = en.biography.biographyParagraph;
 };
 
 function changeToDe() {
@@ -75,6 +81,9 @@ function changeToDe() {
         document.getElementById('artworksButton').innerHTML = de.menu.artworksButton;
         document.getElementById('biographyButton').innerHTML = de.menu.biographyButton;
         document.getElementById('contactButton').innerHTML = de.menu.contactButton;
+
+        document.getElementById('biographyHeader').innerHTML = de.biography.biographyHeader;
+        document.getElementById('biographyParagraph').innerHTML = de.biography.biographyParagraph;
 };
 
 
