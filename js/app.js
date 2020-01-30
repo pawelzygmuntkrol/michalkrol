@@ -1,6 +1,6 @@
 // POPUP IMG
 
-//Get SRC from last added IMG and asign it to POPUP IMG
+// Get SRC from last added IMG and asign it to POPUP IMG
 function showPopUpImg() {
     document.getElementById("popUpImg").src = document.getElementById("popUpImgPrototype").src;
 }
@@ -13,7 +13,7 @@ function closePopUpImg() {
 }
 
 
-//SIDE MENU
+// SIDE MENU
 
 function openSideMenu() {
     if(window.screen.width < 426){
@@ -31,10 +31,27 @@ function closeSideMenu() {
 }
 
 
-//LANGUAGE
+// LANGUAGE
 
-function defaultLanguage() {
-    let language = 'pl';
+let userBrowserLanguage = navigator.language.slice(0, 2);
+let language = '';
+
+if(userBrowserLanguage === 'pl') {
+    language = 'pl';
+} else if (userBrowserLanguage === 'de') {
+    language = 'de';
+} else {
+    language = 'en';
+}
+
+function changeLanguage(language) {
+    if(language === 'pl') {
+        changeToPl();
+    } else if(language === 'de') {
+        changeToDe();
+    } else {
+        changeToEn();
+    }
 }
 
 
@@ -87,5 +104,13 @@ function changeToDe() {
 };
 
 
+// ARTWORKITEM BACKGROUND SCROLL EFFECT
 
+let imgContainerHeight = document.getElementById('img-container').offsetHeight;
+imgContainerHeight -= '300';
+
+function backgroundScrollEffect() {
+    if(document.getElementById('img-container').scrollTop > '300')
+    document.getElementById('img-container').style.backgroundColor = 'rgba(255, 255, 255)';
+}
 

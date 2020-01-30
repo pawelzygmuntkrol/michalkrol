@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/universal.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/sidenav.css">
-    
+
     <link rel="stylesheet" href="./css/artworks.css">
 
     <script src="./js/app.js"></script>
@@ -25,7 +25,7 @@
 
 
 
-<body onload='showPopUpImg()' onclick='closePopUpImg()'>
+<body onload='showPopUpImg(); changeLanguage(language)' onclick='closePopUpImg()'>
 
 
     <nav>
@@ -46,7 +46,7 @@
                     <p class='small-screens'>&times;</p>
                 </li>
                 <div class='sidemenu-links'>
-                    <a href='#' id='artworksButton' active>Prace</a>
+                    <a href='index.html' id='artworksButton' active>Prace</a>
                     <a href='#' id='exhibitionButton'>Wystawy</a>
                     <a href='biography.html' id='biographyButton'>Biografia</a>
                     <a href='#' id='contactButton'>Kontakt</a>
@@ -123,9 +123,11 @@
             <p class='title'>Structuralist</p>
         </div>
         <div class='img-container'>
-            <img src='./images/i12.jpg'>
-            <p class='author'>Arctic new moon</p>
-            <p class='title'>Structuralist</p>
+            <a href='./artworks/0001.html'>
+                <img src='./images/0001/0001-1.jpg'>
+                <p class='author'>Arctic new moon</p>
+                <p class='title'>Structuralist</p>
+            </a>
         </div>
     </main>
 

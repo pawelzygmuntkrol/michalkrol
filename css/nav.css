@@ -5,9 +5,8 @@ nav {
     top: 0px;
     width: 100%;
     padding: 1rem 2rem;
-    /* border: none;    na koniec odkomentować   */ 
+    border: none;
     z-index: 1;
-    border-bottom: solid black 1px; /* do usunięcia pozniej */
 }
 
 ul {

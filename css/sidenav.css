@@ -77,3 +77,18 @@
     }   
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+    .sidemenu-links {
+        padding-top: 25%;
+        grid-row-gap: 1.2rem;
+    }
+
+    .sidemenu-icons {
+        position: absolute;
+        top: 1.7rem;
+        right: 10vw;
+    }
+
+  }

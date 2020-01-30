@@ -1,7 +1,3 @@
-.biography {
-
-}
-
 h1 {
     width: 100vw;
     height: 100vh;
@@ -18,4 +14,15 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 3rem 27vw 5rem;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 426px) {
+  
+    .biography p {
+        padding: 3rem 2rem 5rem;
+    }
+    
 }
