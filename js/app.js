@@ -67,6 +67,14 @@ function changeToPl() {
         document.getElementById('biographyButton').innerHTML = pl.menu.biographyButton;
         document.getElementById('contactButton').innerHTML = pl.menu.contactButton;
 
+        document.getElementById('paintingDataTitle').innerHTML = pl.artworks[paintingNum].paintingDataTitle;
+        document.getElementById('paintingDataAuthor').innerHTML = pl.artworks[paintingNum].paintingDataAuthor;
+        document.getElementById('paintingTitle').innerHTML = pl.artworks[paintingNum].paintingTitle;
+        document.getElementById('paintingYearOfCreation').innerHTML = pl.artworks[paintingNum].paintingYearOfCreation;
+        document.getElementById('paintingStatus').innerHTML = pl.artworks[paintingNum].paintingStatus;
+        document.getElementById('paintingDescription').innerHTML = pl.artworks[paintingNum].paintingDescription;
+        //document.getElementById('paintingImages').innerHTML = '';
+
         document.getElementById('biographyHeader').innerHTML = pl.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = pl.biography.biographyParagraph;
 };
@@ -82,6 +90,14 @@ function changeToEn() {
         document.getElementById('artworksButton').innerHTML = en.menu.artworksButton;
         document.getElementById('biographyButton').innerHTML = en.menu.biographyButton;
         document.getElementById('contactButton').innerHTML = en.menu.contactButton;
+
+        document.getElementById('paintingDataTitle').innerHTML = en.artworks[paintingNum].paintingDataTitle;
+        document.getElementById('paintingDataAuthor').innerHTML = en.artworks[paintingNum].paintingDataAuthor;
+        document.getElementById('paintingTitle').innerHTML = en.artworks[paintingNum].paintingTitle;
+        document.getElementById('paintingYearOfCreation').innerHTML = en.artworks[paintingNum].paintingYearOfCreation;
+        document.getElementById('paintingStatus').innerHTML = en.artworks[paintingNum].paintingStatus;
+        document.getElementById('paintingDescription').innerHTML = en.artworks[paintingNum].paintingDescription;
+        //document.getElementById('paintingImages').innerHTML = '';
 
         document.getElementById('biographyHeader').innerHTML = en.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = en.biography.biographyParagraph;
@@ -99,13 +115,21 @@ function changeToDe() {
         document.getElementById('biographyButton').innerHTML = de.menu.biographyButton;
         document.getElementById('contactButton').innerHTML = de.menu.contactButton;
 
+        document.getElementById('paintingDataTitle').innerHTML = de.artworks[paintingNum].paintingDataTitle;
+        document.getElementById('paintingDataAuthor').innerHTML = de.artworks[paintingNum].paintingDataAuthor;
+        document.getElementById('paintingTitle').innerHTML = de.artworks[paintingNum].paintingTitle;
+        document.getElementById('paintingYearOfCreation').innerHTML = de.artworks[paintingNum].paintingYearOfCreation;
+        document.getElementById('paintingStatus').innerHTML = de.artworks[paintingNum].paintingStatus;
+        document.getElementById('paintingDescription').innerHTML = de.artworks[paintingNum].paintingDescription;
+        //document.getElementById('paintingImages').innerHTML = '';
+
         document.getElementById('biographyHeader').innerHTML = de.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = de.biography.biographyParagraph;
 };
 
 
 // ARTWORKITEM BACKGROUND SCROLL EFFECT
-
+/*
 let imgContainerHeight = document.getElementById('img-container').offsetHeight;
 imgContainerHeight -= '300';
 
@@ -113,4 +137,19 @@ function backgroundScrollEffect() {
     if(document.getElementById('img-container').scrollTop > '300')
     document.getElementById('img-container').style.backgroundColor = 'rgba(255, 255, 255)';
 }
+*/
 
+// ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
+
+let paintingNum = '0000';
+
+function getPaintingNum(num) {
+    paintingNum = num;
+    return paintingNum
+}
+/*
+function displayPaintings(paintingNum) {
+    let listLength = pl.artworks[paintingNum].length;
+    document.getElementById('img-container').innerHTML = '<img>elko</img>';
+};
+*/

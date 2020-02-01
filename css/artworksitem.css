@@ -1,3 +1,5 @@
+/* DESKTOP */
+
 .artwork-data {
     position: fixed;
     left: 2rem;
@@ -41,6 +43,20 @@ img {
     padding-top: 10rem;
 }
 
+.left {
+    width: 50vw;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.right {
+    width: 50vw;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
 .img-description p {
     width: 100vw;
     height: auto;
@@ -48,4 +64,25 @@ img {
     align-items: center;
     justify-content: center;
     padding: 3rem 27vw 5rem;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 426px) {
+
+    .img-item {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    img {
+        height: auto;
+        width: 90vw;
+    }
+
+    .img-description p {
+        padding: 3rem 2rem 5rem;
+    }
+
 }
