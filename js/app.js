@@ -1,6 +1,6 @@
 // POPUP IMG
 
-// Get SRC from last added IMG and asign it to POPUP IMG
+// Get SRC from last added IMG and asign it to POPUP IMG.
 function showPopUpImg() {
     document.getElementById("popUpImg").src = document.getElementById("popUpImgPrototype").src;
 }
@@ -15,6 +15,7 @@ function closePopUpImg() {
 
 // SIDE MENU
 
+// Show/hide Side Menu, calculate width and hide Menu/Close button.
 function openSideMenu() {
     if(window.screen.width < 426){
         document.getElementById('menu').style.width = '100%';
@@ -33,6 +34,7 @@ function closeSideMenu() {
 
 // LANGUAGE
 
+// Check users browser language and turns language.
 let userBrowserLanguage = navigator.language.slice(0, 2);
 let language = '';
 
@@ -54,7 +56,7 @@ function changeLanguage(language) {
     }
 }
 
-
+// All events that take place when language is set.
 function changeToPl() {
     language = 'pl';
         document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
@@ -74,7 +76,7 @@ function changeToPl() {
         document.getElementById('paintingStatus').innerHTML = pl.artworks[paintingNum].paintingStatus;
         document.getElementById('paintingDescription').innerHTML = pl.artworks[paintingNum].paintingDescription;
         //document.getElementById('paintingImages').innerHTML = '';
-
+        
         document.getElementById('biographyHeader').innerHTML = pl.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = pl.biography.biographyParagraph;
 };
@@ -141,15 +143,29 @@ function backgroundScrollEffect() {
 
 // ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
 
+// Get id of painting while clicked and use it to display this paintings subpage.
 let paintingNum = '0000';
 
 function getPaintingNum(num) {
     paintingNum = num;
+    localStorage.setItem('paintingId', paintingNum);
+    paintingNum = localStorage.getItem('paintingId');
     return paintingNum
 }
+
+// Take a length of list of paintings to display, loops thru them and display them.
+
+
 /*
-function displayPaintings(paintingNum) {
-    let listLength = pl.artworks[paintingNum].length;
-    document.getElementById('img-container').innerHTML = '<img>elko</img>';
-};
+    let paintingImages = document.getElementById('paintingImages');
+
+    for(let i = 0; i < [language].artworks[paintingNum].length; i++) {
+            let newPainting = document.createElement(
+                `<div class='img-item'>
+                    <img src='./images/0001/0001-1.jpg'/>
+                </div>`);
+                paintingImages[i].appendChild(newPainting);       
+    };
+
+
 */

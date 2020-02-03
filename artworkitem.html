@@ -46,9 +46,9 @@
                     <p class='small-screens'>&times;</p>
                 </li>
                 <div class='sidemenu-links'>
-                    <a href='./../index.html' id='artworksButton' active>Prace</a>
+                    <a href='./index.html' id='artworksButton' active>Prace</a>
                     <a href='#' id='exhibitionButton'>Wystawy</a>
-                    <a href='./../biography.html' id='biographyButton'>Biografia</a>
+                    <a href='./biography.html' id='biographyButton'>Biografia</a>
                     <a href='#' id='contactButton'>Kontakt</a>
                     <div class='sidemenu-language'>
                         <a href='#' id='pl' onclick='changeToPl()'>pl</a>
@@ -70,24 +70,32 @@
         <p id='paintingDataAuthor'></p>
     </div>
 
-    <div id='img-container' onscroll='backgroundScrollEffect()'>
-        <div class='img-item'>
+    <div id='paintingImages' onscroll='backgroundScrollEffect()'>
+        <!--<div class='img-item'>
             <img src='./images/0001/0001-1.jpg'/>
         </div>
         <div class='img-item'>
             <img src='./images/0001/0001-2.jpg'/> 
-        </div>       
+        </div> -->       
     </div>
 
     <div class='img-description'>
-        <span class='headers'>
-            <h3 class='left' id='paintingTitle'></h3>
-            <h3 class='right' id='paintingYearOfCreation'></h3>
-        </span>
+            <h4 id='paintingTitle'></h4>
+            <h4 id='paintingYearOfCreation'></h4>
         <p id='paintingStatus'></p>
         <p id='paintingDescription'></p>
     </div>
 
 
 </body>
+
+
+<script type="text/javascript">
+
+//GET LOCALSTORAGE TO RETURN RIGHT DATA ABOUT PAINTING
+paintingNum = localStorage.getItem('paintingId');
+
+</script>
+
 </html>
+

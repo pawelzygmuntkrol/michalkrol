@@ -8,10 +8,9 @@
     color: rgba(128, 128, 128);
 }
 
-#img-container {   
+#paintingImages {   
     background-color: rgba(10, 10, 10, 0.95);
-    
-    padding-bottom: 10rem;
+    padding: 0rem 0rem 10rem 0rem;
 }
 
 .img-item {
@@ -29,41 +28,50 @@ img {
 }
 
 .img-description {
+    display: grid;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10rem 0rem 5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3rem 1.5rem 1rem auto;
+    grid-row-gap: 1rem;
 }
-
-.img-description h3 {
-    width: 100vw;
-    height: 10vh;
+    
+#paintingTitle { 
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    padding-top: 10rem;
+    align-items: flex-end;
+    grid-area: 1 / 1 / 2 / 5;
+    font-size: 3rem;
+    width: 100vw;
 }
 
-.left {
-    width: 50vw;
+#paintingYearOfCreation { 
     display: flex;
-    align-items: right;
-    justify-content: right;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: 2 / 1 / 3 / 5; 
+    font-size: 1.7rem;
+    width: 100vw;
 }
 
-.right {
-    width: 50vw;
+#paintingStatus { 
     display: flex;
-    align-items: left;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 1 / 4 / 5;
+    font-size: 1.3rem;
+    width: 100vw;
 }
 
-.img-description p {
+#paintingDescription { 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: 4 / 1 / 5 / 5;
     width: 100vw;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 27vw 5rem;
+    padding: 2rem 25% 0rem;
 }
 
 
@@ -83,6 +91,10 @@ img {
 
     .img-description p {
         padding: 3rem 2rem 5rem;
+    }
+
+    #paintingDescription { 
+        padding: 2rem 5vh 0rem;
     }
 
 }
