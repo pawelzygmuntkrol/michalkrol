@@ -16,14 +16,13 @@ function closePopUpImg() {
 // SIDE MENU
 
 // Show/hide Side Menu, calculate width and hide Menu/Close button.
-function openSideMenu() {
+function openSideMenu() { 
     if(window.screen.width < 426){
         document.getElementById('menu').style.width = '100%';
     } else {
         document.getElementById('menu').style.width = '23.5rem';
     }
     document.getElementById('menu-button').style.visibility = 'hidden';
-    
 }
 
 function closeSideMenu() {
@@ -75,7 +74,7 @@ function changeToPl() {
         document.getElementById('paintingYearOfCreation').innerHTML = pl.artworks[paintingNum].paintingYearOfCreation;
         document.getElementById('paintingStatus').innerHTML = pl.artworks[paintingNum].paintingStatus;
         document.getElementById('paintingDescription').innerHTML = pl.artworks[paintingNum].paintingDescription;
-        //document.getElementById('paintingImages').innerHTML = '';
+        document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
         
         document.getElementById('biographyHeader').innerHTML = pl.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = pl.biography.biographyParagraph;
@@ -99,7 +98,8 @@ function changeToEn() {
         document.getElementById('paintingYearOfCreation').innerHTML = en.artworks[paintingNum].paintingYearOfCreation;
         document.getElementById('paintingStatus').innerHTML = en.artworks[paintingNum].paintingStatus;
         document.getElementById('paintingDescription').innerHTML = en.artworks[paintingNum].paintingDescription;
-        //document.getElementById('paintingImages').innerHTML = '';
+        document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+        
 
         document.getElementById('biographyHeader').innerHTML = en.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = en.biography.biographyParagraph;
@@ -123,7 +123,7 @@ function changeToDe() {
         document.getElementById('paintingYearOfCreation').innerHTML = de.artworks[paintingNum].paintingYearOfCreation;
         document.getElementById('paintingStatus').innerHTML = de.artworks[paintingNum].paintingStatus;
         document.getElementById('paintingDescription').innerHTML = de.artworks[paintingNum].paintingDescription;
-        //document.getElementById('paintingImages').innerHTML = '';
+        document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
 
         document.getElementById('biographyHeader').innerHTML = de.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = de.biography.biographyParagraph;
@@ -150,22 +150,17 @@ function getPaintingNum(num) {
     paintingNum = num;
     localStorage.setItem('paintingId', paintingNum);
     paintingNum = localStorage.getItem('paintingId');
-    return paintingNum
+    return paintingNum;
 }
 
 // Take a length of list of paintings to display, loops thru them and display them.
-
-
-/*
-    let paintingImages = document.getElementById('paintingImages');
-
-    for(let i = 0; i < [language].artworks[paintingNum].length; i++) {
-            let newPainting = document.createElement(
-                `<div class='img-item'>
-                    <img src='./images/0001/0001-1.jpg'/>
-                </div>`);
-                paintingImages[i].appendChild(newPainting);       
-    };
-
-
-*/
+// In this case PL is given but it does not matter, all objects (PL/EN/DE) have the same images of paintings.
+function displayPaintings(paintingNum) {
+    let result = '';
+    for(let i = 1; i <= Object.keys(pl.artworks[paintingNum].paintingImages).length; i++) {
+        let str = "<div class='img-item'><img src='./images/0000/0000-1.jpg'/></div>"
+        let newStr = str.replace('0000', paintingNum).replace('0000', paintingNum).replace('-1', '-'+[i]);
+        result += newStr;
+    }   
+    return result;
+}

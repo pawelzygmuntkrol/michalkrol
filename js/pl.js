@@ -39,22 +39,7 @@ let pl = {
                 '0001-2': 'images\0001\0001-2.JPG',
                 '0001-3': 'images\0001\0001-3.JPG',
             }
-        }, 
-        
-        '0000': {
-            paintingDataTitle: 'Testowy tytuł',
-            paintingDataAuthor: 'Testowy Autor',
-            paintingTitle: 'Testowy tytuł',
-            paintingYearOfCreation: '2020',    
-            paintingStatus: 'Dostępny',
-            paintingDescription: 'Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko Elko ',
-            paintingImages: {
-                '0000-1': './images/0000/0000-1.jpg',
-                '0000-2': './images/0000/0000-2.jpg',
-                '0000-3': './images/0000/0000-3.jpg',
-            }
         },
-
     },
 
     // EXHIBITIONS
