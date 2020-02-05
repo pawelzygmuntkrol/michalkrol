@@ -2,14 +2,35 @@
 
 // Get SRC from last added IMG and asign it to POPUP IMG.
 function showPopUpImg() {
-    document.getElementById("popUpImg").src = document.getElementById("popUpImgPrototype").src;
+    document.getElementById("popUpImg").src = './images/0003/0003-1.jpg'; // Ciągle trzeba popracować żeby zaciągało samo skądś
 }
 
+// Close PopUpImg and display main list of paintings.
 function closePopUpImg() {
+    document.getElementById('artworksList').innerHTML = displayArtworksList();
     document.getElementById('popUpImgContainer').style.transitionDuration = '0.8s'; 
     document.getElementById('popUpImgContainer').style.animationTimingFunction = 'ease-in'; 
     document.getElementById('popUpImgContainer').style.opacity = '0';
     document.getElementById('popUpImgContainer').style.visibility = 'hidden';
+ 
+}
+
+// MAIN PAINTINGS
+
+// Take a length of list of paintings to display, loops thru them and display them (on main page -> index.html).
+// In this case PL is given but it does not matter, all objects (PL/EN/DE) have the same images of paintings.
+function displayArtworksList() {
+    let result = '';
+    let id = '0001';
+    let lastNumofId = 1;
+    for(let i = 0; i < Object.keys(pl.artworks).length; i++) { 
+        let str = `<div class='img-container' onclick='getPaintingNum("0000")'><a href='./artworkitem.html'><img src='./images/0000/0000-1.jpg'><p class='author'>authorStr</p><p class='title'>titleStr</p></a></div>`
+        let newStr = str.replace('0000', id).replace('0000', id).replace('0000', id).replace('authorStr', pl.artworks[id].paintingDataAuthor).replace('titleStr', pl.artworks[id].paintingDataTitle);
+        result += newStr;
+        lastNumofId++;
+        id = '000' + lastNumofId;
+    }
+    return result;
 }
 
 
@@ -55,6 +76,7 @@ function changeLanguage(language) {
     }
 }
 
+
 // All events that take place when language is set.
 function changeToPl() {
     language = 'pl';
@@ -98,8 +120,7 @@ function changeToEn() {
         document.getElementById('paintingYearOfCreation').innerHTML = en.artworks[paintingNum].paintingYearOfCreation;
         document.getElementById('paintingStatus').innerHTML = en.artworks[paintingNum].paintingStatus;
         document.getElementById('paintingDescription').innerHTML = en.artworks[paintingNum].paintingDescription;
-        document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-        
+        document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);    
 
         document.getElementById('biographyHeader').innerHTML = en.biography.biographyHeader;
         document.getElementById('biographyParagraph').innerHTML = en.biography.biographyParagraph;
@@ -141,6 +162,7 @@ function backgroundScrollEffect() {
 }
 */
 
+
 // ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
 
 // Get id of painting while clicked and use it to display this paintings subpage.
@@ -153,7 +175,7 @@ function getPaintingNum(num) {
     return paintingNum;
 }
 
-// Take a length of list of paintings to display, loops thru them and display them.
+// Take a length of list of paintings to display, loops thru them and display them (on sub page -> artworkitem.html).
 // In this case PL is given but it does not matter, all objects (PL/EN/DE) have the same images of paintings.
 function displayPaintings(paintingNum) {
     let result = '';
@@ -164,3 +186,5 @@ function displayPaintings(paintingNum) {
     }   
     return result;
 }
+
+

@@ -26,8 +26,12 @@
 
 
 <body onload='showPopUpImg(); changeLanguage(language)' onclick='closePopUpImg()'>
+      
 
-
+    <div id='popUpImgContainer'>
+        <img id='popUpImg' src=''>
+    </div>    
+        
     <nav>
         <ul>
             <a href='#' class='nav-left'>
@@ -65,8 +69,10 @@
         </ul>
     </nav>
 
-    <main>
+    <main id='artworksList'>
         <!-- FIRST IMG IS USED IN POPUP IMG -->
+
+        <!--       
         <div class='img-container'>
             <a href='./artworkitem.html'>
                 <img src='./images/i1.jpg' id='popUpImgPrototype'>
@@ -130,11 +136,11 @@
                 <p class='title'>Structuralist</p>
             </a>
         </div>
-        <div class='img-container'>
+        <div class='img-container' onclick='getPaintingNum("0003")'>
             <a href='./artworkitem.html'>
-                <img src='./images/i10.jpg'>
-                <p class='author'>Arctic new moon</p>
-                <p class='title'>Structuralist</p>
+                <img src='./images/0003/0003-1.jpg'>
+                <p class='author'>Flora</p>
+                <p class='title'>Structural Collage</p>
             </a>
         </div>
         <div class='img-container' onclick='getPaintingNum("0002")'>
@@ -151,13 +157,10 @@
                 <p class='title'>Structural Collage</p>
             </a>
         </div>
-
+        -->
+ 
     </main>
 
-    <div id='popUpImgContainer'>
-        <img id='popUpImg' src=''>
-    </div>
-  
 
 </body>
 </html>
