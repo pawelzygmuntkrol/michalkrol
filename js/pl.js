@@ -1,7 +1,7 @@
 let pl = {
 
     // POP UP IMAGE
-    popUpImage: 'images\0003\0003-1.JPG',
+    popUpImage: 'images\0005\0005-1.JPG',
 
 
     // SIDEBAR MENU
@@ -15,6 +15,40 @@ let pl = {
 
     // ARTWORKS
     artworks: {
+
+        '0005': {
+            paintingDataTitle: 'RCD 500',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2008',    
+            paintingTitle: 'SM',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Kolaż powstały podczas pracy w fabryce - lakierni w Bydgoszczy. Część kartonowa wykorzystywana także podczas lakierowania i malowania detali w lakierni przytwierdzona do płótna i pokryta warstwami farby olejnej i pastelami. Obraz zmienia częściowo barwy w zależności od rodzaju oświetlenia. Wyrażenie RCD 500 symbolicznie nawiązuję do podkładek kartonowych wykorzystywanych w lakierni ale równie dobrze może oznaczać daleką, nieodkrytą nam jeszcze galaktykę. Obraz sygnowany podpisany na odwrocie.',
+            paintingImages: {
+                '0005-1': 'images\0005\0005-1.jpg',
+                '0005-2': 'images\0005\0005-2.jpg',
+                '0005-3': 'images\0005\0005-3.jpg',
+                '0005-4': 'images\0005\0005-4.jpg',
+                '0005-5': 'images\0005\0005-5.jpg',
+                '0005-6': 'images\0005\0005-6.jpg',
+            }
+        }, 
+
+        '0004': {
+            paintingDataTitle: 'SM',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2007',    
+            paintingTitle: 'SM',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'SM oznacza Something mechanical, Stright maschine, strange material. Historia obrazu nawiązuje do klimatu industrialnego, gdyż elementy, które zawiera pochodzą z fabryki. Składa się z opiłków metalu pochodzących ze skrawarki z procesu skrawania oraz ciętego kruszonego fioletowego metalu, przytwierdzonego za pośrednictwem specjalistycznego kleju do drewnianej płyty pilśniowej. Płyta ma nierówny kształt, grubość około 8 mm, poza opiłkami metalu składa się z grubo lanej warstwy srebrnej farby olejnej na tło oraz smoły z procesu smołowania dachu w środku obrazu. Ostre elementy, ciemne barwy jak i nierówne krawędzie pracy nadają jej surowego charakteru. Praca jest sygnowana na odwrocie.',
+            paintingImages: {
+                '0004-1': 'images\0004\0004-1.jpg',
+                '0004-2': 'images\0004\0004-2.jpg',
+                '0004-3': 'images\0004\0004-3.jpg',
+                '0004-4': 'images\0004\0004-4.jpg',
+                '0004-5': 'images\0004\0004-5.jpg',
+            }
+        }, 
+
         '0003': {
             paintingDataTitle: 'Flora',
             paintingDataAuthor: 'Structural Collage',
@@ -28,7 +62,7 @@ let pl = {
                 '0003-3': 'images\0003\0003-3.jpg',
                 '0003-4': 'images\0003\0003-4.jpg',
                 '0003-5': 'images\0003\0003-5.jpg',
-                '0003-6': 'images\0003\0003-6.jpg',
+                '0003-6': 'images\0003\0003-6.jpg',          
             }
         }, 
 

@@ -2,7 +2,7 @@
 
 // Get SRC from last added IMG and asign it to POPUP IMG.
 function showPopUpImg() {
-    document.getElementById("popUpImg").src = './images/0003/0003-1.jpg'; // Ciągle trzeba popracować żeby zaciągało samo skądś
+    document.getElementById("popUpImg").src = './images/0005/0005-1.jpg'; // Ciągle trzeba popracować żeby zaciągało samo skądś
 }
 
 // Close PopUpImg and display main list of paintings.
