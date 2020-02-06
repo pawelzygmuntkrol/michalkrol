@@ -46,19 +46,19 @@
                     <p class='small-screens'>&times;</p>
                 </li>
                 <div class='sidemenu-links'>
-                    <a href='./index.html' id='artworksButton' active>Prace</a>
-                    <a href='#' id='exhibitionButton'>Wystawy</a>
-                    <a href='./biography.html' id='biographyButton'>Biografia</a>
-                    <a href='#' id='contactButton'>Kontakt</a>
+                    <a href='./index.html' id='artworksButton' active><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <a href='#' id='exhibitionButton'><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <a href='./biography.html' id='biographyButton'><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <a href='#' id='contactButton'><!-- text is dynamically loaded by changeLanguage function --></a>
                     <div class='sidemenu-language'>
                         <a href='#' id='pl' onclick='changeToPl()'>pl</a>
                         <a href='#' id='en' onclick='changeToEn()'>en</a>
                         <a href='#' id='de' onclick='changeToDe()'>de</a>
                     </div>
                     <div class='sidemenu-icons'>
-                        <a href='#'><i class="fab fa-facebook-square"></i></a>
-                        <a href='#'><i class="fab fa-instagram"></i></a>
-                        <a href='#'><i class="fab fa-behance-square"></i></a>
+                        <a href='https://www.facebook.com/StructuralCollage/' target='_blank'><i class="fab fa-facebook-square"></i></a>
+                        <a href='https://www.instagram.com/structuralcollage/' target='_blank'><i class="fab fa-instagram"></i></a>
+                        <a href='#' target='_blank'><i class="fab fa-behance-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -66,17 +66,17 @@
     </nav>
 
     <div class='artwork-data'>
-        <p id='paintingDataTitle'></p>
-        <p id='paintingDataAuthor'></p>
+        <p id='paintingDataTitle'><!-- text is dynamically loaded by changeLanguage function --></p>
+        <p id='paintingDataAuthor'><!-- text is dynamically loaded by changeLanguage function --></p>
     </div>
 
-    <div id='paintingImages' onscroll='backgroundScrollEffect()' onload='addPainting()'></div>
+    <div id='paintingImages' onscroll='backgroundScrollEffect()' onload='addPainting()'><!-- photos are dynamically loaded by changeLanguage function --></div>
 
     <div class='img-description'>
-            <h4 id='paintingTitle'></h4>
-            <h4 id='paintingYearOfCreation'></h4>
-        <p id='paintingStatus'></p>
-        <p id='paintingDescription'></p>
+            <h4 id='paintingTitle'><!-- text is dynamically loaded by changeLanguage function --></h4>
+            <h4 id='paintingYearOfCreation'><!-- text is dynamically loaded by changeLanguage function --></h4>
+        <p id='paintingStatus'><!-- text is dynamically loaded by changeLanguage function --></p>
+        <p id='paintingDescription'><!-- text is dynamically loaded by changeLanguage function --></p>
     </div>
 
 
@@ -89,6 +89,5 @@
 paintingNum = localStorage.getItem('paintingId');
 
 </script>
-
 </html>
 

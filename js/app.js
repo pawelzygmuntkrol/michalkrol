@@ -12,8 +12,8 @@ function closePopUpImg() {
     document.getElementById('popUpImgContainer').style.animationTimingFunction = 'ease-in'; 
     document.getElementById('popUpImgContainer').style.opacity = '0';
     document.getElementById('popUpImgContainer').style.visibility = 'hidden';
- 
 }
+
 
 // MAIN PAINTINGS
 

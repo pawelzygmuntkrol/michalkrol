@@ -3,7 +3,6 @@ let pl = {
     // POP UP IMAGE
     popUpImage: 'images\0005\0005-1.JPG',
 
-
     // SIDEBAR MENU
     menu: {
         closeButton: 'Zamknij',
