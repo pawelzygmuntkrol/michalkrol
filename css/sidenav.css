@@ -13,8 +13,9 @@
     transition: 0.35s;
 }
 
-#close-button a:hover {
-    color: rgba(255, 255, 255);    
+.elements-to-hover:hover {
+    color: rgba(255, 255, 255);  
+    transition: 0.35s;  
 }
 
 .sidemenu a {

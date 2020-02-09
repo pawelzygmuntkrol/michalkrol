@@ -47,8 +47,8 @@
             </a>
             <div id='menu' class='sidemenu'>
                 <li href='#' id="close-button" onclick='closeSideMenu()'>
-                    <p class='large-screens' id='closeButton'></p>
-                    <p class='small-screens'>&times;</p>
+                    <p class='large-screens elements-to-hover' id='closeButton'></p>
+                    <p class='small-screens elements-to-hover'>&times;</p>
                 </li>
                 <div class='sidemenu-links'>
                     <a href='index.html' id='artworksButton' active><!-- text is dynamically loaded by changeLanguage function --></a>
@@ -56,9 +56,9 @@
                     <a href='biography.html' id='biographyButton'><!-- text is dynamically loaded by changeLanguage function --></a>
                     <a href='#' id='contactButton'><!-- text is dynamically loaded by changeLanguage function --></a>
                     <div class='sidemenu-language'>
-                        <a href='#' id='pl' onclick='changeToPl()'>pl</a>
-                        <a href='#' id='en' onclick='changeToEn()'>en</a>
-                        <a href='#' id='de' onclick='changeToDe()'>de</a>
+                        <a href='#' id='pl' onclick='changeToPl(); disableAutoLanguage("pl")'>pl</a>
+                        <a href='#' id='en' onclick='changeToEn(); disableAutoLanguage("en")'>en</a>
+                        <a href='#' id='de' onclick='changeToDe(); disableAutoLanguage("de")'>de</a>
                     </div>
                     <div class='sidemenu-icons'>
                         <a href='https://www.facebook.com/StructuralCollage/' target='_blank'><i class="fab fa-facebook-square"></i></a>

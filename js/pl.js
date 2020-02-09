@@ -1,7 +1,7 @@
 let pl = {
 
     // POP UP IMAGE
-    popUpImage: 'images\0005\0005-1.JPG',
+    popUpImage: 'images\0006\0006-1.jpg',
 
     // SIDEBAR MENU
     menu: {
@@ -15,11 +15,27 @@ let pl = {
     // ARTWORKS
     artworks: {
 
+        '0006': {
+            paintingDataTitle: 'Dion',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2008',    
+            paintingTitle: 'Dion',
+            paintingStatus: 'Sprzedany',
+            paintingDescription: 'Historia obrazu jest iście industrialna gdyż powstał on w starej fabryce-lakierni w Bydgoszczy w której kiedyś pracowałem podczas farbowania i lakierowania innych przedmiotów. Praca powstała z dwóch części: płyty kartonowej oraz płótna. Dodatkowo została wykorzystana farba olejna w różnych kolorach i warstwach na płycie kartonowej. Udział swój w powstaniu pracy miała maszyna wykorzystywana do mieszania farby. Mieszając farbę dokonywała rozbryzgu na podkładkę, która teraz stanowi główny trzon obrazu. Na pracy widać ślady lakieru, będącego jednym z podstawowych materiałów stosowanych w lakierni.',
+            paintingImages: {
+                '0006-1': 'images\0006\0006-1.jpg',
+                '0006-2': 'images\0006\0006-2.jpg',
+                '0006-3': 'images\0006\0006-3.jpg',
+                '0006-4': 'images\0006\0006-4.jpg',
+                '0006-5': 'images\0006\0006-5.jpg',
+            }
+        }, 
+
         '0005': {
             paintingDataTitle: 'RCD 500',
             paintingDataAuthor: 'Structural Collage',
             paintingYearOfCreation: '2008',    
-            paintingTitle: 'SM',
+            paintingTitle: 'RCD 500',
             paintingStatus: 'Dostępny',
             paintingDescription: 'Kolaż powstały podczas pracy w fabryce - lakierni w Bydgoszczy. Część kartonowa wykorzystywana także podczas lakierowania i malowania detali w lakierni przytwierdzona do płótna i pokryta warstwami farby olejnej i pastelami. Obraz zmienia częściowo barwy w zależności od rodzaju oświetlenia. Wyrażenie RCD 500 symbolicznie nawiązuję do podkładek kartonowych wykorzystywanych w lakierni ale równie dobrze może oznaczać daleką, nieodkrytą nam jeszcze galaktykę. Obraz sygnowany podpisany na odwrocie.',
             paintingImages: {

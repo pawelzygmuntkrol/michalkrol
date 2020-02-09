@@ -15,11 +15,27 @@ let en = {
     // ARTWORKS
     artworks: {
 
+        '0006': {
+            paintingDataTitle: 'Dion',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2008',    
+            paintingTitle: 'Dion',
+            paintingStatus: 'Sold',
+            paintingDescription: 'tu eng tekst',
+            paintingImages: {
+                '0006-1': 'images\0006\0006-1.jpg',
+                '0006-2': 'images\0006\0006-2.jpg',
+                '0006-3': 'images\0006\0006-3.jpg',
+                '0006-4': 'images\0006\0006-4.jpg',
+                '0006-5': 'images\0006\0006-5.jpg',
+            }
+        }, 
+
         '0005': {
             paintingDataTitle: 'RCD 500',
             paintingDataAuthor: 'Structural Collage',
             paintingYearOfCreation: '2008',    
-            paintingTitle: 'SM',
+            paintingTitle: 'RCD 500',
             paintingStatus: 'Availible',
             paintingDescription: 'tu eng tekst',
             paintingImages: {
