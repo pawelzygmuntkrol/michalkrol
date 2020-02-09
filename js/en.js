@@ -1,8 +1,5 @@
 let en = {
     
-    // POP UP IMAGE
-    popUpImage: 'images\0005\0005-1.JPG',
-
     // SIDEBAR MENU
     menu: {
         closeButton: 'Close',
@@ -15,6 +12,63 @@ let en = {
     // ARTWORKS
     artworks: {
 
+        '0009': {
+            popUpSrc: 'images\0009\0009-1.jpg',
+            paintingDataTitle: 'Ant(y)-man',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2014',    
+            paintingTitle: 'Ant(y)-man',
+            paintingStatus: 'Sold',
+            paintingDescription: 'tu eng tekst',
+            paintingImages: {
+                '0009-1': 'images\0009\0009-1.jpg',
+                '0009-2': 'images\0009\0009-2.jpg',
+                '0009-3': 'images\0009\0009-3.jpg',
+                '0009-4': 'images\0009\0009-4.jpg',
+                '0009-5': 'images\0009\0009-5.jpg',
+                '0009-6': 'images\0009\0009-6.jpg',
+            }
+        }, 
+
+        '0008': {
+            popUpSrc: 'images\0008\0008-1.jpg',
+            paintingDataTitle: 'Anturium ',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2013',    
+            paintingTitle: 'Anturium ',
+            paintingStatus: 'Avaliable',
+            paintingDescription: 'tu eng tekst',
+            paintingImages: {
+                '0008-1': 'images\0008\0008-1.jpg',
+                '0008-2': 'images\0008\0008-2.jpg',
+                '0008-3': 'images\0008\0008-3.jpg',
+                '0008-4': 'images\0008\0008-4.jpg',
+                '0008-5': 'images\0008\0008-5.jpg',
+                '0008-6': 'images\0008\0008-6.jpg',
+                '0008-7': 'images\0008\0008-7.jpg',
+            }
+        }, 
+        
+        '0007': {
+            popUpSrc: 'images\0007\0007-1.jpg',
+            paintingDataTitle: 'Aberracja',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2008',    
+            paintingTitle: 'Aberracja',
+            paintingStatus: 'Sold',
+            paintingDescription: 'tu eng tekst',
+            paintingImages: {
+                '0007-1': 'images\0007\0007-1.jpg',
+                '0007-2': 'images\0007\0007-2.jpg',
+                '0007-3': 'images\0007\0007-3.jpg',
+                '0007-4': 'images\0007\0007-4.jpg',
+                '0007-5': 'images\0007\0007-5.jpg',
+                '0007-6': 'images\0007\0007-6.jpg',
+                '0007-7': 'images\0007\0007-7.jpg',
+                '0007-8': 'images\0007\0007-8.jpg',
+            }
+        }, 
+
         '0006': {
             paintingDataTitle: 'Dion',
             paintingDataAuthor: 'Structural Collage',
@@ -26,8 +80,7 @@ let en = {
                 '0006-1': 'images\0006\0006-1.jpg',
                 '0006-2': 'images\0006\0006-2.jpg',
                 '0006-3': 'images\0006\0006-3.jpg',
-                '0006-4': 'images\0006\0006-4.jpg',
-                '0006-5': 'images\0006\0006-5.jpg',
+                '0006-4': 'images\0006\0006-4.jpg'
             }
         }, 
 
@@ -36,7 +89,7 @@ let en = {
             paintingDataAuthor: 'Structural Collage',
             paintingYearOfCreation: '2008',    
             paintingTitle: 'RCD 500',
-            paintingStatus: 'Availible',
+            paintingStatus: 'Sold',
             paintingDescription: 'tu eng tekst',
             paintingImages: {
                 '0005-1': 'images\0005\0005-1.jpg',

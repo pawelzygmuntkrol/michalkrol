@@ -1,8 +1,5 @@
 let pl = {
 
-    // POP UP IMAGE
-    popUpImage: 'images\0006\0006-1.jpg',
-
     // SIDEBAR MENU
     menu: {
         closeButton: 'Zamknij',
@@ -15,7 +12,65 @@ let pl = {
     // ARTWORKS
     artworks: {
 
+        '0009': {
+            popUpSrc: 'images\0009\0009-1.jpg',
+            paintingDataTitle: 'Ant(y)-man',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2014',    
+            paintingTitle: 'Ant(y)-man',
+            paintingStatus: 'Sprzedany',
+            paintingDescription: 'Praca wykonana techniką kolażu. Zastosowana została srebrna farba olejna grubo kładziona oraz przymocowane ulane elementy, pochodzące z maszyny wtryskarka. Obraz posiada elementy wypukłe 3D przedstawionej postaci. Nawiązuje do początków swojego powstania czyli  fabryki która współcześnie często odczłowiecza naszą naturę sprowadzając nas do istot człeko - podobnych, robotów lub w tym wypadku mrówek pracujących jak w gnieździe. Obraz podpisany sygnowany na odwrocie.',
+            paintingImages: {
+                '0009-1': 'images\0009\0009-1.jpg',
+                '0009-2': 'images\0009\0009-2.jpg',
+                '0009-3': 'images\0009\0009-3.jpg',
+                '0009-4': 'images\0009\0009-4.jpg',
+                '0009-5': 'images\0009\0009-5.jpg',
+                '0009-6': 'images\0009\0009-6.jpg',
+            }
+        }, 
+
+        '0008': {
+            popUpSrc: 'images\0008\0008-1.jpg',
+            paintingDataTitle: 'Anturium ',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2013',    
+            paintingTitle: 'Anturium ',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Obraz fakturowy, kolaż, a właściwie asamblaż. Do wykonania pracy został użyty czarny siateczkowaty materiał, fioletowy kruszony metal pochodzący z procesu skrawania oraz czarna i fioletowa farba olejna. Elementy  zostały przytwierdzone za pomocą specjalistycznego kleju do płótna. Symboliką nawiązuje do Anturium. Kruszony materiał pochodzi z bydgoskiej fabryki jest symbolicznym sercem obrazu, dzięki któremu czarny organizm żyje. Obraz sygnowany podpisany na odwrocie.',
+            paintingImages: {
+                '0008-1': 'images\0008\0008-1.jpg',
+                '0008-2': 'images\0008\0008-2.jpg',
+                '0008-3': 'images\0008\0008-3.jpg',
+                '0008-4': 'images\0008\0008-4.jpg',
+                '0008-5': 'images\0008\0008-5.jpg',
+                '0008-6': 'images\0008\0008-6.jpg',
+                '0008-7': 'images\0008\0008-7.jpg',
+            }
+        }, 
+        
+        '0007': {
+            popUpSrc: 'images\0007\0007-1.jpg',
+            paintingDataTitle: 'Aberracja',
+            paintingDataAuthor: 'Structural Collage',
+            paintingYearOfCreation: '2008',    
+            paintingTitle: 'Aberracja',
+            paintingStatus: 'Sprzedany',
+            paintingDescription: 'Obraz powstał w starej fabryce-lakierni w Bydgoszczy w której kiedyś pracowałem podczas farbowania i lakierowania innych przedmiotów. Kolaż powstał z połączenia płyty kartonowej wykorzystywanej jako podkładka w lakierni, ciętego kruszonego metalu i farby olejnej oraz płótna. Na powierzchni pracy można doszukać się wiele śladów z przeszłości w postaci plam, chlapnięć, zadrapań. Łączy w sobie ducha przeszłości, w której się narodził oraz przyszłości stając się współczesnym obrazem. Obraz jest sygnowany i podpisany na odwrocie.',
+            paintingImages: {
+                '0007-1': 'images\0007\0007-1.jpg',
+                '0007-2': 'images\0007\0007-2.jpg',
+                '0007-3': 'images\0007\0007-3.jpg',
+                '0007-4': 'images\0007\0007-4.jpg',
+                '0007-5': 'images\0007\0007-5.jpg',
+                '0007-6': 'images\0007\0007-6.jpg',
+                '0007-7': 'images\0007\0007-7.jpg',
+                '0007-8': 'images\0007\0007-8.jpg',
+            }
+        }, 
+
         '0006': {
+            popUpSrc: 'images\0006\0006-1.jpg',
             paintingDataTitle: 'Dion',
             paintingDataAuthor: 'Structural Collage',
             paintingYearOfCreation: '2008',    
@@ -26,8 +81,7 @@ let pl = {
                 '0006-1': 'images\0006\0006-1.jpg',
                 '0006-2': 'images\0006\0006-2.jpg',
                 '0006-3': 'images\0006\0006-3.jpg',
-                '0006-4': 'images\0006\0006-4.jpg',
-                '0006-5': 'images\0006\0006-5.jpg',
+                '0006-4': 'images\0006\0006-4.jpg'
             }
         }, 
 
@@ -36,7 +90,7 @@ let pl = {
             paintingDataAuthor: 'Structural Collage',
             paintingYearOfCreation: '2008',    
             paintingTitle: 'RCD 500',
-            paintingStatus: 'Dostępny',
+            paintingStatus: 'Sprzedany',
             paintingDescription: 'Kolaż powstały podczas pracy w fabryce - lakierni w Bydgoszczy. Część kartonowa wykorzystywana także podczas lakierowania i malowania detali w lakierni przytwierdzona do płótna i pokryta warstwami farby olejnej i pastelami. Obraz zmienia częściowo barwy w zależności od rodzaju oświetlenia. Wyrażenie RCD 500 symbolicznie nawiązuję do podkładek kartonowych wykorzystywanych w lakierni ale równie dobrze może oznaczać daleką, nieodkrytą nam jeszcze galaktykę. Obraz sygnowany podpisany na odwrocie.',
             paintingImages: {
                 '0005-1': 'images\0005\0005-1.jpg',

@@ -3,14 +3,15 @@
 // wasPopUpDisplayed = null which means last painting wasn't displayed earlier.
 let wasPopUpDisplayed;
 
-
 // Get SRC from last added IMG and asign it to POPUP IMG.
-
 function showPopUpImg() {
     wasPopUpDisplayed = sessionStorage.getItem('wasPopUpDisplayed');
 
+    let photoNumber = Object.keys(pl.artworks).length;
+    let popUpImageSource = './images/0000/0000-1.jpg'.replace('0000', '000' + photoNumber).replace('0000', '000' + photoNumber);
+
     if(wasPopUpDisplayed === null) {
-        document.getElementById("popUpImg").src = './images/0006/0006-1.jpg';// Ciągle trzeba popracować żeby zaciągało samo skądś
+        document.getElementById("popUpImg").src = popUpImageSource;
         wasPopUpDisplayed = 1;
         sessionStorage.setItem('wasPopUpDisplayed', wasPopUpDisplayed);  
     }
@@ -225,15 +226,12 @@ function changeToDe() {
 
 // ARTWORKITEM BACKGROUND SCROLL EFFECT
 /*
-let imgContainerHeight = document.getElementById('img-container').offsetHeight;
-imgContainerHeight -= '300';
-
 function backgroundScrollEffect() {
-    if(document.getElementById('img-container').scrollTop > '300')
-    document.getElementById('img-container').style.backgroundColor = 'rgba(255, 255, 255)';
+    let scrollPosition = window.pageYOffset;
+
+    //document.getElementById('img-container').style.backgroundColor = 'rgba(255, 255, 255)';
 }
 */
-
 
 // ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
 
