@@ -22,9 +22,8 @@
 }
 
 .img-item img {
-    height: 97vh;
-    width: auto;
-    max-width: 80vw;
+    max-height: 97vh;
+    max-width: 90vw;
     padding: 2rem 0;
 }
 
