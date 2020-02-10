@@ -5,13 +5,12 @@ let de = {
         closeButton: 'Zumachen',
         exhibitionButton: 'Ausstellungen',
         artworksButton: 'Kunstwerke',
-        biographyButton: 'Biografie',
+        biographyButton: 'Biographie',
         contactButton: 'Kontakt'
     },
 
     // ARTWORKS
     artworks: {
-
         '0009': {
             popUpSrc: 'images\0009\0009-1.jpg',
             paintingDataTitle: 'Ant(y)-man',
@@ -211,7 +210,8 @@ let de = {
 
     // CONTACT
     contact: {
-
+        contactHeader: 'Kontakt',
+        contactEmailButton: 'Schreib mir'
     },
 
 }

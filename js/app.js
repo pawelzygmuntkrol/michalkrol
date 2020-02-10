@@ -144,8 +144,8 @@ function changeToPl() {
             document.getElementById('biographyParagraph').innerHTML = pl.biography.biographyParagraph;
 
         } else if(page === "contact.html") {
-            
-
+            document.getElementById('contactHeader').innerHTML = pl.contact.contactHeader;
+            document.getElementById('contactEmailButton').innerHTML = pl.contact.contactEmailButton;
         } 
 };
 
@@ -181,8 +181,8 @@ function changeToEn() {
             document.getElementById('biographyParagraph').innerHTML = en.biography.biographyParagraph;
 
         } else if(page === "contact.html") {
-            
-
+            document.getElementById('contactHeader').innerHTML = en.contact.contactHeader;
+            document.getElementById('contactEmailButton').innerHTML = en.contact.contactEmailButton;
         } 
 };
 
@@ -218,8 +218,8 @@ function changeToDe() {
             document.getElementById('biographyParagraph').innerHTML = de.biography.biographyParagraph;
 
         } else if(page === "contact.html") {
-            
-
+            document.getElementById('contactHeader').innerHTML = de.contact.contactHeader;
+            document.getElementById('contactEmailButton').innerHTML = de.contact.contactEmailButton;
         } 
 };
 

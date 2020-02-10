@@ -11,7 +11,6 @@ let pl = {
 
     // ARTWORKS
     artworks: {
-
         '0009': {
             popUpSrc: 'images\0009\0009-1.jpg',
             paintingDataTitle: 'Ant(y)-man',
@@ -212,7 +211,8 @@ let pl = {
 
     // CONTACT
     contact: {
-
+        contactHeader: 'Kontakt',
+        contactEmailButton: 'Napisz do mnie'
     },
 
 }

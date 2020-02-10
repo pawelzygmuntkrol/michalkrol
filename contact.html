@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
+
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <script src="./js/app.js"></script>
+    <script src="./js/pl.js"></script>
+    <script src="./js/en.js"></script>
+    <script src="./js/de.js"></script>
+
+    <title>Contact | Structuralist</title>
+</head>
+
+
+
+<body onload='changeLanguage(language)'>
+    
+
+    <nav>
+        <ul>
+            <a href='#' class='nav-left'>
+                <li class='name'>Michał Król</li>
+                <li class='pseudonym'>Structuralist</li>
+            </a>
+            <a href='#' class='nav-right'>
+                <li id='menu-button' onclick='openSideMenu()'>
+                    <p class='large-screens'>Menu</p>
+                    <p class='small-screens'>&#9776;</p>
+                </li> 
+            </a>
+            <div id='menu' class='sidemenu'>
+                <li href='#' id="close-button" onclick='closeSideMenu()'>
+                    <p class='large-screens elements-to-hover' id='closeButton'></p>
+                    <p class='small-screens elements-to-hover'>&times;</p>
+                </li>
+                <div class='sidemenu-links'>
+                    <a href='index.html' id='artworksButton' active><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <a href='#' id='exhibitionButton'><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <a href='biography.html' id='biographyButton'><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <a href='contact.html' id='contactButton'><!-- text is dynamically loaded by changeLanguage function --></a>
+                    <div class='sidemenu-language'>
+                        <a href='#' id='pl' onclick='changeToPl(); disableAutoLanguage("pl")'>pl</a>
+                        <a href='#' id='en' onclick='changeToEn(); disableAutoLanguage("en")'>en</a>
+                        <a href='#' id='de' onclick='changeToDe(); disableAutoLanguage("de")'>de</a>
+                    </div>
+                    <div class='sidemenu-icons'>
+                        <a href='https://www.facebook.com/StructuralCollage/' target='_blank'><i class="fab fa-facebook-square"></i></a>
+                        <a href='https://www.instagram.com/structuralcollage/' target='_blank'><i class="fab fa-instagram"></i></a>
+                        <a href='#' target='_blank'><i class="fab fa-behance-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    
+    <main class='contact'>
+        <h1 id='contactHeader'></h1>
+        <a href="mailto:kontakt@michalkrol.eu">
+            <button id='contactEmailButton'><!-- text is dynamically loaded by changeLanguage function --></button>
+        </a>
+            <!--
+        <div class='contact-form'>
+            <input type="text" id="name" name="name" placeholder="Your name...">
+            <input type="text" id="email" name="email" placeholder="Your e-mail address...">
+            <textarea textarea name="text" rows="15" cols="50" wrap="soft" placeholder="Your message..."></textarea>
+            </div>
+            
+            <div class='submit-button'>
+                <input type="submit" id="submit" value="Send">
+            </div>          
+        -->
+    </main>
+
+
+</body>
+
+
+<script type="text/javascript">
+
+    //Get localstorage to return right data about language based on users choice (if made).
+    userBrowserLanguage = localStorage.getItem('chosenLang');
+    
+    </script>
+</html>
