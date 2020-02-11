@@ -164,9 +164,40 @@ let de = {
     },
 
     // EXHIBITIONS
-    exhibition: {
+    exhibitions: {
+        exhibition: {
+        '0004': {
+            exhibitionHeader: '',
+            exhibitionDate: '',
+            exhibitionParagraph: ``,
+            exhibitionLink: '',
+            exhibitionPoster: '',
+        },
 
-    },
+        '0003': {
+            exhibitionHeader: '',
+            exhibitionDate: '',
+            exhibitionParagraph: ``,
+            exhibitionLink: '',
+            exhibitionPoster: '',
+        },
+
+        '0002': {
+            exhibitionHeader: '',
+            exhibitionDate: '',
+            exhibitionParagraph: ``,
+            exhibitionLink: '',
+            exhibitionPoster: '',
+        },
+
+        '0001': {
+            exhibitionHeader: '',
+            exhibitionDate: '',
+            exhibitionParagraph: ``,
+            exhibitionLink: '',
+            exhibitionPoster: '',
+        }
+        },
 
     // BIOGRAPHY
     biography: {

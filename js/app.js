@@ -137,7 +137,12 @@ function changeToPl() {
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
 
         } else if(page === "exhibitions.html") {
-
+            document.getElementById('exhibitionHeader').innerHTML = pl.exhibitions[exhibitionNum].exhibitionHeader;
+            document.getElementById('exhibitionDate').innerHTML = pl.exhibitions[exhibitionNum].exhibitionDate;
+            document.getElementById('exhibitionParagraph').innerHTML = pl.exhibitions[exhibitionNum].exhibitionParagraph;
+            document.getElementById('exhibitionLink').innerHTML = pl.exhibitions[exhibitionNum].exhibitionLink;
+            document.getElementById('exhibitionPoster').innerHTML = pl.exhibitions[exhibitionNum].exhibitionPoster;
+            document.getElementById('exhibitionData').innerHTML = displayExhibition(exhibitionNum); 
 
         } else if(page === "biography.html") {
             document.getElementById('biographyHeader').innerHTML = pl.biography.biographyHeader;
@@ -174,7 +179,12 @@ function changeToEn() {
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);  
 
         } else if(page === "exhibitions.html") {
-
+            document.getElementById('exhibitionHeader').innerHTML = en.exhibitions[exhibitionNum].exhibitionHeader;
+            document.getElementById('exhibitionDate').innerHTML = en.exhibitions[exhibitionNum].exhibitionDate;
+            document.getElementById('exhibitionParagraph').innerHTML = en.exhibitions[exhibitionNum].exhibitionParagraph;
+            document.getElementById('exhibitionLink').innerHTML = en.exhibitions[exhibitionNum].exhibitionLink;
+            document.getElementById('exhibitionPoster').innerHTML = en.exhibitions[exhibitionNum].exhibitionPoster;
+            document.getElementById('exhibitionData').innerHTML = displayExhibition(exhibitionNum); 
 
         } else if(page === "biography.html") {
             document.getElementById('biographyHeader').innerHTML = en.biography.biographyHeader;
@@ -211,7 +221,12 @@ function changeToDe() {
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
 
         } else if(page === "exhibitions.html") {
-
+            document.getElementById('exhibitionHeader').innerHTML = de.exhibitions[exhibitionNum].exhibitionHeader;
+            document.getElementById('exhibitionDate').innerHTML = de.exhibitions[exhibitionNum].exhibitionDate;
+            document.getElementById('exhibitionParagraph').innerHTML = de.exhibitions[exhibitionNum].exhibitionParagraph;
+            document.getElementById('exhibitionLink').innerHTML = de.exhibitions[exhibitionNum].exhibitionLink;
+            document.getElementById('exhibitionPoster').innerHTML = de.exhibitions[exhibitionNum].exhibitionPoster;
+            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
 
         } else if(page === "biography.html") {
             document.getElementById('biographyHeader').innerHTML = de.biography.biographyHeader;
@@ -258,3 +273,49 @@ function displayPaintings(paintingNum) {
 }
 
 
+/*
+// Take a length of list of exhibitions to display, loops thru them and display them (on exhibitions page -> exhibitions.html).
+// In this case PL is given but it does not matter, all objects (PL/EN/DE) have the same length.
+function displayExhibition() {
+    let result = '';
+    let id = '0001';
+    let lastNumofId = 1;
+    for(let i = 0; i < Object.keys(pl.exhibitions).length; i++) { 
+        let str = `<div><div><h1 id='exhibitionHeader'>headerStr</h1><p id='exhibitionDate'>dateStr</p><p id='exhibitionParagraph'>paragraphStr</p><a id="exhibitionLink" href="">linkStr</a></div><div><img id="exhibitionPoster" src="posterStr" alt=""></div></div>`
+        let newStr = 
+            str.replace('headerStr', pl.exhibitions[id].exhibitionHeader)
+               .replace('dateStr', pl.exhibitions[id].exhibitionDate)
+               .replace('paragraphStr', pl.exhibitions[id].exhibitionParagraph)
+               .replace('linkStr', pl.exhibitions[id].exhibitionLink)
+               .replace('posterStr', pl.exhibitions[id].exhibitionPoster);
+        result = newStr.concat(result);
+        lastNumofId++;
+        id = '000' + lastNumofId;
+    }
+    return result;
+}
+*/
+
+/*
+function displayExhibition() {
+    let result = '';
+    let id = '0001';
+    let lastNumofId = 1;
+    for(let i = 0; i < Object.keys(pl.exhibitions).length; i++) { 
+        let str = `<div><div><h1 id='exhibitionHeader'></h1><p id='exhibitionDate'></p><p id='exhibitionParagraph'></p><a id="exhibitionLink" href=""></a></div><div><img id="exhibitionPoster" src="" alt=""></div></div>`
+        let newStr = str.replace('0000', id).replace('0000', id).replace('0000', id).replace('authorStr', pl.artworks[id].paintingDataAuthor).replace('titleStr', pl.artworks[id].paintingDataTitle);
+        result = newStr.concat(result);
+        lastNumofId++;
+        id = '000' + lastNumofId;
+    }
+    return result;
+}
+
+
+
+        document.getElementById('exhibitionHeader').innerHTML = en.exhibitions[exhibitionNum].exhibitionHeader;
+        document.getElementById('exhibitionDate').innerHTML = en.exhibitions[exhibitionNum].exhibitionDate;
+        document.getElementById('exhibitionParagraph').innerHTML = en.exhibitions[exhibitionNum].exhibitionParagraph;
+        document.getElementById('exhibitionLink').innerHTML = en.exhibitions[exhibitionNum].exhibitionLink;
+        document.getElementById('exhibitionPoster').innerHTML = en.exhibitions[exhibitionNum].exhibitionPoster;
+*/
