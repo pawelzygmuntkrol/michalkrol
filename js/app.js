@@ -124,39 +124,44 @@ function changeToPl() {
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
 
-        document.getElementById('closeButton').innerHTML = pl.menu.closeButton;
-        document.getElementById('exhibitionButton').innerHTML = pl.menu.exhibitionButton;
-        document.getElementById('artworksButton').innerHTML = pl.menu.artworksButton;
-        document.getElementById('biographyButton').innerHTML = pl.menu.biographyButton;
-        document.getElementById('contactButton').innerHTML = pl.menu.contactButton;
+        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = pl.menu; 
+            document.getElementById('closeButton').innerHTML = closeButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+            document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('biographyButton').innerHTML = biographyButton;
+            document.getElementById('contactButton').innerHTML = contactButton;
 
         let path = window.location.pathname;
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            document.getElementById('paintingDataTitle').innerHTML = pl.artworks[paintingNum].paintingDataTitle;
-            document.getElementById('paintingDataAuthor').innerHTML = pl.artworks[paintingNum].paintingDataAuthor;
-            document.getElementById('paintingTitle').innerHTML = pl.artworks[paintingNum].paintingTitle;
-            document.getElementById('paintingYearOfCreation').innerHTML = pl.artworks[paintingNum].paintingYearOfCreation;
-            document.getElementById('paintingStatus').innerHTML = pl.artworks[paintingNum].paintingStatus;
-            document.getElementById('paintingDescription').innerHTML = pl.artworks[paintingNum].paintingDescription;
+            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription} = pl.artworks[paintingNum];
+                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingTitle').innerHTML = paintingTitle;
+                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+                document.getElementById('paintingStatus').innerHTML = paintingStatus;
+                document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            document.getElementById('exhibitionHeader').innerHTML = pl.exhibitions[exhibitionNum].exhibitionHeader;
-            document.getElementById('exhibitionDate').innerHTML = pl.exhibitions[exhibitionNum].exhibitionDate;
-            document.getElementById('exhibitionParagraph').innerHTML = pl.exhibitions[exhibitionNum].exhibitionParagraph;
-            document.getElementById('exhibitionLink').innerHTML = pl.exhibitions[exhibitionNum].exhibitionLink;
-            document.getElementById('exhibitionPoster').innerHTML = pl.exhibitions[exhibitionNum].exhibitionPoster; 
+            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[exhibitionNum];
+                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster; 
 
         } else if(page === "biography.html") {
-            document.getElementById('biographyHeader').innerHTML = pl.biography.biographyHeader;
-            document.getElementById('biographyParagraph').innerHTML = pl.biography.biographyParagraph;
+            let {biographyHeader, biographyParagraph} = pl.biography;
+                document.getElementById('biographyHeader').innerHTML = biographyHeader;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
 
         } else if(page === "contact.html") {
-            document.getElementById('contactHeader').innerHTML = pl.contact.contactHeader;
-            document.getElementById('contactEmailButton').innerHTML = pl.contact.contactEmailButton;
+            let {contactHeader, contactEmailButton} = pl.contact;
+                document.getElementById('contactHeader').innerHTML = contactHeader;
+                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
         } 
 };
 
@@ -166,39 +171,44 @@ function changeToEn() {
         document.getElementById('en').style.color = 'rgba(255, 255, 255)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
 
-        document.getElementById('closeButton').innerHTML = en.menu.closeButton;
-        document.getElementById('exhibitionButton').innerHTML = en.menu.exhibitionButton;
-        document.getElementById('artworksButton').innerHTML = en.menu.artworksButton;
-        document.getElementById('biographyButton').innerHTML = en.menu.biographyButton;
-        document.getElementById('contactButton').innerHTML = en.menu.contactButton;
+        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = en.menu; 
+            document.getElementById('closeButton').innerHTML = closeButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+            document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('biographyButton').innerHTML = biographyButton;
+            document.getElementById('contactButton').innerHTML = contactButton;
 
         let path = window.location.pathname;
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            document.getElementById('paintingDataTitle').innerHTML = en.artworks[paintingNum].paintingDataTitle;
-            document.getElementById('paintingDataAuthor').innerHTML = en.artworks[paintingNum].paintingDataAuthor;
-            document.getElementById('paintingTitle').innerHTML = en.artworks[paintingNum].paintingTitle;
-            document.getElementById('paintingYearOfCreation').innerHTML = en.artworks[paintingNum].paintingYearOfCreation;
-            document.getElementById('paintingStatus').innerHTML = en.artworks[paintingNum].paintingStatus;
-            document.getElementById('paintingDescription').innerHTML = en.artworks[paintingNum].paintingDescription;
+            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription} = en.artworks[paintingNum];
+                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingTitle').innerHTML = paintingTitle;
+                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+                document.getElementById('paintingStatus').innerHTML = paintingStatus;
+                document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);  
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            document.getElementById('exhibitionHeader').innerHTML = en.exhibitions[exhibitionNum].exhibitionHeader;
-            document.getElementById('exhibitionDate').innerHTML = en.exhibitions[exhibitionNum].exhibitionDate;
-            document.getElementById('exhibitionParagraph').innerHTML = en.exhibitions[exhibitionNum].exhibitionParagraph;
-            document.getElementById('exhibitionLink').innerHTML = en.exhibitions[exhibitionNum].exhibitionLink;
-            document.getElementById('exhibitionPoster').innerHTML = en.exhibitions[exhibitionNum].exhibitionPoster;        
+            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = en.exhibitions[exhibitionNum];
+                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;       
 
         } else if(page === "biography.html") {
-            document.getElementById('biographyHeader').innerHTML = en.biography.biographyHeader;
-            document.getElementById('biographyParagraph').innerHTML = en.biography.biographyParagraph;
+            let {biographyHeader, biographyParagraph} = en.biography;
+                document.getElementById('biographyHeader').innerHTML = biographyHeader;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
 
         } else if(page === "contact.html") {
-            document.getElementById('contactHeader').innerHTML = en.contact.contactHeader;
-            document.getElementById('contactEmailButton').innerHTML = en.contact.contactEmailButton;
+            let {contactHeader, contactEmailButton} = en.contact;
+                document.getElementById('contactHeader').innerHTML = contactHeader;
+                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
         } 
 };
 
@@ -208,39 +218,44 @@ function changeToDe() {
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(255, 255, 255)';
 
-        document.getElementById('closeButton').innerHTML = de.menu.closeButton;
-        document.getElementById('exhibitionButton').innerHTML = de.menu.exhibitionButton;
-        document.getElementById('artworksButton').innerHTML = de.menu.artworksButton;
-        document.getElementById('biographyButton').innerHTML = de.menu.biographyButton;
-        document.getElementById('contactButton').innerHTML = de.menu.contactButton;
+        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = de.menu; 
+            document.getElementById('closeButton').innerHTML = closeButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+            document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('biographyButton').innerHTML = biographyButton;
+            document.getElementById('contactButton').innerHTML = contactButton;
 
         let path = window.location.pathname;
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            document.getElementById('paintingDataTitle').innerHTML = de.artworks[paintingNum].paintingDataTitle;
-            document.getElementById('paintingDataAuthor').innerHTML = de.artworks[paintingNum].paintingDataAuthor;
-            document.getElementById('paintingTitle').innerHTML = de.artworks[paintingNum].paintingTitle;
-            document.getElementById('paintingYearOfCreation').innerHTML = de.artworks[paintingNum].paintingYearOfCreation;
-            document.getElementById('paintingStatus').innerHTML = de.artworks[paintingNum].paintingStatus;
-            document.getElementById('paintingDescription').innerHTML = de.artworks[paintingNum].paintingDescription;
+            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription} = de.artworks[paintingNum];
+                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingTitle').innerHTML = paintingTitle;
+                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+                document.getElementById('paintingStatus').innerHTML = paintingStatus;
+                document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            document.getElementById('exhibitionHeader').innerHTML = de.exhibitions[exhibitionNum].exhibitionHeader;
-            document.getElementById('exhibitionDate').innerHTML = de.exhibitions[exhibitionNum].exhibitionDate;
-            document.getElementById('exhibitionParagraph').innerHTML = de.exhibitions[exhibitionNum].exhibitionParagraph;
-            document.getElementById('exhibitionLink').innerHTML = de.exhibitions[exhibitionNum].exhibitionLink;
-            document.getElementById('exhibitionPoster').innerHTML = de.exhibitions[exhibitionNum].exhibitionPoster;          
+            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = de.exhibitions[exhibitionNum];
+                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;          
 
         } else if(page === "biography.html") {
-            document.getElementById('biographyHeader').innerHTML = de.biography.biographyHeader;
-            document.getElementById('biographyParagraph').innerHTML = de.biography.biographyParagraph;
+            let {biographyHeader, biographyParagraph} = de.biography;
+                document.getElementById('biographyHeader').innerHTML = biographyHeader;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
 
         } else if(page === "contact.html") {
-            document.getElementById('contactHeader').innerHTML = de.contact.contactHeader;
-            document.getElementById('contactEmailButton').innerHTML = de.contact.contactEmailButton;
+            let {contactHeader, contactEmailButton} = de.contact;
+                document.getElementById('contactHeader').innerHTML = contactHeader;
+                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
         } 
 };
 
@@ -289,16 +304,17 @@ function displayExhibition() {
     let id = '0001';
     let lastNumofId = 1;
     for(let i = 0; i < Object.keys(pl.exhibitions).length; i++) { 
+        let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[id];
         let str =         
             `<div class='container'>
                 <div class='text'>
-                    <h1 id='exhibitionHeader'>${pl.exhibitions[id].exhibitionHeader}</h1>
-                    <p id='exhibitionDate'>${pl.exhibitions[id].exhibitionDate}</p>
-                    <p id='exhibitionParagraph'>${pl.exhibitions[id].exhibitionParagraph}</p>
-                    <a id="exhibitionLink" href="">${pl.exhibitions[id].exhibitionLink}</a>
+                    <h1 id='exhibitionHeader'>${exhibitionHeader}</h1>
+                    <p id='exhibitionDate'>${exhibitionDate}</p>
+                    <p id='exhibitionParagraph'>${exhibitionParagraph}</p>
+                    <a id="exhibitionLink" href="${exhibitionLink}">${exhibitionLink}</a>
                 </div>
                 <div class='poster'>
-                    <img id="exhibitionPoster" src="${pl.exhibitions[id].exhibitionPoster}" alt="">
+                    <img id="exhibitionPoster" src="${exhibitionPoster}" alt="">
                 </div>
             </div>`
         result = str.concat(result);

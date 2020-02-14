@@ -170,28 +170,27 @@ let pl = {
             exhibitionHeader: 'Wernisaż prac w galerii Popartgaleria w Poznaiu pod tytułem „INTERIOR”',
             exhibitionDate: '28.10.2018 – 8.11.2018',
             exhibitionParagraph: `
-                – rentgen pokazuje nam coś niewidocznego
-                – naszą wewnętrzną powłokę
-                – strukturę
-                – materię organiczną ukazaną przez maszynę
-                – jest metaforą INTERIORU czyli WNĘTRZA
-                – nie chodzi o fizyczne wnętrze, ono jest tylko pretekstem
-                – ale wnętrze emocjonalne
-                – ukazane pod postacią barw
-                – różnego rodzaju
-                – wynikłych z doznań
-                – i doświadczeń
-                – emocjonalnych , muzycznych, fizycznych , erotycznych
-                – które są w naszym wnętrzu osadzone
-                – jak plamy koloru nałożone na tych zdjęciach
-                – jest to też hołd złożony muzyce elektronicznej, techno
-                – która niesie cząstkę futuryzmu, mroku, nowoczesności
-                – oraz techniczności i surowości jak maszyna RTG
-                – która stała się narzędziem diagnostycznym działania
+                – rentgen pokazuje nam coś niewidocznego <br>
+                – naszą wewnętrzną powłokę <br>
+                – strukturę <br>
+                – materię organiczną ukazaną przez maszynę <br>
+                – jest metaforą INTERIORU czyli WNĘTRZA <br>
+                – nie chodzi o fizyczne wnętrze, ono jest tylko pretekstem <br>
+                – ale wnętrze emocjonalne <br>
+                – ukazane pod postacią barw <br>
+                – różnego rodzaju <br>
+                – wynikłych z doznań i doświadczeń <br>
+                – emocjonalnych , muzycznych, fizycznych , erotycznych <br>
+                – które są w naszym wnętrzu osadzone <br>
+                – jak plamy koloru nałożone na tych zdjęciach <br>
+                – jest to też hołd złożony muzyce elektronicznej, techno <br>
+                – która niesie cząstkę futuryzmu, mroku, nowoczesności <br>
+                – oraz techniczności i surowości jak maszyna RTG <br>
+                – która stała się narzędziem diagnostycznym działania 
                 artystycznego
             `,
             exhibitionLink: '',
-            exhibitionPoster: 'images\0001\0001-1.jpg',
+            exhibitionPoster: './images/0001/0001-1.jpg',
         },
 
         '0003': {
@@ -199,7 +198,7 @@ let pl = {
             exhibitionDate: 'październik 2017 – październik 2017',
             exhibitionParagraph: `Tematy poruszane podczas ENVICON-u oraz informacje i wiedza na najwyższym poziomie merytorycznym co roku przyciągają około pół tysiąca uczestników. Kongres to sprawdzone forum, w którym udział biorą najważniejsi reprezentanci administracji rządowej i samorządowej, przedstawiciele polskich i zagranicznych przedsiębiorstw eksperci w dziedzinach gospodarki odpadami i gospodarki wodno-ściekowej, a także wykorzystywania surowców wtórnych i rozsądnego zarządzania środowiskiem i ekologią. W ramach wykorzystania surowców wtórynych oraz w nawiązaniu do tematyki ZERO WASTE projekt STUKTURAL COLLAGE został poproszony o pokazanie możliwości wykorzystania produktów ubocznych procesów produkcyjnych w ujęciu artystycznym. Tym samym można było dostrzeć iż tematyka ZERO WASTE & ART mogą być ze soba tożsame.`,
             exhibitionLink: 'http://envicon.abrys.pl/',
-            exhibitionPoster: 'images\0001\0001-1.jpg',
+            exhibitionPoster: './images/0001/0001-1.jpg',
         },
 
         '0002': {
@@ -207,7 +206,7 @@ let pl = {
             exhibitionDate: 'czerwiec 2017 – wrzesień 2017',
             exhibitionParagraph: `Wernisaż odbył się w jednej z bardziej interesujących kawiarni i restauracji Poznania Geranium Caffe. Kawiarnia będąca zdecydowanie jedną z ulubienic mieszkańców Jeżyc, stawia przede wszystkim na siły natury w swojej kuchni oraz filozofii kulinarnej, jednocześnie prezentując pełne przyrody i harmonii wnętrza. Zgodziła się zaprezentować prace będące w pewien sposób zaprzeczeniem procesów natury, a stanowiące raczej abstrakcyjne twory powstałe przy współdziałaniu maszyny z człowiekiem. W ten sposób postawiła sobie jedną poprzeczkę wyżej, celowo uwrażliwiając swoich gości, często stałych bywalców, na inny wymiar rzeczywistości, w którym toporny świat maszyn miesza się z abstrakcyjnym myśleniem człowieka. Stając się jednocześnie przestrzenią, która tak jak kuchnia non stop się zmienia.`,
             exhibitionLink: '',
-            exhibitionPoster: 'images\0001\0001-1.jpg',
+            exhibitionPoster: './images/0001/0001-1.jpg',
         },
 
         '0001': {
