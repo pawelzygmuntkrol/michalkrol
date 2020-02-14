@@ -165,7 +165,6 @@ let de = {
 
     // EXHIBITIONS
     exhibitions: {
-        exhibition: {
         '0004': {
             exhibitionHeader: '',
             exhibitionDate: '',
@@ -197,7 +196,7 @@ let de = {
             exhibitionLink: '',
             exhibitionPoster: '',
         }
-        },
+    },
 
     // BIOGRAPHY
     biography: {
