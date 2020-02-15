@@ -8,6 +8,14 @@
     color: rgba(128, 128, 128);
 }
 
+.artwork-dimensions {
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+    font-size: 0.9rem;
+    color: rgba(128, 128, 128);
+}
+
 #paintingImages {   
     background-color: rgba(10, 10, 10, 0.95);
     padding: 0rem 0rem 10rem 0rem;

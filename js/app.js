@@ -135,9 +135,11 @@ function changeToPl() {
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription} = pl.artworks[paintingNum];
+            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
                 document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
                 document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
                 document.getElementById('paintingTitle').innerHTML = paintingTitle;
                 document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
@@ -182,9 +184,11 @@ function changeToEn() {
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription} = en.artworks[paintingNum];
+            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
                 document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
                 document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
                 document.getElementById('paintingTitle').innerHTML = paintingTitle;
                 document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
@@ -229,9 +233,11 @@ function changeToDe() {
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription} = de.artworks[paintingNum];
+            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
                 document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
                 document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
                 document.getElementById('paintingTitle').innerHTML = paintingTitle;
                 document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;

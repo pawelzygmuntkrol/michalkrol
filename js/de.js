@@ -12,9 +12,10 @@ let de = {
     // ARTWORKS
     artworks: {
         '0009': {
-            popUpSrc: 'images\0009\0009-1.jpg',
             paintingDataTitle: 'Ant(y)-man',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2014',    
             paintingTitle: 'Ant(y)-man',
             paintingStatus: 'Verkaufen',
@@ -30,9 +31,10 @@ let de = {
         }, 
 
         '0008': {
-            popUpSrc: 'images\0008\0008-1.jpg',
             paintingDataTitle: 'Anturium ',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2013',    
             paintingTitle: 'Anturium ',
             paintingStatus: 'Vorhanden',
@@ -49,9 +51,10 @@ let de = {
         }, 
         
         '0007': {
-            popUpSrc: 'images\0007\0007-1.jpg',
             paintingDataTitle: 'Aberracja',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2008',    
             paintingTitle: 'Aberracja',
             paintingStatus: 'Verkaufen',
@@ -71,6 +74,8 @@ let de = {
         '0006': {
             paintingDataTitle: 'Dion',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2008',    
             paintingTitle: 'Dion',
             paintingStatus: 'Verkaufen',
@@ -86,6 +91,8 @@ let de = {
         '0005': {
             paintingDataTitle: 'RCD 500',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2008',    
             paintingTitle: 'RCD 500',
             paintingStatus: 'Verkaufen',
@@ -103,6 +110,8 @@ let de = {
         '0004': {
             paintingDataTitle: 'SM',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2007',    
             paintingTitle: 'SM',
             paintingStatus: 'Vorhanden',
@@ -119,6 +128,8 @@ let de = {
         '0003': {
             paintingDataTitle: 'Flora',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2006',    
             paintingTitle: 'Flora',
             paintingStatus: 'Vorhanden',
@@ -136,6 +147,8 @@ let de = {
         '0002': {
             paintingDataTitle: 'Krata',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2006',    
             paintingTitle: 'Krata',
             paintingStatus: 'Verkaufen',
@@ -151,6 +164,8 @@ let de = {
         '0001': {
             paintingDataTitle: 'Czarna Madonna',
             paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: 'wymiar',
+            paintingDimensionsHeight: 'wymiar',
             paintingYearOfCreation: '2006',    
             paintingTitle: 'Czarna Madonna',
             paintingStatus: 'Vorhanden',
