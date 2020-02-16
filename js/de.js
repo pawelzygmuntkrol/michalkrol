@@ -12,6 +12,9 @@ let de = {
     // ARTWORKS
     artworks: {
         '0009': {
+            metaTitle: 'Ant(y)-man',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Ant(y)-man',
             paintingDataTitle: 'Ant(y)-man',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -31,6 +34,9 @@ let de = {
         }, 
 
         '0008': {
+            metaTitle: 'Anturium',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Anturium',
             paintingDataTitle: 'Anturium ',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -51,6 +57,9 @@ let de = {
         }, 
         
         '0007': {
+            metaTitle: 'Aberracja',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Aberracja',
             paintingDataTitle: 'Aberracja',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -72,6 +81,9 @@ let de = {
         }, 
 
         '0006': {
+            metaTitle: 'Dion',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Dion',
             paintingDataTitle: 'Dion',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -89,6 +101,9 @@ let de = {
         }, 
 
         '0005': {
+            metaTitle: 'RCD 500',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, RCD 500',
             paintingDataTitle: 'RCD 500',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -108,6 +123,9 @@ let de = {
         }, 
 
         '0004': {
+            metaTitle: 'Flora',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Flora',
             paintingDataTitle: 'SM',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -126,6 +144,9 @@ let de = {
         }, 
 
         '0003': {
+            metaTitle: 'Flora',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Flora',
             paintingDataTitle: 'Flora',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -145,6 +166,9 @@ let de = {
         }, 
 
         '0002': {
+            metaTitle: 'Krata',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Krata',
             paintingDataTitle: 'Krata',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -162,6 +186,9 @@ let de = {
         }, 
 
         '0001': {
+            metaTitle: 'Czarna Madonna',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Czarna Madonna',
             paintingDataTitle: 'Czarna Madonna',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',

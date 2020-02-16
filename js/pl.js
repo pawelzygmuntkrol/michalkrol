@@ -12,9 +12,8 @@ let pl = {
     // ARTWORKS
     artworks: {
         '0009': {
-            //paintingURL: `http://www.michalkrol.github.io/artworksitem/${paintingDataTitle}`,
             metaTitle: 'Ant(y)-man',
-            metaDescription: 'Obraz nawiązuje do fabryki która współcześnie często odczłowiecza naszą naturę sprowadzając nas do istot człeko-podobnych, robotów',
+            metaDescription: '',
             metaKeywords: 'Structuralist, Structural Collage, Ant(y)-man',
             paintingDataTitle: 'Ant(y)-man',
             paintingDataAuthor: 'Structural Collage',
@@ -35,6 +34,9 @@ let pl = {
         }, 
 
         '0008': {
+            metaTitle: 'Anturium',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Anturium',
             paintingDataTitle: 'Anturium ',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -55,6 +57,9 @@ let pl = {
         }, 
         
         '0007': {
+            metaTitle: 'Aberracja',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Aberracja',
             paintingDataTitle: 'Aberracja',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -76,6 +81,9 @@ let pl = {
         }, 
 
         '0006': {
+            metaTitle: 'Dion',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Dion',
             paintingDataTitle: 'Dion',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -93,6 +101,9 @@ let pl = {
         }, 
 
         '0005': {
+            metaTitle: 'RCD 500',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, RCD 500',
             paintingDataTitle: 'RCD 500',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -112,6 +123,9 @@ let pl = {
         }, 
 
         '0004': {
+            metaTitle: 'Flora',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Flora',
             paintingDataTitle: 'SM',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -130,6 +144,9 @@ let pl = {
         }, 
 
         '0003': {
+            metaTitle: 'Flora',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Flora',
             paintingDataTitle: 'Flora',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -149,6 +166,9 @@ let pl = {
         }, 
 
         '0002': {
+            metaTitle: 'Krata',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Krata',
             paintingDataTitle: 'Krata',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
@@ -166,6 +186,9 @@ let pl = {
         }, 
 
         '0001': {
+            metaTitle: 'Czarna Madonna',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Czarna Madonna',
             paintingDataTitle: 'Czarna Madonna',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',

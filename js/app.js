@@ -148,6 +148,7 @@ function changeToPl() {
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
                 document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+            document.getElementsByTagName('body').style.backgroundColor = backgroundScrollEffect();
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
@@ -187,7 +188,10 @@ function changeToEn() {
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
+            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
+                document.title = metaTitle;
+                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
                 document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
                 document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
                 document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
@@ -236,7 +240,10 @@ function changeToDe() {
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
+            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
+                document.title = metaTitle;
+                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
                 document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
                 document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
                 document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
@@ -272,11 +279,13 @@ function changeToDe() {
 // ARTWORKITEM BACKGROUND SCROLL EFFECT
 /*
 function backgroundScrollEffect() {
-    let scrollPosition = window.pageYOffset;
-
-    //document.getElementById('img-container').style.backgroundColor = 'rgba(255, 255, 255)';
+    let elementHeight = document.body.scrollHeight;clientHeight
+    let changeColorHeight = document.getElementsByTagName('img-description').scrollHeight;
+    let changeColorHeight = elementHeight - changeColorHeight;
+    
 }
 */
+
 
 // ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
 
