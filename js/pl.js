@@ -13,7 +13,10 @@ let pl = {
     artworks: {
         '0009': {
             //paintingURL: `http://www.michalkrol.github.io/artworksitem/${paintingDataTitle}`,
-            paintingDataTitle, paintingTitle: 'Ant(y)-man',
+            metaTitle: 'Ant(y)-man',
+            metaDescription: 'Obraz nawiązuje do fabryki która współcześnie często odczłowiecza naszą naturę sprowadzając nas do istot człeko-podobnych, robotów',
+            metaKeywords: 'Structuralist, Structural Collage, Ant(y)-man',
+            paintingDataTitle: 'Ant(y)-man',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: 'wymiar',
             paintingDimensionsHeight: 'wymiar',

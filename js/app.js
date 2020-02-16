@@ -135,7 +135,10 @@ function changeToPl() {
         let page = path.split("/").pop();
 
         if(page === "artworkitem.html") {
-            let {paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
+            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
+                document.title = metaTitle;
+                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
                 document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
                 document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
                 document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
