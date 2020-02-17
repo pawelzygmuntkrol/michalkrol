@@ -8,7 +8,15 @@ function showPopUpImg() {
     wasPopUpDisplayed = sessionStorage.getItem('wasPopUpDisplayed');
 
     let photoNumber = Object.keys(pl.artworks).length;
-    let popUpImageSource = `./images/000${photoNumber}/000${photoNumber}-1.jpg`;
+    let popUpImageSource;
+
+    if(photoNumber < 10) {
+        popUpImageSource = `./images/000${photoNumber}/000${photoNumber}-1.jpg`;
+    } else if(photoNumber >= 10) {
+        popUpImageSource = `./images/00${photoNumber}/00${photoNumber}-1.jpg`;
+    } else if(photoNumber >= 100) {
+        popUpImageSource = `./images/0${photoNumber}/0${photoNumber}-1.jpg`;
+    }
 
     if(wasPopUpDisplayed === null) {
         document.getElementById("popUpImg").src = popUpImageSource;
@@ -49,7 +57,8 @@ function displayArtworksList() {
             </div>`
         result = str.concat(result);
         lastNumofId++;
-        id = '000' + lastNumofId;
+        id = '0000' + lastNumofId;
+        id = id.substr(-4)
     }
     return result;
 }
@@ -337,7 +346,8 @@ function displayExhibition() {
             </div>`
         result = str.concat(result);
         lastNumofId++;
-        id = '000' + lastNumofId;     
+        id = '000' + lastNumofId;   
+        id = id.substr(-4)
     }
     return result;
 };

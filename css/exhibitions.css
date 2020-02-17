@@ -27,8 +27,8 @@ main {
 }
 
 img {
-    height: 15rem;
-    width: auto;
+    width: 100%;
+    height: auto;
 }
 
 #exhibitionHeader, #exhibitionDate, #exhibitionParagraph, #exhibitionLink {
@@ -93,11 +93,12 @@ img {
 
     .container {
         height: 100vh;
+        margin-bottom: 5rem;
     }
 
     img {
-        height: 50%;
-        width: auto;
+        max-width: 10rem;
+        height: auto;
     }
 
     .text {
