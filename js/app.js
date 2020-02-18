@@ -30,7 +30,7 @@ function showPopUpImg() {
 
 // Close PopUpImg and display main list of paintings.
 function closePopUpImg() {
-    document.getElementById('artworksList').innerHTML = displayArtworksList();
+    
     document.getElementById('popUpImgContainer').style.transitionDuration = '0.8s'; 
     document.getElementById('popUpImgContainer').style.animationTimingFunction = 'ease-in'; 
     document.getElementById('popUpImgContainer').style.opacity = '0';
@@ -128,6 +128,7 @@ function changeLanguage(language) {
 
 // All events that take place when language is set.
 function changeToPl() {
+    document.getElementById('artworksList').innerHTML = displayArtworksList();
     language = 'pl';
         document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
@@ -157,7 +158,7 @@ function changeToPl() {
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
                 document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-            document.getElementsByTagName('body').style.backgroundColor = backgroundScrollEffect();
+            //document.getElementsByTagName('body').style.backgroundColor = backgroundScrollEffect();
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
@@ -181,6 +182,7 @@ function changeToPl() {
 };
 
 function changeToEn() {
+    document.getElementById('artworksList').innerHTML = displayArtworksList();
     language = 'en';
         document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
         document.getElementById('en').style.color = 'rgba(255, 255, 255)';
@@ -234,6 +236,7 @@ function changeToEn() {
 
 function changeToDe() {
     language = 'de';
+    document.getElementById('artworksList').innerHTML = displayArtworksList();
         document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(255, 255, 255)';
