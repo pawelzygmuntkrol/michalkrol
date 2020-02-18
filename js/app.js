@@ -1,10 +1,231 @@
+// LANGUAGE
+
+// Check users browser language.
+let userBrowserLanguage = navigator.language.slice(0, 2);
+
+// Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
+function disableAutoLanguage(lang) {
+    if(lang === 'pl') {
+        userBrowserLanguage = 'pl';
+    } else if(lang === 'en') {
+        userBrowserLanguage = 'en';
+    } else if(lang === 'de') {
+        userBrowserLanguage = 'de';
+    }
+
+    localStorage.setItem('chosenLang', userBrowserLanguage);
+    return userBrowserLanguage;
+}
+
+userBrowserLanguage = localStorage.getItem('chosenLang');
+
+// Based on user choice/browser language specifies to language to use.
+let language = '';
+
+if(userBrowserLanguage === 'pl') {
+    language = 'pl';
+} else if (userBrowserLanguage === 'de') {
+    language = 'de';
+} else {
+    language = 'en';
+}
+
+// Specified language call function that displays information in this language on page.
+function changeLanguage(language) {
+    if(language === 'pl') {
+        changeToPl();
+    } else if(language === 'de') {
+        changeToDe();
+    } else {
+        changeToEn();
+    }
+}
+
+
+// All events that take place when language is set.
+function changeToPl() {
+    language = 'pl';
+        document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
+        document.getElementById('en').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('de').style.color = 'rgba(128, 128, 128)';
+
+        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = pl.menu; 
+            document.getElementById('closeButton').innerHTML = closeButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+            document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('biographyButton').innerHTML = biographyButton;
+            document.getElementById('contactButton').innerHTML = contactButton;
+
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+
+        if(page === "index.html") {
+            document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+
+        } else if(page === "artworkitem.html") {
+            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
+                document.title = metaTitle;
+                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
+                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
+                document.getElementById('paintingTitle').innerHTML = paintingTitle;
+                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+                document.getElementById('paintingStatus').innerHTML = paintingStatus;
+                document.getElementById('paintingDescription').innerHTML = paintingDescription;
+            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+            //document.getElementsByTagName('body').style.backgroundColor = backgroundScrollEffect();
+
+        } else if(page === "exhibitions.html") {
+            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
+            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[exhibitionNum];
+                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster; 
+
+        } else if(page === "biography.html") {
+            let {biographyHeader, biographyParagraph} = pl.biography;
+                document.getElementById('biographyHeader').innerHTML = biographyHeader;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+
+        } else if(page === "contact.html") {
+            let {contactHeader, contactEmailButton} = pl.contact;
+                document.getElementById('contactHeader').innerHTML = contactHeader;
+                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
+        } 
+};
+
+function changeToEn() {
+    language = 'en';
+        document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('en').style.color = 'rgba(255, 255, 255)';
+        document.getElementById('de').style.color = 'rgba(128, 128, 128)';
+
+        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = en.menu; 
+            document.getElementById('closeButton').innerHTML = closeButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+            document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('biographyButton').innerHTML = biographyButton;
+            document.getElementById('contactButton').innerHTML = contactButton;
+
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+
+        if(page === "index.html") {
+            document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+
+        } else if (page === "artworkitem.html") {
+            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
+                document.title = metaTitle;
+                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
+                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
+                document.getElementById('paintingTitle').innerHTML = paintingTitle;
+                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+                document.getElementById('paintingStatus').innerHTML = paintingStatus;
+                document.getElementById('paintingDescription').innerHTML = paintingDescription;
+            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);  
+
+        } else if(page === "exhibitions.html") {
+            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
+            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = en.exhibitions[exhibitionNum];
+                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;       
+
+        } else if(page === "biography.html") {
+            let {biographyHeader, biographyParagraph} = en.biography;
+                document.getElementById('biographyHeader').innerHTML = biographyHeader;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+
+        } else if(page === "contact.html") {
+            let {contactHeader, contactEmailButton} = en.contact;
+                document.getElementById('contactHeader').innerHTML = contactHeader;
+                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
+        } 
+};
+
+function changeToDe() {
+    language = 'de';
+        document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('en').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('de').style.color = 'rgba(255, 255, 255)';
+
+        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = de.menu; 
+            document.getElementById('closeButton').innerHTML = closeButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+            document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('biographyButton').innerHTML = biographyButton;
+            document.getElementById('contactButton').innerHTML = contactButton;
+
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+
+        if(page === "index.html") {
+            document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+
+        } else if(page === "artworkitem.html") {
+            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
+                document.title = metaTitle;
+                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
+                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
+                document.getElementById('paintingTitle').innerHTML = paintingTitle;
+                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+                document.getElementById('paintingStatus').innerHTML = paintingStatus;
+                document.getElementById('paintingDescription').innerHTML = paintingDescription;
+            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+
+        } else if(page === "exhibitions.html") {
+            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
+            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = de.exhibitions[exhibitionNum];
+                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;          
+
+        } else if(page === "biography.html") {
+            let {biographyHeader, biographyParagraph} = de.biography;
+                document.getElementById('biographyHeader').innerHTML = biographyHeader;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+
+        } else if(page === "contact.html") {
+            let {contactHeader, contactEmailButton} = de.contact;
+                document.getElementById('contactHeader').innerHTML = contactHeader;
+                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
+        } 
+};
+
+
+// ARTWORKITEM BACKGROUND SCROLL EFFECT
+/*
+function backgroundScrollEffect() {
+    let elementHeight = document.body.scrollHeight;clientHeight
+    let changeColorHeight = document.getElementsByTagName('img-description').scrollHeight;
+    let changeColorHeight = elementHeight - changeColorHeight;
+    
+}
+*/
+
 // POPUP IMG
 
 // wasPopUpDisplayed = null which means last painting wasn't displayed earlier.
-let wasPopUpDisplayed;
-
 // Get SRC from last added IMG and asign it to POPUP IMG.
 function showPopUpImg() {
+    let wasPopUpDisplayed;
     wasPopUpDisplayed = sessionStorage.getItem('wasPopUpDisplayed');
 
     let photoNumber = Object.keys(pl.artworks).length;
@@ -30,7 +251,7 @@ function showPopUpImg() {
 
 // Close PopUpImg and display main list of paintings.
 function closePopUpImg() {
-    
+    document.getElementById('artworksList').innerHTML = displayArtworksList();
     document.getElementById('popUpImgContainer').style.transitionDuration = '0.8s'; 
     document.getElementById('popUpImgContainer').style.animationTimingFunction = 'ease-in'; 
     document.getElementById('popUpImgContainer').style.opacity = '0';
@@ -80,223 +301,6 @@ function closeSideMenu() {
     document.getElementById('menu').style.width = '0';
     document.getElementById('menu-button').style.visibility = 'visible';
 }
-
-
-// LANGUAGE
-
-// Check users browser language.
-let userBrowserLanguage = navigator.language.slice(0, 2);
-
-// Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
-function disableAutoLanguage(lang) {
-    if(lang === 'pl') {
-        userBrowserLanguage = 'pl';
-    } else if(lang === 'en') {
-        userBrowserLanguage = 'en';
-    } else if(lang === 'de') {
-        userBrowserLanguage = 'de';
-    }
-
-    localStorage.setItem('chosenLang', userBrowserLanguage);
-    return userBrowserLanguage;
-}
-
-userBrowserLanguage = localStorage.getItem('chosenLang');
-
-// Based on user choice/browser language specifies to language to use.
-let language = '';
-
-if(userBrowserLanguage === 'pl') {
-    language = 'pl';
-} else if (userBrowserLanguage === 'de') {
-    language = 'de';
-} else {
-    language = 'en';
-}
-
-// Specified language call function that displays information in this language on page.
-function changeLanguage(language) {
-    if(language === 'pl') {
-        changeToPl();
-    } else if(language === 'de') {
-        changeToDe();
-    } else {
-        changeToEn();
-    }
-}
-
-
-// All events that take place when language is set.
-function changeToPl() {
-    document.getElementById('artworksList').innerHTML = displayArtworksList();
-    language = 'pl';
-        document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
-        document.getElementById('en').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('de').style.color = 'rgba(128, 128, 128)';
-
-        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = pl.menu; 
-            document.getElementById('closeButton').innerHTML = closeButton;
-            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
-            document.getElementById('artworksButton').innerHTML = artworksButton;
-            document.getElementById('biographyButton').innerHTML = biographyButton;
-            document.getElementById('contactButton').innerHTML = contactButton;
-
-        let path = window.location.pathname;
-        let page = path.split("/").pop();
-
-        if(page === "artworkitem.html") {
-            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
-                document.title = metaTitle;
-                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
-                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
-                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
-                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
-                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
-                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
-                document.getElementById('paintingTitle').innerHTML = paintingTitle;
-                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
-                document.getElementById('paintingStatus').innerHTML = paintingStatus;
-                document.getElementById('paintingDescription').innerHTML = paintingDescription;
-            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-            //document.getElementsByTagName('body').style.backgroundColor = backgroundScrollEffect();
-
-        } else if(page === "exhibitions.html") {
-            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[exhibitionNum];
-                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
-                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
-                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
-                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
-                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster; 
-
-        } else if(page === "biography.html") {
-            let {biographyHeader, biographyParagraph} = pl.biography;
-                document.getElementById('biographyHeader').innerHTML = biographyHeader;
-                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
-
-        } else if(page === "contact.html") {
-            let {contactHeader, contactEmailButton} = pl.contact;
-                document.getElementById('contactHeader').innerHTML = contactHeader;
-                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
-        } 
-};
-
-function changeToEn() {
-    document.getElementById('artworksList').innerHTML = displayArtworksList();
-    language = 'en';
-        document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('en').style.color = 'rgba(255, 255, 255)';
-        document.getElementById('de').style.color = 'rgba(128, 128, 128)';
-
-        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = en.menu; 
-            document.getElementById('closeButton').innerHTML = closeButton;
-            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
-            document.getElementById('artworksButton').innerHTML = artworksButton;
-            document.getElementById('biographyButton').innerHTML = biographyButton;
-            document.getElementById('contactButton').innerHTML = contactButton;
-
-        let path = window.location.pathname;
-        let page = path.split("/").pop();
-
-        if(page === "artworkitem.html") {
-            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
-                document.title = metaTitle;
-                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
-                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
-                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
-                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
-                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
-                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
-                document.getElementById('paintingTitle').innerHTML = paintingTitle;
-                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
-                document.getElementById('paintingStatus').innerHTML = paintingStatus;
-                document.getElementById('paintingDescription').innerHTML = paintingDescription;
-            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);  
-
-        } else if(page === "exhibitions.html") {
-            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = en.exhibitions[exhibitionNum];
-                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
-                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
-                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
-                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
-                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;       
-
-        } else if(page === "biography.html") {
-            let {biographyHeader, biographyParagraph} = en.biography;
-                document.getElementById('biographyHeader').innerHTML = biographyHeader;
-                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
-
-        } else if(page === "contact.html") {
-            let {contactHeader, contactEmailButton} = en.contact;
-                document.getElementById('contactHeader').innerHTML = contactHeader;
-                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
-        } 
-};
-
-function changeToDe() {
-    language = 'de';
-    document.getElementById('artworksList').innerHTML = displayArtworksList();
-        document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('en').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('de').style.color = 'rgba(255, 255, 255)';
-
-        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = de.menu; 
-            document.getElementById('closeButton').innerHTML = closeButton;
-            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
-            document.getElementById('artworksButton').innerHTML = artworksButton;
-            document.getElementById('biographyButton').innerHTML = biographyButton;
-            document.getElementById('contactButton').innerHTML = contactButton;
-
-        let path = window.location.pathname;
-        let page = path.split("/").pop();
-
-        if(page === "artworkitem.html") {
-            let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
-                document.title = metaTitle;
-                document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
-                document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
-                document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
-                document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
-                document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
-                document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
-                document.getElementById('paintingTitle').innerHTML = paintingTitle;
-                document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
-                document.getElementById('paintingStatus').innerHTML = paintingStatus;
-                document.getElementById('paintingDescription').innerHTML = paintingDescription;
-            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-
-        } else if(page === "exhibitions.html") {
-            document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = de.exhibitions[exhibitionNum];
-                document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
-                document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
-                document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
-                document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
-                document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;          
-
-        } else if(page === "biography.html") {
-            let {biographyHeader, biographyParagraph} = de.biography;
-                document.getElementById('biographyHeader').innerHTML = biographyHeader;
-                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
-
-        } else if(page === "contact.html") {
-            let {contactHeader, contactEmailButton} = de.contact;
-                document.getElementById('contactHeader').innerHTML = contactHeader;
-                document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
-        } 
-};
-
-
-// ARTWORKITEM BACKGROUND SCROLL EFFECT
-/*
-function backgroundScrollEffect() {
-    let elementHeight = document.body.scrollHeight;clientHeight
-    let changeColorHeight = document.getElementsByTagName('img-description').scrollHeight;
-    let changeColorHeight = elementHeight - changeColorHeight;
-    
-}
-*/
 
 
 // ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
