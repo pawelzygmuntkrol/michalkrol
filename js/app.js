@@ -341,14 +341,16 @@ function displayExhibition() {
     let id = '0001';
     let lastNumofId = 1;
     for(let i = 0; i < Object.keys(pl.exhibitions).length; i++) { 
-        let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[id];
+        let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink1, exhibitionLink2, exhibitionLink3, exhibitionPoster} = pl.exhibitions[id];
         let str =         
             `<div class='container'>
                 <div class='text'>
                     <h1 id='exhibitionHeader'>${exhibitionHeader}</h1>
                     <p id='exhibitionDate'>${exhibitionDate}</p>
                     <p id='exhibitionParagraph'>${exhibitionParagraph}</p>
-                    <a id="exhibitionLink" href="${exhibitionLink}">${exhibitionLink}</a>
+                    <a id="exhibitionLink1" href="${exhibitionLink1}">${exhibitionLink1}</a><br>
+                    <a id="exhibitionLink2" href="${exhibitionLink2}">${exhibitionLink2}</a><br>
+                    <a id="exhibitionLink3" href="${exhibitionLink3}">${exhibitionLink3}</a><br>
                 </div>
                 <div class='poster'>
                     <img id="exhibitionPoster" src="${exhibitionPoster}" alt="">

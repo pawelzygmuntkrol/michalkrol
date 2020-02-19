@@ -390,7 +390,9 @@ let pl = {
             exhibitionHeader: 'Wystawa sztuki współczesnej z kolekcji Piotra Fajkisa w Kopalni Ignacy w Rybniku',
             exhibitionDate: 'styczeń 2020 – luty 2020',
             exhibitionParagraph: `Zgromadzone dzieła na wystawie prezentuję polskich artystów młodego pokolenia takich jak Paweł Baśnik, Patryk Różycki, Piotr Owczarek, czy Paweł Tymcio, ale nie tylko. W jego kolekcji znajdują się również starsi, dojrzali twórcy, jak choćby Kazimierz Rafalik, Piotr Młodożeniec, Wilhelm Sasnal, Iza Staręga, Dorota Nieznalska lub Norman Leto. Zaprezentowana została także praca Michała Króla „Sieć” .`,
-            exhibitionLink: 'https://www.rybnik.com.pl/wiadomosci,wystawa-sztuki-wspolczesnej-na-ignacym,wia5-3267-43345.html',
+            exhibitionLink1: 'https://www.rybnik.com.pl/wiadomosci,wystawa-sztuki-wspolczesnej-na-ignacym,wia5-3267-43345.html',
+            exhibitionLink2: '',
+            exhibitionLink3: '',
             exhibitionPoster: './images/exhibitions/WystawaPiotraFajkisa.jpg',
         },
 
@@ -398,7 +400,9 @@ let pl = {
             exhibitionHeader: 'Jasinski&friends VII - wystawa sztuki w Galerii Przy Teatrze w Warszawie',
             exhibitionDate: 'listopad 2019 – styczeń 2020',
             exhibitionParagraph: `Siódma edycja zbiorowej wystawy sztuki Jasinski&friends. Organizowana przez Dominika Jasińskiego wraz z Galerią Przy Teatrze Narodowym w Warszawie. Zaprezentowano prace 26 - ciu polskich artystów, od malarstwa przez grafikę po fotografię. Na wystawie można było zobaczyć trzy prace autorstwa Michała Króla pt. „Earth Skull”, „Golden Skul” „Copper Skull”.`,
-            exhibitionLink: 'https://www.facebook.com/events/3070138143000323/',
+            exhibitionLink1: 'https://www.facebook.com/events/3070138143000323/',
+            exhibitionLink2: '',
+            exhibitionLink3: '',
             exhibitionPoster: './images/exhibitions/Jasiński&Friends.jpg',
         },
 
@@ -426,7 +430,9 @@ let pl = {
                 - która stała się narzędziem diagnostycznym działania, 
                 artystycznego.
             `,
-            exhibitionLink: 'https://www.facebook.com/events/254804431892324/',
+            exhibitionLink1: 'https://www.facebook.com/events/254804431892324/',
+            exhibitionLink2: '',
+            exhibitionLink3: '',
             exhibitionPoster: './images/exhibitions/InterioPoznań.jpg',
         },
 
@@ -434,8 +440,9 @@ let pl = {
             exhibitionHeader: 'XXI Międzynarodowy Kongres Ochrony Środowiska Envicon Environment',
             exhibitionDate: 'październik 2017 – październik 2017',
             exhibitionParagraph: `Tematy poruszane podczas ENVICON-u oraz informacje i wiedza na najwyższym poziomie merytorycznym co roku przyciągają około pół tysiąca uczestników. Kongres to sprawdzone forum, w którym udział biorą najważniejsi reprezentanci administracji rządowej i samorządowej, przedstawiciele polskich i zagranicznych przedsiębiorstw, eksperci w dziedzinach gospodarki odpadami i gospodarki wodno-ściekowej, a także wykorzystywania surowców wtórnych i rozsądnego zarządzania środowiskiem i ekologią. W ramach wykorzystania surowców wtórnych oraz w nawiązaniu do tematyki ZERO WASTE projekt STUKTURAL COLLAGE został poproszony o pokazanie możliwości wykorzystania produktów ubocznych procesów produkcyjnych w ujęciu artystycznym. Tym samym można było dostrzec, iż tematyka ZERO WASTE & ART mogą być ze sobą tożsame.`,
-            exhibitionLink: 'https://www.facebook.com/events/1413554982060525/',
-            //exhibitionLink: 'https://www.facebook.com/envicon.abrys/posts/1851582358193016',
+            exhibitionLink1: 'https://www.facebook.com/events/1413554982060525/',
+            exhibitionLink2: 'https://www.facebook.com/envicon.abrys/posts/1851582358193016',
+            exhibitionLink3: '',
             exhibitionPoster: './images/exhibitions/EnviconPoznań.jpg',
         },
 
@@ -443,7 +450,9 @@ let pl = {
             exhibitionHeader: 'Wernisaż pt. STRUCTURAL COLLAGE w Geranium Caffe w Poznaniu',
             exhibitionDate: 'czerwiec 2017 – wrzesień 2017',
             exhibitionParagraph: `Wernisaż odbył się w jednej z bardziej interesujących kawiarni i restauracji Poznania Geranium Caffe Vege Kuchnia. Kawiarnia będąca zdecydowanie jedną z ulubienic mieszkańców Jeżyc, stawia przede wszystkim na siły natury w swojej kuchni oraz filozofii kulinarnej, jednocześnie prezentując pełne przyrody i harmonii wnętrza. Zgodziła się zaprezentować prace będące w pewien sposób zaprzeczeniem procesów natury, a stanowiące raczej abstrakcyjne twory powstałe przy współdziałaniu maszyny z człowiekiem. W ten sposób postawiła sobie jedną poprzeczkę wyżej, celowo uwrażliwiając swoich gości, często stałych bywalców, na inny wymiar rzeczywistości, w którym toporny świat maszyn, miesza się z abstrakcyjnym myśleniem człowieka. Stając się jednocześnie przestrzenią, która tak jak kuchnia non stop się zmienia.`,
-            exhibitionLink: 'https://www.facebook.com/events/1910549632553265/',
+            exhibitionLink1: 'https://www.facebook.com/events/1910549632553265/',
+            exhibitionLink2: '',
+            exhibitionLink3: '',
             exhibitionPoster: './images/exhibitions/StructuralCollageGerranium.jpg',
         },
 
@@ -451,7 +460,9 @@ let pl = {
             exhibitionHeader: 'Wystawa i happening pt. STRUCTURAL COLLAGE w Bydgoszczy',
             exhibitionDate: 'marzec 2017 – maj 2017',
             exhibitionParagraph: `Wystawa odbyła się w XIV filii Wojewódzkiej i Miejskiej Biblioteki Publicznej w Bydgoszczy położonej przy jednej z głównych ulic. Zamierzeniem projektu było wyjście ze sztuką do zwykłych obywateli miasta i obcowanie z nią „twarzą w twarz”, a także „wciągnięcie” obywateli w projekt tworzenia wielkiego kolażu kuturowo – społecznego: biblioteka-sztuka-ulica. Użyta została do tego ogromna witryna okienna biblioteki, w której rozmieszczone zostały wyróżniające się kolorystycznie prace, których celem było zwrócenie uwagi zwykłego pieszego i zachęcenie go do zatrzymania się i obcowania ze sztuką, która poniekąd wychodzi do niego na przeciw. Jednocześnie zachęcając zwykłych obywateli do przestąpienia progów biblioteki. Wystawa prac była jednocześnie happeningiem mającym na celu zwrócenie uwagi zwykłych mieszkańców na sztukę, spotkaną na swojej drodze, zachęcenie ich do poznania jej bliżej, a w dalszej konsekwencji obcowania z kulturą poprzez swoją obecność w bibliotece.`,
-            exhibitionLink: 'https://www.facebook.com/events/290218671399627/',
+            exhibitionLink1: 'https://www.facebook.com/events/290218671399627/',
+            exhibitionLink2: '',
+            exhibitionLink3: '',
             exhibitionPoster: './images/exhibitions/StructuralCollageBydgoszcz.jpg',
         }
     },
