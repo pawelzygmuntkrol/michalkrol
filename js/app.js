@@ -91,6 +91,7 @@ function changeToPl() {
             let {biographyHeader, biographyParagraph} = pl.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
                 document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+                moveToBottom(); 
 
         } else if(page === "contact.html") {
             let {contactHeader, contactEmailButton} = pl.contact;
@@ -146,6 +147,7 @@ function changeToEn() {
             let {biographyHeader, biographyParagraph} = en.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
                 document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+                moveToBottom(); 
 
         } else if(page === "contact.html") {
             let {contactHeader, contactEmailButton} = en.contact;
@@ -200,7 +202,8 @@ function changeToDe() {
         } else if(page === "biography.html") {
             let {biographyHeader, biographyParagraph} = de.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
-                document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+                document.getElementById('biographyParagraph').innerHTML = biographyParagraph; 
+                moveToBottom();       
 
         } else if(page === "contact.html") {
             let {contactHeader, contactEmailButton} = de.contact;
@@ -358,3 +361,15 @@ function displayExhibition() {
     }
     return result;
 };
+
+
+// MOVE TO BOTTOM
+
+// Waits 3 seconds and move the page to the bottom of the page where bio text is placed.
+function moveToBottom() {
+    
+    setTimeout( function() { 
+        document.getElementById('biographyParagraph').scrollIntoView({ behavior: 'smooth', block: 'end' });   
+     }, 1500);
+
+  }
