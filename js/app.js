@@ -235,11 +235,11 @@ function showPopUpImg() {
     let popUpImageSource;
 
     if(photoNumber < 10) {
-        popUpImageSource = `./photos/000${photoNumber}/000${photoNumber}-1.jpg`;
+        popUpImageSource = `./images/000${photoNumber}/000${photoNumber}-1.jpg`;
     } else if(photoNumber >= 10) {
-        popUpImageSource = `./photos/00${photoNumber}/00${photoNumber}-1.jpg`;
+        popUpImageSource = `./images/00${photoNumber}/00${photoNumber}-1.jpg`;
     } else if(photoNumber >= 100) {
-        popUpImageSource = `./photos/0${photoNumber}/0${photoNumber}-1.jpg`;
+        popUpImageSource = `./images/0${photoNumber}/0${photoNumber}-1.jpg`;
     }
 
     if(wasPopUpDisplayed === null) {
@@ -274,7 +274,7 @@ function displayArtworksList() {
         let str = 
             `<div class='img-container' onclick='getPaintingNum("${id}")'>
                 <a href='./artworkitem.html'>
-                    <img src='./photos/${id}/${id}-1.jpg'>
+                    <img src='./images/${id}/${id}-1.jpg'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
                 </a>
@@ -325,7 +325,7 @@ function displayPaintings(paintingNum) {
     for(let i = 1; i <= Object.keys(pl.artworks[paintingNum].paintingImages).length; i++) {
         let str = `
             <div class='img-item'>
-                <img src='./photos/${paintingNum}/${paintingNum}-${i}.jpg'/>
+                <img src='./images/${paintingNum}/${paintingNum}-${i}.jpg'/>
             </div>`;
         result += str;
     }   

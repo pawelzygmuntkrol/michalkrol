@@ -375,11 +375,11 @@ let pl = {
             paintingStatus: 'Dostępny',
             paintingDescription: 'Praca wykonana na płycie pilśniowej pochodzącej ze starych mebli. Obraz wykonany z tkaniny jutowej znalezionej na strychu w połączeniu z czarnym kruszonym szkłem wykorzystywanym w procesie spawania oraz przyklejonym pyłem pochodzącym ze szlifowania starych ponad 100- letnich dachówek ceramicznych. Elementy przytwierdzone do płyty za pomocą odpowiedniego kleju i zabezpieczone werniksem. Całość pokryta czarną smolistą farbą oraz czerwoną farbą olejną. Wszystkie elementy przedstawione na obrazie łączy zamierzchła przeszłość i przyszłość w postaci wizerunku kobiety. Obraz sygnowany, podpisany na odwrocie. Bez możliwości wykonania kopii.',
             paintingImages: {
-                '0001-1': 'photos\0001\0001-1.jpg',
-                '0001-2': 'photos\0001\0001-2.jpg',
-                '0001-3': 'photos\0001\0001-3.JPG',
-                '0001-4': 'photos\0001\0001-4.JPG',
-                '0001-5': 'photos\0001\0001-5.JPG',
+                '0001-1': 'images\0001\0001-1.jpg',
+                '0001-2': 'images\0001\0001-2.jpg',
+                '0001-3': 'images\0001\0001-3.JPG',
+                '0001-4': 'images\0001\0001-4.JPG',
+                '0001-5': 'images\0001\0001-5.JPG',
             }
         },
     },
