@@ -24,16 +24,16 @@ let pl = {
             paintingStatus: 'Dostępny',
             paintingDescription: 'Filtry to praca kolaż na którą składają się 4 odrębne prace. Składają się na nią prostokątne tekturowe podkładki, które były wykorzystywane jako podkładki na farbę przy malowaniu  obrazów strukturalnych oraz filtry fotograficzne otrzymane od jednego z operatorów na Camerimage w Bydgoszczy przytwierdzone za pomocą kleju. Praca podpisana na odwrocie.',
             paintingImages: {
-                '0016-1': 'images\0016\0016-1.jpg',
+                '0016-1': 'images\0016\0016-1.JPG',
                 '0016-2': 'images\0016\0016-2.jpg',
                 '0016-3': 'images\0016\0016-3.jpg',
                 '0016-4': 'images\0016\0016-4.jpg',
-                '0016-5': 'images\0016\0016-5.jpg',
-                '0016-6': 'images\0016\0016-6.jpg',
-                '0016-7': 'images\0016\0016-7.jpg',
-                '0016-8': 'images\0016\0016-8.jpg',
-                '0016-9': 'images\0016\0016-9.jpg',
-                '0016-10': 'images\0016\0016-10.jpg',
+                '0016-5': 'images\0016\0016-5.JPG',
+                '0016-6': 'images\0016\0016-6.JPG',
+                '0016-7': 'images\0016\0016-7.JPG',
+                '0016-8': 'images\0016\0016-8.JPG',
+                '0016-9': 'images\0016\0016-9.JPG',
+                '0016-10': 'images\0016\0016-10.JPG',
             }
         }, 
 
@@ -53,13 +53,13 @@ let pl = {
                 '0015-1': 'images\0015\0015-1.jpg',
                 '0015-2': 'images\0015\0015-2.jpg',
                 '0015-3': 'images\0015\0015-3.jpg',
-                '0015-4': 'images\0015\0015-4.jpg',
-                '0015-5': 'images\0015\0015-5.jpg',
-                '0015-6': 'images\0015\0015-6.jpg',
-                '0015-7': 'images\0015\0015-7.jpg',
+                '0015-4': 'images\0015\0015-4.JPG',
+                '0015-5': 'images\0015\0015-5.JPG',
+                '0015-6': 'images\0015\0015-6.JPG',
+                '0015-7': 'images\0015\0015-7.JPG',
                 '0015-8': 'images\0015\0015-8.jpg',
                 '0015-9': 'images\0015\0015-9.jpg',
-                '0015-10': 'images\0015\0015-10.jpg',
+                '0015-10': 'images\0015\0015-10.JPG',
             }
         }, 
 
@@ -76,15 +76,15 @@ let pl = {
             paintingStatus: 'Dostępny',
             paintingDescription: 'Insomnia oznacza stan niewystarczającej długości snu lub niezadowalającej jego jakość. Jest to bezsenność. Jest to ciemność z przebłyskami światła. Na obraz składa się masa plastyczna przypominająca wosk, a w rzeczywistości  jest to masa powstała jako ubytek tworzywa z wtryskarek w jednej z bydgoskich fabryk. Elementy plastikowe zostały przytwierdzone do płótna za pomocą specjalistycznego kleju.  Elementy plastikowe zostały zabezpieczone lakierem. Na obraz została naniesiona gruba warstwa czarnej farby olejnej i polakierowana. Praca ma zamalowane boki i nie wymaga ramy.  Jest sygnowana i podpisana na odwrocie. ',
             paintingImages: {
-                '0014-1': 'images\0014\0014-1.jpg',
+                '0014-1': 'images\0014\0014-1.JPG',
                 '0014-2': 'images\0014\0014-2.jpg',
-                '0014-3': 'images\0014\0014-3.jpg',
-                '0014-4': 'images\0014\0014-4.jpg',
-                '0014-5': 'images\0014\0014-5.jpg',
-                '0014-6': 'images\0014\0014-6.jpg',
-                '0014-7': 'images\0014\0014-7.jpg',
-                '0014-8': 'images\0014\0014-8.jpg',
-                '0014-9': 'images\0014\0014-9.jpg',
+                '0014-3': 'images\0014\0014-3.JPG',
+                '0014-4': 'images\0014\0014-4.JPG',
+                '0014-5': 'images\0014\0014-5.JPG',
+                '0014-6': 'images\0014\0014-6.JPG',
+                '0014-7': 'images\0014\0014-7.JPG',
+                '0014-8': 'images\0014\0014-8.JPG',
+                '0014-9': 'images\0014\0014-9.JPG',
                 '0014-10': 'images\0014\0014-10.jpg',
             }
         }, 
@@ -134,7 +134,7 @@ let pl = {
                 '0012-6': 'images\0012\0012-6.jpg',
                 '0012-7': 'images\0012\0012-7.jpg',
                 '0012-8': 'images\0012\0012-8.jpg',
-                '0012-9': 'images\0012\0012-9.jpg',
+                '0012-9': 'images\0012\0012-9.JPG',
                 '0012-10': 'images\0012\0012-10.jpg',
                 '0012-11': 'images\0012\0012-11.jpg',
             }
@@ -153,13 +153,13 @@ let pl = {
             paintingStatus: 'Dostępny',
             paintingDescription: '"Czarny świt w krwistej barwie coraz mocniej mnie przeraża..." Autor nieznany<br><br>Najlepszy do charakteryzacji tej pracy jest powyższy opis, na który natrafiłem przypadkowo w internecie", który poprzez swoją wyrazistość stał się podwaliną do powstania pracy. Obraz fakturowy wykonany na płótnie ma zamalowane boki dzięki czemu nie wymaga ramy. Jest wykonany z opiłków metalu pochodzących z procesu skrawania ze skrawarki, przytwierdzonych do płótna za pomocą specjalistycznego kleju. Poza tym użyta została farba olejna oraz werniks zabezpieczający. Praca sygnowana i  podpisana na odwrocie obrazu. Powierzchnia matowa  z połyskliwymi elementami. Asamblaż, structural collage.',
             paintingImages: {
-                '0011-1': 'images\0011\0011-1.jpg',
-                '0011-2': 'images\0011\0011-2.jpg',
-                '0011-3': 'images\0011\0011-3.jpg',
-                '0011-4': 'images\0011\0011-4.jpg',
-                '0011-5': 'images\0011\0011-5.jpg',
-                '0011-6': 'images\0011\0011-6.jpg',
-                '0011-7': 'images\0011\0011-7.jpg',
+                '0011-1': 'images\0011\0011-1.JPG',
+                '0011-2': 'images\0011\0011-2.JPG',
+                '0011-3': 'images\0011\0011-3.JPG',
+                '0011-4': 'images\0011\0011-4.JPG',
+                '0011-5': 'images\0011\0011-5.JPG',
+                '0011-6': 'images\0011\0011-6.JPG',
+                '0011-7': 'images\0011\0011-7.JPG',
             }
         }, 
 
@@ -177,13 +177,13 @@ let pl = {
             paintingDescription: 'Heartboom oznacza dosłownie wybuch serca pod wpływem pewnych doznań, uczuć, emocji, przeżyć. Jest to pewien rodzaj wyzwolenia emocjonalnego. Obraz jest wykonany techniką asamblażu. Składa się z masy plastycznej przypominającej wosk, a będącej w rzeczywistości wypływem plastikowego tworzywa z wtryskarek, pochodzących z jednej z bydgoskich fabryk. Obraz jest sygnowany, podpisany na odwrocie.',
             paintingImages: {
                 '0010-1': 'images\0010\0010-1.jpg',
-                '0010-2': 'images\0010\0010-2.jpg',
-                '0010-3': 'images\0010\0010-3.jpg',
+                '0010-2': 'images\0010\0010-2.JPG',
+                '0010-3': 'images\0010\0010-3.JPG',
                 '0010-4': 'images\0010\0010-4.jpg',
-                '0010-5': 'images\0010\0010-5.jpg',
-                '0010-6': 'images\0010\0010-6.jpg',
-                '0010-7': 'images\0010\0010-7.jpg',
-                '0010-8': 'images\0010\0010-8.jpg',
+                '0010-5': 'images\0010\0010-5.JPG',
+                '0010-6': 'images\0010\0010-6.JPG',
+                '0010-7': 'images\0010\0010-7.JPG',
+                '0010-8': 'images\0010\0010-8.JPG',
             }
         }, 
 
@@ -272,7 +272,8 @@ let pl = {
                 '0006-1': 'images\0006\0006-1.jpg',
                 '0006-2': 'images\0006\0006-2.jpg',
                 '0006-3': 'images\0006\0006-3.jpg',
-                '0006-4': 'images\0006\0006-4.jpg'
+                '0006-4': 'images\0006\0006-4.jpg',
+                '0006-5': 'images\0006\0006-5.jpg',
             }
         }, 
 
@@ -289,12 +290,12 @@ let pl = {
             paintingStatus: 'Sprzedany',
             paintingDescription: 'Kolaż powstały podczas pracy w fabryce - lakierni w Bydgoszczy. Część kartonowa wykorzystywana także podczas lakierowania i malowania detali w lakierni przytwierdzona do płótna i pokryta warstwami farby olejnej i pastelami. Obraz zmienia częściowo barwy w zależności od rodzaju oświetlenia. Wyrażenie RCD 500 symbolicznie nawiązuję do podkładek kartonowych wykorzystywanych w lakierni ale równie dobrze może oznaczać daleką, nieodkrytą nam jeszcze galaktykę. Obraz sygnowany podpisany na odwrocie.',
             paintingImages: {
-                '0005-1': 'images\0005\0005-1.jpg',
-                '0005-2': 'images\0005\0005-2.jpg',
-                '0005-3': 'images\0005\0005-3.jpg',
-                '0005-4': 'images\0005\0005-4.jpg',
-                '0005-5': 'images\0005\0005-5.jpg',
-                '0005-6': 'images\0005\0005-6.jpg',
+                '0005-1': 'images\0005\0005-1.JPG',
+                '0005-2': 'images\0005\0005-2.JPG',
+                '0005-3': 'images\0005\0005-3.JPG',
+                '0005-4': 'images\0005\0005-4.JPG',
+                '0005-5': 'images\0005\0005-5.JPG',
+                '0005-6': 'images\0005\0005-6.JPG',
             }
         }, 
 
@@ -311,11 +312,11 @@ let pl = {
             paintingStatus: 'Dostępny',
             paintingDescription: 'SM oznacza Something mechanical, Stright maschine, strange material. Historia obrazu nawiązuje do klimatu industrialnego, gdyż elementy, które zawiera pochodzą z fabryki. Składa się z opiłków metalu pochodzących ze skrawarki z procesu skrawania oraz ciętego kruszonego fioletowego metalu, przytwierdzonego za pośrednictwem specjalistycznego kleju do drewnianej płyty pilśniowej. Płyta ma nierówny kształt, grubość około 8 mm, poza opiłkami metalu składa się z grubo lanej warstwy srebrnej farby olejnej na tło oraz smoły z procesu smołowania dachu w środku obrazu. Ostre elementy, ciemne barwy jak i nierówne krawędzie pracy nadają jej surowego charakteru. Praca jest sygnowana na odwrocie.',
             paintingImages: {
-                '0004-1': 'images\0004\0004-1.jpg',
-                '0004-2': 'images\0004\0004-2.jpg',
-                '0004-3': 'images\0004\0004-3.jpg',
-                '0004-4': 'images\0004\0004-4.jpg',
-                '0004-5': 'images\0004\0004-5.jpg',
+                '0004-1': 'images\0004\0004-1.JPG',
+                '0004-2': 'images\0004\0004-2.JPG',
+                '0004-3': 'images\0004\0004-3.JPG',
+                '0004-4': 'images\0004\0004-4.JPG',
+                '0004-5': 'images\0004\0004-5.JPG',
             }
         }, 
 
@@ -376,7 +377,9 @@ let pl = {
             paintingImages: {
                 '0001-1': 'images\0001\0001-1.jpg',
                 '0001-2': 'images\0001\0001-2.jpg',
-                '0001-3': 'images\0001\0001-3.jpg',
+                '0001-3': 'images\0001\0001-3.JPG',
+                '0001-4': 'images\0001\0001-4.JPG',
+                '0001-5': 'images\0001\0001-5.JPG',
             }
         },
     },

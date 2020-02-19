@@ -24,16 +24,16 @@ let de = {
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
-                '0016-1': 'images\0016\0016-1.jpg',
+                '0016-1': 'images\0016\0016-1.JPG',
                 '0016-2': 'images\0016\0016-2.jpg',
                 '0016-3': 'images\0016\0016-3.jpg',
                 '0016-4': 'images\0016\0016-4.jpg',
-                '0016-5': 'images\0016\0016-5.jpg',
-                '0016-6': 'images\0016\0016-6.jpg',
-                '0016-7': 'images\0016\0016-7.jpg',
-                '0016-8': 'images\0016\0016-8.jpg',
-                '0016-9': 'images\0016\0016-9.jpg',
-                '0016-10': 'images\0016\0016-10.jpg',
+                '0016-5': 'images\0016\0016-5.JPG',
+                '0016-6': 'images\0016\0016-6.JPG',
+                '0016-7': 'images\0016\0016-7.JPG',
+                '0016-8': 'images\0016\0016-8.JPG',
+                '0016-9': 'images\0016\0016-9.JPG',
+                '0016-10': 'images\0016\0016-10.JPG',
             }
         }, 
 
@@ -53,13 +53,13 @@ let de = {
                 '0015-1': 'images\0015\0015-1.jpg',
                 '0015-2': 'images\0015\0015-2.jpg',
                 '0015-3': 'images\0015\0015-3.jpg',
-                '0015-4': 'images\0015\0015-4.jpg',
-                '0015-5': 'images\0015\0015-5.jpg',
-                '0015-6': 'images\0015\0015-6.jpg',
-                '0015-7': 'images\0015\0015-7.jpg',
+                '0015-4': 'images\0015\0015-4.JPG',
+                '0015-5': 'images\0015\0015-5.JPG',
+                '0015-6': 'images\0015\0015-6.JPG',
+                '0015-7': 'images\0015\0015-7.JPG',
                 '0015-8': 'images\0015\0015-8.jpg',
                 '0015-9': 'images\0015\0015-9.jpg',
-                '0015-10': 'images\0015\0015-10.jpg',
+                '0015-10': 'images\0015\0015-10.JPG',
             }
         }, 
 
@@ -76,15 +76,15 @@ let de = {
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
-                '0014-1': 'images\0014\0014-1.jpg',
+                '0014-1': 'images\0014\0014-1.JPG',
                 '0014-2': 'images\0014\0014-2.jpg',
-                '0014-3': 'images\0014\0014-3.jpg',
-                '0014-4': 'images\0014\0014-4.jpg',
-                '0014-5': 'images\0014\0014-5.jpg',
-                '0014-6': 'images\0014\0014-6.jpg',
-                '0014-7': 'images\0014\0014-7.jpg',
-                '0014-8': 'images\0014\0014-8.jpg',
-                '0014-9': 'images\0014\0014-9.jpg',
+                '0014-3': 'images\0014\0014-3.JPG',
+                '0014-4': 'images\0014\0014-4.JPG',
+                '0014-5': 'images\0014\0014-5.JPG',
+                '0014-6': 'images\0014\0014-6.JPG',
+                '0014-7': 'images\0014\0014-7.JPG',
+                '0014-8': 'images\0014\0014-8.JPG',
+                '0014-9': 'images\0014\0014-9.JPG',
                 '0014-10': 'images\0014\0014-10.jpg',
             }
         }, 
@@ -134,7 +134,7 @@ let de = {
                 '0012-6': 'images\0012\0012-6.jpg',
                 '0012-7': 'images\0012\0012-7.jpg',
                 '0012-8': 'images\0012\0012-8.jpg',
-                '0012-9': 'images\0012\0012-9.jpg',
+                '0012-9': 'images\0012\0012-9.JPG',
                 '0012-10': 'images\0012\0012-10.jpg',
                 '0012-11': 'images\0012\0012-11.jpg',
             }
@@ -153,13 +153,13 @@ let de = {
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
-                '0011-1': 'images\0011\0011-1.jpg',
-                '0011-2': 'images\0011\0011-2.jpg',
-                '0011-3': 'images\0011\0011-3.jpg',
-                '0011-4': 'images\0011\0011-4.jpg',
-                '0011-5': 'images\0011\0011-5.jpg',
-                '0011-6': 'images\0011\0011-6.jpg',
-                '0011-7': 'images\0011\0011-7.jpg',
+                '0011-1': 'images\0011\0011-1.JPG',
+                '0011-2': 'images\0011\0011-2.JPG',
+                '0011-3': 'images\0011\0011-3.JPG',
+                '0011-4': 'images\0011\0011-4.JPG',
+                '0011-5': 'images\0011\0011-5.JPG',
+                '0011-6': 'images\0011\0011-6.JPG',
+                '0011-7': 'images\0011\0011-7.JPG',
             }
         }, 
 
@@ -177,13 +177,13 @@ let de = {
             paintingDescription: 'tu tekst de',
             paintingImages: {
                 '0010-1': 'images\0010\0010-1.jpg',
-                '0010-2': 'images\0010\0010-2.jpg',
-                '0010-3': 'images\0010\0010-3.jpg',
+                '0010-2': 'images\0010\0010-2.JPG',
+                '0010-3': 'images\0010\0010-3.JPG',
                 '0010-4': 'images\0010\0010-4.jpg',
-                '0010-5': 'images\0010\0010-5.jpg',
-                '0010-6': 'images\0010\0010-6.jpg',
-                '0010-7': 'images\0010\0010-7.jpg',
-                '0010-8': 'images\0010\0010-8.jpg',
+                '0010-5': 'images\0010\0010-5.JPG',
+                '0010-6': 'images\0010\0010-6.JPG',
+                '0010-7': 'images\0010\0010-7.JPG',
+                '0010-8': 'images\0010\0010-8.JPG',
             }
         }, 
 
@@ -272,7 +272,8 @@ let de = {
                 '0006-1': 'images\0006\0006-1.jpg',
                 '0006-2': 'images\0006\0006-2.jpg',
                 '0006-3': 'images\0006\0006-3.jpg',
-                '0006-4': 'images\0006\0006-4.jpg'
+                '0006-4': 'images\0006\0006-4.jpg',
+                '0006-5': 'images\0006\0006-5.jpg',
             }
         }, 
 
@@ -289,12 +290,12 @@ let de = {
             paintingStatus: 'Verkaufen',
             paintingDescription: 'tu de tekst',
             paintingImages: {
-                '0005-1': 'images\0005\0005-1.jpg',
-                '0005-2': 'images\0005\0005-2.jpg',
-                '0005-3': 'images\0005\0005-3.jpg',
-                '0005-4': 'images\0005\0005-4.jpg',
-                '0005-5': 'images\0005\0005-5.jpg',
-                '0005-6': 'images\0005\0005-6.jpg',
+                '0005-1': 'images\0005\0005-1.JPG',
+                '0005-2': 'images\0005\0005-2.JPG',
+                '0005-3': 'images\0005\0005-3.JPG',
+                '0005-4': 'images\0005\0005-4.JPG',
+                '0005-5': 'images\0005\0005-5.JPG',
+                '0005-6': 'images\0005\0005-6.JPG',
             }
         }, 
 
@@ -311,11 +312,11 @@ let de = {
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu de tekst',
             paintingImages: {
-                '0004-1': 'images\0004\0004-1.jpg',
-                '0004-2': 'images\0004\0004-2.jpg',
-                '0004-3': 'images\0004\0004-3.jpg',
-                '0004-4': 'images\0004\0004-4.jpg',
-                '0004-5': 'images\0004\0004-5.jpg',
+                '0004-1': 'images\0004\0004-1.JPG',
+                '0004-2': 'images\0004\0004-2.JPG',
+                '0004-3': 'images\0004\0004-3.JPG',
+                '0004-4': 'images\0004\0004-4.JPG',
+                '0004-5': 'images\0004\0004-5.JPG',
             }
         }, 
 
@@ -376,7 +377,9 @@ let de = {
             paintingImages: {
                 '0001-1': 'images\0001\0001-1.jpg',
                 '0001-2': 'images\0001\0001-2.jpg',
-                '0001-3': 'images\0001\0001-3.jpg',
+                '0001-3': 'images\0001\0001-3.JPG',
+                '0001-4': 'images\0001\0001-4.JPG',
+                '0001-5': 'images\0001\0001-5.JPG',
             }
         },
     },
