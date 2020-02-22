@@ -44,6 +44,7 @@
     grid-template-rows: 3rem 1.5rem 1rem auto;
     grid-row-gap: 1rem;
     text-align: justify;
+    background-color: rgba(255, 255, 255);
 }
     
 #paintingTitle { 

@@ -11,6 +11,58 @@ let en = {
 
     // ARTWORKS
     artworks: {
+        '0018': {
+            metaTitle: 'Czaszki',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Czaszki',
+            paintingDataTitle: 'Czaszki',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '29,7 cm',
+            paintingDimensionsHeight: '42 cm',
+            paintingYearOfCreation: '2017',    
+            paintingTitle: 'Czaszki',
+            paintingStatus: 'Sold',
+            paintingDescription: 'tu tekst en',
+            paintingImages: {
+                '0018-1': 'images\0018\0018-1.JPG',
+                '0018-2': 'images\0018\0018-2.jpg',
+                '0018-3': 'images\0018\0018-3.jpg',
+                '0018-4': 'images\0018\0018-4.jpg',
+                '0018-5': 'images\0018\0018-5.JPG',
+                '0018-6': 'images\0018\0018-6.JPG',
+                '0018-7': 'images\0018\0018-7.JPG',
+                '0018-8': 'images\0018\0018-8.JPG',
+                '0018-9': 'images\0018\0018-9.JPG',
+                '0018-10': 'images\0018\0018-10.JPG',
+            }
+        }, 
+
+        '0017': {
+            metaTitle: 'Źródło',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Źródło',
+            paintingDataTitle: 'Źródło ',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '46 cm',
+            paintingDimensionsHeight: '55 cm',
+            paintingYearOfCreation: '2017',    
+            paintingTitle: 'Źródło',
+            paintingStatus: 'Avaliable',
+            paintingDescription: 'tu tekst en',
+            paintingImages: {
+                '0017-1': 'images\0017\0017-1.JPG',
+                '0017-2': 'images\0017\0017-2.jpg',
+                '0017-3': 'images\0017\0017-3.jpg',
+                '0017-4': 'images\0017\0017-4.jpg',
+                '0017-5': 'images\0017\0017-5.JPG',
+                '0017-6': 'images\0017\0017-6.JPG',
+                '0017-7': 'images\0017\0017-7.JPG',
+                '0017-8': 'images\0017\0017-8.JPG',
+                '0017-9': 'images\0017\0017-9.JPG',
+                '0017-10': 'images\0017\0017-10.JPG',
+            }
+        }, 
+
         '0016': {
             metaTitle: 'Filtry',
             metaDescription: '',

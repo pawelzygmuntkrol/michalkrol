@@ -44,6 +44,13 @@
     justify-items: center;
 }
 
+.sidemenu-sorting {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1.25rem;
+}
+
 .sidemenu-language {
     width: 40%;
     display: flex;
@@ -77,6 +84,7 @@
         font-size: 3rem;
     }   
 
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
@@ -92,5 +100,10 @@
         right: 10vw;
         height: 1rem;
     }
+
+    .sidemenu-sorting {
+        margin-top: 0;
+    }
+
 
   }

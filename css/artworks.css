@@ -60,9 +60,11 @@ img {
 /* MOBILE */
 
 @media (max-width: 426px) {
-  
+
     #popUpImg {
-        height: 60vh;
+        max-width: 90vw;
+        height: auto;
+        max-height: 90vh;
         padding: 0.5rem;
     }
 

@@ -11,6 +11,58 @@ let pl = {
 
     // ARTWORKS
     artworks: {
+        '0018': {
+            metaTitle: 'Czaszki',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Czaszki',
+            paintingDataTitle: 'Czaszki',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '29,7 cm',
+            paintingDimensionsHeight: '42 cm',
+            paintingYearOfCreation: '2017',    
+            paintingTitle: 'Czaszki',
+            paintingStatus: 'Sprzedany',
+            paintingDescription: 'Czaszki to projekt zainspirowany zdjęciem rentgenowskim, otrzymanym po prześwietleniu głowy. Maszyna do wykonywania rentgena stała się kolejnym sprzętem, który mogłem przełożyć na działania artystyczne, tym samym dołączając do ją do grona, wtryskarek, skrawarek, tokarek. Otworzyło to także nowy rozdział w zainteresowaniach artystycznych - popartem i zapoczątkowało cykl Interior. Zdjęcie autobiograficzne.',
+            paintingImages: {
+                '0018-1': 'images\0018\0018-1.JPG',
+                '0018-2': 'images\0018\0018-2.jpg',
+                '0018-3': 'images\0018\0018-3.jpg',
+                '0018-4': 'images\0018\0018-4.jpg',
+                '0018-5': 'images\0018\0018-5.JPG',
+                '0018-6': 'images\0018\0018-6.JPG',
+                '0018-7': 'images\0018\0018-7.JPG',
+                '0018-8': 'images\0018\0018-8.JPG',
+                '0018-9': 'images\0018\0018-9.JPG',
+                '0018-10': 'images\0018\0018-10.JPG',
+            }
+        }, 
+
+        '0017': {
+            metaTitle: 'Źródło',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Źródło',
+            paintingDataTitle: 'Źródło ',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '46 cm',
+            paintingDimensionsHeight: '55 cm',
+            paintingYearOfCreation: '2017',    
+            paintingTitle: 'Źródło',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Obraz fakturowy wykonany z opiłków metalu pochodzących ze skrawarki z procesu skrawania, grubo lanej czarnej farby olejnej oraz farb olejnych sztalugowych. Czarny element pracy jest nawiązaniem z do mistycznego źródła, otchłani, przejścia. Jest tez pewnym symbolem niepokoju łączącego wszystkie obrazy, w których czarny element występuje. Podpisany na odwrocie.',
+            paintingImages: {
+                '0017-1': 'images\0017\0017-1.JPG',
+                '0017-2': 'images\0017\0017-2.jpg',
+                '0017-3': 'images\0017\0017-3.jpg',
+                '0017-4': 'images\0017\0017-4.jpg',
+                '0017-5': 'images\0017\0017-5.JPG',
+                '0017-6': 'images\0017\0017-6.JPG',
+                '0017-7': 'images\0017\0017-7.JPG',
+                '0017-8': 'images\0017\0017-8.JPG',
+                '0017-9': 'images\0017\0017-9.JPG',
+                '0017-10': 'images\0017\0017-10.JPG',
+            }
+        }, 
+
         '0016': {
             metaTitle: 'Filtry',
             metaDescription: '',

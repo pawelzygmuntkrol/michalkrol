@@ -61,6 +61,7 @@ function changeToPl() {
 
         if(page === "index.html") {
             document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+            document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
 
         } else if(page === "artworkitem.html") {
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
@@ -76,10 +77,12 @@ function changeToPl() {
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
                 document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-            //document.getElementsByTagName('body').style.backgroundColor = backgroundScrollEffect();
+                backgroundScrollEffect();
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
+            document.getElementById('exhibitionButton').style.color = 'rgba(255, 255, 255)';
+
             let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[exhibitionNum];
                 document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
                 document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
@@ -88,12 +91,16 @@ function changeToPl() {
                 document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster; 
 
         } else if(page === "biography.html") {
+            document.getElementById('biographyButton').style.color = 'rgba(255, 255, 255)';
+
             let {biographyHeader, biographyParagraph} = pl.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
                 document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
                 moveToBottom(); 
 
         } else if(page === "contact.html") {
+            document.getElementById('contactButton').style.color = 'rgba(255, 255, 255)';
+
             let {contactHeader, contactEmailButton} = pl.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
                 document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
@@ -118,6 +125,7 @@ function changeToEn() {
 
         if(page === "index.html") {
             document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+            document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
 
         } else if (page === "artworkitem.html") {
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
@@ -136,6 +144,8 @@ function changeToEn() {
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
+            document.getElementById('exhibitionButton').style.color = 'rgba(255, 255, 255)';
+
             let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = en.exhibitions[exhibitionNum];
                 document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
                 document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
@@ -144,12 +154,16 @@ function changeToEn() {
                 document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;       
 
         } else if(page === "biography.html") {
+            document.getElementById('biographyButton').style.color = 'rgba(255, 255, 255)';
+
             let {biographyHeader, biographyParagraph} = en.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
                 document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
                 moveToBottom(); 
 
         } else if(page === "contact.html") {
+            document.getElementById('contactButton').style.color = 'rgba(255, 255, 255)';
+
             let {contactHeader, contactEmailButton} = en.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
                 document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
@@ -174,6 +188,7 @@ function changeToDe() {
 
         if(page === "index.html") {
             document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+            document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
 
         } else if(page === "artworkitem.html") {
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
@@ -192,6 +207,8 @@ function changeToDe() {
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
+            document.getElementById('exhibitionButton').style.color = 'rgba(255, 255, 255)';
+
             let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = de.exhibitions[exhibitionNum];
                 document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
                 document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
@@ -200,28 +217,22 @@ function changeToDe() {
                 document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;          
 
         } else if(page === "biography.html") {
+            document.getElementById('biographyButton').style.color = 'rgba(255, 255, 255)';
+
             let {biographyHeader, biographyParagraph} = de.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
                 document.getElementById('biographyParagraph').innerHTML = biographyParagraph; 
                 moveToBottom();       
 
         } else if(page === "contact.html") {
+            document.getElementById('contactButton').style.color = 'rgba(255, 255, 255)';
+
             let {contactHeader, contactEmailButton} = de.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
                 document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
         } 
 };
 
-
-// ARTWORKITEM BACKGROUND SCROLL EFFECT
-/*
-function backgroundScrollEffect() {
-    let elementHeight = document.body.scrollHeight;clientHeight
-    let changeColorHeight = document.getElementsByTagName('img-description').scrollHeight;
-    let changeColorHeight = elementHeight - changeColorHeight;
-    
-}
-*/
 
 // POPUP IMG
 
@@ -332,6 +343,18 @@ function displayPaintings(paintingNum) {
     return result;
 }
 
+/*
+// ARTWORKITEM BACKGROUNDSCROLLEFFECT
+
+// Take the position of scroll and changes background color.
+function backgroundScrollEffect() { 
+    let divHeight = document.getElementById('paintingImages').offsetHeight;
+    if(document.documentElement.scrollTop >= divHeight) {
+        document.querySelector('img-description').style.backgroundColor = 'red';
+    }
+};
+*/
+
 
 
 // Take a length of list of exhibitions to display, loops thru them and display them (on exhibitions page -> exhibitions.html).
@@ -372,6 +395,6 @@ function moveToBottom() {
     
     setTimeout( function() { 
         document.getElementById('biographyParagraph').scrollIntoView({ behavior: 'smooth', block: 'end' });   
-     }, 1500);
+     }, 1000);
 
   }
