@@ -3,8 +3,11 @@ let de = {
     // SIDEBAR MENU
     menu: {
         closeButton: 'Zumachen',
-        exhibitionButton: 'Ausstellungen',
         artworksButton: 'Kunstwerke',
+        displayAllButton: 'Alle',
+        displayStructuralCollageButton: 'Structural Collage',
+        displayInteriorButton: 'Interior',
+        exhibitionButton: 'Ausstellungen',
         biographyButton: 'Biographie',
         contactButton: 'Kontakt'
     },

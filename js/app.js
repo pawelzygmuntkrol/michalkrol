@@ -49,10 +49,10 @@ function changeToPl() {
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
 
-        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = pl.menu; 
+        let {closeButton, artworksButton, exhibitionButton, biographyButton, contactButton} = pl.menu; 
             document.getElementById('closeButton').innerHTML = closeButton;
-            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
             document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;     
             document.getElementById('biographyButton').innerHTML = biographyButton;
             document.getElementById('contactButton').innerHTML = contactButton;
 
@@ -60,8 +60,12 @@ function changeToPl() {
         let page = path.split("/").pop();
 
         if(page === "index.html") {
-            document.getElementById('artworksList').innerHTML = displayArtworksList(); 
-            document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+            let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = pl.menu;
+                document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+                document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+                document.getElementById('displayAllButton').innerHTML = displayAllButton;
+                document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
+                document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if(page === "artworkitem.html") {
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
@@ -113,10 +117,10 @@ function changeToEn() {
         document.getElementById('en').style.color = 'rgba(255, 255, 255)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
 
-        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = en.menu; 
+        let {closeButton, artworksButton, exhibitionButton, biographyButton, contactButton} = en.menu; 
             document.getElementById('closeButton').innerHTML = closeButton;
-            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
             document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
             document.getElementById('biographyButton').innerHTML = biographyButton;
             document.getElementById('contactButton').innerHTML = contactButton;
 
@@ -124,8 +128,12 @@ function changeToEn() {
         let page = path.split("/").pop();
 
         if(page === "index.html") {
-            document.getElementById('artworksList').innerHTML = displayArtworksList(); 
-            document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+            let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = en.menu;
+                document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+                document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+                document.getElementById('displayAllButton').innerHTML = displayAllButton;
+                document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
+                document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if (page === "artworkitem.html") {
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
@@ -176,10 +184,10 @@ function changeToDe() {
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(255, 255, 255)';
 
-        let {closeButton, exhibitionButton, artworksButton, biographyButton, contactButton} = de.menu; 
+        let {closeButton, artworksButton, exhibitionButton, biographyButton, contactButton} = de.menu; 
             document.getElementById('closeButton').innerHTML = closeButton;
-            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
             document.getElementById('artworksButton').innerHTML = artworksButton;
+            document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
             document.getElementById('biographyButton').innerHTML = biographyButton;
             document.getElementById('contactButton').innerHTML = contactButton;
 
@@ -187,8 +195,12 @@ function changeToDe() {
         let page = path.split("/").pop();
 
         if(page === "index.html") {
-            document.getElementById('artworksList').innerHTML = displayArtworksList(); 
-            document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+            let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = de.menu;
+                document.getElementById('artworksList').innerHTML = displayArtworksList(); 
+                document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+                document.getElementById('displayAllButton').innerHTML = displayAllButton;
+                document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
+                document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if(page === "artworkitem.html") {
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
@@ -275,14 +287,81 @@ function closePopUpImg() {
 
 // MAIN PAINTINGS
 
+// Defaultvalue is displayAllValue which shows all painting but user clicking on side menu buttons can change that to show only Stryctural Collage or Interior.
+let displayAllValue = 1;
+let displayStructuralCollageValue = 0;
+let displayInteriorValue = 0;
+
+function displayAll() {
+    displayAllValue = 1;
+    displayStructuralCollageValue = 0;
+    displayInteriorValue = 0; 
+    document.getElementById('displayAllButton').style.color = 'rgba(255, 255, 255)';
+    document.getElementById('displayStructuralCollageButton').style.color = 'rgba(128, 128, 128)';
+    document.getElementById('displayInteriorButton').style.color = 'rgba(128, 128, 128)';
+    return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
+}
+
+function displayStructuralCollage() {
+    displayAllValue = 0;
+    displayStructuralCollageValue = 1;
+    displayInteriorValue = 0; 
+    document.getElementById('displayAllButton').style.color = 'rgba(128, 128, 128)';
+    document.getElementById('displayStructuralCollageButton').style.color = 'rgba(255, 255, 255)';
+    document.getElementById('displayInteriorButton').style.color = 'rgba(128, 128, 128)';
+    return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
+}
+
+function displayInterior() {
+    displayAllValue = 0;
+    displayStructuralCollageValue = 0;
+    displayInteriorValue = 1; 
+    document.getElementById('displayAllButton').style.color = 'rgba(128, 128, 128)';
+    document.getElementById('displayStructuralCollageButton').style.color = 'rgba(128, 128, 128)';
+    document.getElementById('displayInteriorButton').style.color = 'rgba(255, 255, 255)';
+    return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
+}
+
+
 // Take a length of list of paintings to display, loops thru them and display them (on main page -> index.html).
 // In this case PL is given but it does not matter, all objects (PL/EN/DE) have the same images of paintings.
+// Paintings are displayed based on functions displayAll, displayStructuralCollage and displayInterior.
 function displayArtworksList() {
+
     let result = '';
     let id = '0001';
     let lastNumofId = 1;
+    let str = '';
     for(let i = 0; i < Object.keys(pl.artworks).length; i++) { 
-        let str = 
+        
+        if(displayStructuralCollageValue === 1) {
+            if(pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
+                str = 
+                `<div class='img-container' onclick='getPaintingNum("${id}")'>
+                    <a href='./artworkitem.html'>
+                        <img src='./images/${id}/${id}-1.jpg'>
+                        <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
+                        <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
+                    </a>
+                </div>`
+            } else {
+                str = '';
+            }
+        } else if (displayInteriorValue === 1) {
+            if(pl.artworks[id].paintingDataAuthor === 'Interior') {
+                str = 
+                `<div class='img-container' onclick='getPaintingNum("${id}")'>
+                    <a href='./artworkitem.html'>
+                        <img src='./images/${id}/${id}-1.jpg'>
+                        <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
+                        <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
+                    </a>
+                </div>`
+            } else {
+                str = '';
+            }
+        } else if (displayAllValue === 1){
+            str = 
             `<div class='img-container' onclick='getPaintingNum("${id}")'>
                 <a href='./artworkitem.html'>
                     <img src='./images/${id}/${id}-1.jpg'>
@@ -290,6 +369,7 @@ function displayArtworksList() {
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
                 </a>
             </div>`
+        }
         result = str.concat(result);
         lastNumofId++;
         id = '0000' + lastNumofId;
@@ -398,3 +478,5 @@ function moveToBottom() {
      }, 1000);
 
   }
+
+

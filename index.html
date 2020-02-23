@@ -25,7 +25,7 @@
 
 
 
-<body onload='showPopUpImg(); changeLanguage(language)' onclick='closePopUpImg()'>
+<body onload='showPopUpImg()' onclick='closePopUpImg(); changeLanguage(language)'>
       
 
     <div id='popUpImgContainer'>
@@ -53,9 +53,9 @@
                 <div class='sidemenu-links'>
                     <a href='./index.html' id='artworksButton' active><!-- text is dynamically loaded by changeLanguage function --></a>
                     <div class='sidemenu-sorting'>
-                        <a href='#'>Wszystkie</a>
-                        <a href='#'>Structural Collage</a>
-                        <a href='#'>Interior</a>
+                        <a href='#' id='displayAllButton' onclick='displayAll()'><!-- text is dynamically loaded by changeLanguage function --></a>
+                        <a href='#' id='displayStructuralCollageButton' onclick='displayStructuralCollage()'><!-- text is dynamically loaded by changeLanguage function --></a>
+                        <a href='#' id='displayInteriorButton' onclick='displayInterior()'><!-- text is dynamically loaded by changeLanguage function --></a>
                     </div>
                     <a href='./exhibitions.html' id='exhibitionButton'><!-- text is dynamically loaded by changeLanguage function --></a>
                     <a href='./biography.html' id='biographyButton'><!-- text is dynamically loaded by changeLanguage function --></a>
