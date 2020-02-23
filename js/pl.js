@@ -11,6 +11,79 @@ let pl = {
 
     // ARTWORKS
     artworks: {
+        '0021': {
+            metaTitle: 'EGGistence',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, EGGistence',
+            paintingDataTitle: 'EGGistence',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'EGGistence',
+            paintingStatus: 'Sprzedany',
+            paintingDescription: 'Obraz wykonany techniką kolażu z wykorzystaniem opiłków metalu, płótna i farby olejnej. Opiłki metalu przytwierdzone za pośrednictwem specjalistycznego kleju. Pracę charakteryzują różnorodne struktury farby Abstrakcyjne ujęcie jaja, bytu biologicznego oraz abstrakcji, która w nim zachodzi. Obraz podpisany zamalowany po bokach nie wymaga ramy.',
+            paintingImages: {
+                '0021-1': 'images\0021\0021-1.JPG',
+                '0021-2': 'images\0021\0021-2.jpg',
+                '0021-3': 'images\0021\0021-3.jpg',
+                '0021-4': 'images\0021\0021-4.jpg',
+                '0021-5': 'images\0021\0021-5.JPG',
+                '0021-6': 'images\0021\0021-6.JPG',
+                '0021-7': 'images\0021\0021-7.JPG',
+                '0021-8': 'images\0021\0021-8.JPG',
+                '0021-9': 'images\0021\0021-9.JPG',
+            }
+        },
+
+        '0020': {
+            metaTitle: 'Monstrancja',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Monstrancja',
+            paintingDataTitle: 'Monstrancja',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Monstrancja',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Obraz fakturowy wykonany techniką kolażu z wykorzystaniem opiłków metalu, płótna i farby olejnej. Opiłki metalu pochodzą z procesu skrawania ze skrawarki i przytwierdzone są do płótna za pomocą specjalistycznego kleju. Użyto farby olejnej oraz werniksu zabezpieczającego. Boki obrazu są pomalowane więc obraz nadaje się do powieszenia i nie wymaga ramy. Obraz jest matowy z błyszczącymi elementami. Praca jest sygnowana i podpisana na odwrocie. Abstrakcyjne ujęcie przedmiotu  wykorzystywanego w Kościele jakim jest Monstrancja, który pomimo blasku pozostaje ciemny i pełen cieni w środku. Fotografia robiona z lampą błyskową.',
+            paintingImages: {
+                '0020-1': 'images\0020\0020-1.JPG',
+                '0020-2': 'images\0020\0020-2.jpg',
+                '0020-3': 'images\0020\0020-3.jpg',
+                '0020-4': 'images\0020\0020-4.jpg',
+                '0020-5': 'images\0020\0020-5.JPG',
+                '0020-6': 'images\0020\0020-6.JPG',
+                '0020-7': 'images\0020\0020-7.JPG',
+                '0020-8': 'images\0020\0020-8.JPG',
+            }
+        },
+
+        '0019': {
+            metaTitle: 'Czarny miód',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Czarny miód',
+            paintingDataTitle: 'Czarny miód',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2017',    
+            paintingTitle: 'Czarny miód',
+            paintingStatus: 'Sprzedany',
+            paintingDescription: 'Praca wykonana techniką mieszaną, z wykorzystaniem farby olejnej, papieru oraz płótna. Obraz abstrakcyjny stanowi kolaż bądź asamblaż stworzony z różnych elementów. Nawiązuje do plastra miodu ukazanego w symbolicznym, mrocznym, apokaliptycznym, ujęciu, będącym jednocześnie przestrogą braku poszanowania życia z naturą jak i abstrakcyjną wariacją na temat struktury plastra miodu. Praca jest sygnowana na odwrocie, boki ma częściowo zamalowane i nie wymaga ramy, zawerniksowana.',
+            paintingImages: {
+                '0019-1': 'images\0019\0019-1.JPG',
+                '0019-2': 'images\0019\0019-2.jpg',
+                '0019-3': 'images\0019\0019-3.jpg',
+                '0019-4': 'images\0019\0019-4.jpg',
+                '0019-5': 'images\0019\0019-5.JPG',
+                '0019-6': 'images\0019\0019-6.JPG',
+                '0019-7': 'images\0019\0019-7.JPG',
+                '0019-8': 'images\0019\0019-8.JPG',
+            }
+        }, 
+
         '0018': {
             metaTitle: 'Czaszki',
             metaDescription: '',

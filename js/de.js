@@ -11,6 +11,79 @@ let de = {
 
     // ARTWORKS
     artworks: {
+        '0021': {
+            metaTitle: 'EGGistence',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, EGGistence',
+            paintingDataTitle: 'EGGistence',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'EGGistence',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0021-1': 'images\0021\0021-1.JPG',
+                '0021-2': 'images\0021\0021-2.jpg',
+                '0021-3': 'images\0021\0021-3.jpg',
+                '0021-4': 'images\0021\0021-4.jpg',
+                '0021-5': 'images\0021\0021-5.JPG',
+                '0021-6': 'images\0021\0021-6.JPG',
+                '0021-7': 'images\0021\0021-7.JPG',
+                '0021-8': 'images\0021\0021-8.JPG',
+                '0021-9': 'images\0021\0021-9.JPG',
+            }
+        },
+
+        '0020': {
+            metaTitle: 'Monstrancja',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Monstrancja',
+            paintingDataTitle: 'Monstrancja',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Monstrancja',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0020-1': 'images\0020\0020-1.JPG',
+                '0020-2': 'images\0020\0020-2.jpg',
+                '0020-3': 'images\0020\0020-3.jpg',
+                '0020-4': 'images\0020\0020-4.jpg',
+                '0020-5': 'images\0020\0020-5.JPG',
+                '0020-6': 'images\0020\0020-6.JPG',
+                '0020-7': 'images\0020\0020-7.JPG',
+                '0020-8': 'images\0020\0020-8.JPG',
+            }
+        },
+
+        '0019': {
+            metaTitle: 'Czarny miód',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Czarny miód',
+            paintingDataTitle: 'Czarny miód',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2017',    
+            paintingTitle: 'Czarny miód',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0019-1': 'images\0019\0019-1.JPG',
+                '0019-2': 'images\0019\0019-2.jpg',
+                '0019-3': 'images\0019\0019-3.jpg',
+                '0019-4': 'images\0019\0019-4.jpg',
+                '0019-5': 'images\0019\0019-5.JPG',
+                '0019-6': 'images\0019\0019-6.JPG',
+                '0019-7': 'images\0019\0019-7.JPG',
+                '0019-8': 'images\0019\0019-8.JPG',
+            }
+        }, 
+
         '0018': {
             metaTitle: 'Czaszki',
             metaDescription: '',
