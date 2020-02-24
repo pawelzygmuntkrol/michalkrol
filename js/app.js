@@ -20,8 +20,9 @@ function disableAutoLanguage(lang) {
 userBrowserLanguage = localStorage.getItem('chosenLang');
 
 // Based on user choice/browser language specifies to language to use.
-let language = '';
+let language = userBrowserLanguage;
 
+/* jak wszystko ok to usunąć
 if(userBrowserLanguage === 'pl') {
     language = 'pl';
 } else if (userBrowserLanguage === 'de') {
@@ -29,6 +30,7 @@ if(userBrowserLanguage === 'pl') {
 } else {
     language = 'en';
 }
+*/
 
 // Specified language call function that displays information in this language on page.
 function changeLanguage(language) {
@@ -242,6 +244,7 @@ function changeToDe() {
             let {contactHeader, contactEmailButton} = de.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
                 document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
+                displayEmail();
         } 
 };
 
@@ -480,3 +483,11 @@ function moveToBottom() {
   }
 
 
+// DISPLAY EMAIL
+
+// On click shows e-mail address in case client couldn't handle redirection.
+
+function displayEmail(language) {
+    document.getElementById('contactEmailButton').innerHTML = 'kontakt@michalkrol.eu';
+    document.getElementById('contactEmailButton').style.width = '10rem';
+}
