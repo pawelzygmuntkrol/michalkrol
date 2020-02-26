@@ -1,0 +1,72 @@
+/* DESKTOP */
+
+#cookieBanner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0rem;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0);
+    opacity: 0.8;
+    padding: 0.5rem 2rem;
+}
+
+#gdprParagraph {
+    color: rgba(255, 255, 255);
+}
+
+#gdprLink {
+    color: rgba(255, 255, 255);
+    text-decoration: underline;
+}
+
+#gdprButton {
+    color: rgba(0, 0, 0);
+    width: 7rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+    background-color: rgba(255, 255, 255);
+    border: none;
+    font-weight: bolder;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 426px) {
+
+    #cookieBanner {
+        height: 6rem;
+    }
+  
+    #gdprParagraph, #gdprLink {
+        font-size: 0.7rem;
+    }
+
+    #gdprButton {
+        margin: 1rem 0 1rem 1rem;
+    }
+    
+}
+
+@media (min-width: 427px) and (max-width: 770px) {
+    
+    #gdprParagraph, #gdprLink {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+    #cookieBanner {
+        height: 4.5rem;
+    }
+  
+    #gdprParagraph, #gdprLink {
+        font-size: 0.7rem;
+    }
+
+}

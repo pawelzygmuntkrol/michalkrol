@@ -1,5 +1,11 @@
 let en = {
-    
+    // GDPR
+    gdpr: {
+        gdprParagraph : 'tekst en',
+        gdprLink : 'tekst en',
+        gdprButton : 'tekst en',
+    },
+
     // SIDEBAR MENU
     menu: {
         closeButton: 'Close',
@@ -14,6 +20,59 @@ let en = {
 
     // ARTWORKS
     artworks: {
+        '0027': {
+            metaTitle: 'Wonderland',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Wonderland',
+            paintingDataTitle: 'Wonderland',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '101 cm',
+            paintingDimensionsHeight: '107 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Wonderland',
+            paintingStatus: 'Avaliable',
+            paintingDescription: 'tu tekst en',
+            paintingImages: {
+                '0027-1': 'images\0027\0027-1.jpg',
+            }
+        },
+
+        '0026': {
+            metaTitle: 'Ableton',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Ableton',
+            paintingDataTitle: 'Ableton',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '101 cm',
+            paintingDimensionsHeight: '134 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Ableton',
+            paintingStatus: 'Avaliable',
+            paintingDescription: 'tu tekst en',
+            paintingImages: {
+                '0026-1': 'images\0026\0026-1.jpg',
+                '0026-2': 'images\0026\0026-2.jpg',
+            }
+        },
+
+        '0025': {
+            metaTitle: 'Smoq',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Smoq',
+            paintingDataTitle: 'Smoq',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '100 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Smoq',
+            paintingStatus: 'Sold',
+            paintingDescription: 'tu tekst en',
+            paintingImages: {
+                '0025-1': 'images\0025\0025-1.jpg',
+                '0025-2': 'images\0025\0025-2.jpg',
+            }
+        },
+
         '0024': {
             metaTitle: 'DNA',
             metaDescription: '',

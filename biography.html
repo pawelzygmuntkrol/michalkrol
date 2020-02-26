@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/universal.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/sidenav.css">
+    <link rel="stylesheet" href="./css/gdpr.css">
 
     <link rel="stylesheet" href="./css/biography.css">
 
@@ -27,6 +28,13 @@
 
 <body onload='changeLanguage(language)'>
     
+    <div id='cookieBanner'>
+        <div>
+            <p id='gdprParagraph'><!-- text is dynamically loaded by changeLanguage function --></p>
+            <a id='gdprLink' href='https://www.websitepolicies.com/policies/view/xUrVBmTx'><!-- text is dynamically loaded by changeLanguage function --></a>
+        </div>
+        <button id='gdprButton' onclick='gdprClose()'><!-- text is dynamically loaded by changeLanguage function --></button>
+    </div>
 
     <nav>
         <ul>

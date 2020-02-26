@@ -50,6 +50,14 @@ function changeToPl() {
         document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
+        
+        localStorage.getItem('gdprStatus');
+        gdprStatus === 'on' ? document.getElementById('cookieBanner').style.visibility = 'visible' : document.getElementById('cookieBanner').style.visibility = 'hidden';
+        
+        let {gdprParagraph, gdprLink, gdprButton} = pl.gdpr; 
+            document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
+            document.getElementById('gdprLink').innerHTML = gdprLink;
+            document.getElementById('gdprButton').innerHTML = gdprButton;  
 
         let {closeButton, artworksButton, exhibitionButton, biographyButton, contactButton} = pl.menu; 
             document.getElementById('closeButton').innerHTML = closeButton;
@@ -119,6 +127,13 @@ function changeToEn() {
         document.getElementById('en').style.color = 'rgba(255, 255, 255)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
 
+        gdprStatus === 'on' ? document.getElementById('cookieBanner').style.visibility = 'visible' : document.getElementById('cookieBanner').style.visibility = 'hidden';
+
+        let {gdprParagraph, gdprLink, gdprButton} = en.gdpr; 
+            document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
+            document.getElementById('gdprLink').innerHTML = gdprLink;
+            document.getElementById('gdprButton').innerHTML = gdprButton;  
+
         let {closeButton, artworksButton, exhibitionButton, biographyButton, contactButton} = en.menu; 
             document.getElementById('closeButton').innerHTML = closeButton;
             document.getElementById('artworksButton').innerHTML = artworksButton;
@@ -186,6 +201,13 @@ function changeToDe() {
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(255, 255, 255)';
 
+        gdprStatus === 'on' ? document.getElementById('cookieBanner').style.visibility = 'visible' : document.getElementById('cookieBanner').style.visibility = 'hidden';
+
+        let {gdprParagraph, gdprLink, gdprButton} = de.gdpr; 
+            document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
+            document.getElementById('gdprLink').innerHTML = gdprLink;
+            document.getElementById('gdprButton').innerHTML = gdprButton;  
+
         let {closeButton, artworksButton, exhibitionButton, biographyButton, contactButton} = de.menu; 
             document.getElementById('closeButton').innerHTML = closeButton;
             document.getElementById('artworksButton').innerHTML = artworksButton;
@@ -247,6 +269,16 @@ function changeToDe() {
                 displayEmail();
         } 
 };
+
+// GDPR
+let gdprStatus = 'on';
+
+// Hides cookie banner.
+function gdprClose() {
+    document.getElementById('cookieBanner').style.visibility = 'hidden';
+    gdprStatus = 'off';
+    localStorage.setItem('gdprStatus', gdprStatus);
+}
 
 
 // POPUP IMG
