@@ -22,7 +22,7 @@ userBrowserLanguage = localStorage.getItem('chosenLang');
 // Based on user choice/browser language specifies to language to use.
 let language = userBrowserLanguage;
 
-/* jak wszystko ok to usunąć
+
 if(userBrowserLanguage === 'pl') {
     language = 'pl';
 } else if (userBrowserLanguage === 'de') {
@@ -30,7 +30,7 @@ if(userBrowserLanguage === 'pl') {
 } else {
     language = 'en';
 }
-*/
+
 
 // Specified language call function that displays information in this language on page.
 function changeLanguage(language) {
@@ -50,11 +50,9 @@ function changeToPl() {
         document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
-        
-        localStorage.getItem('gdprStatus');
-        gdprStatus === 'on' ? document.getElementById('cookieBanner').style.visibility = 'visible' : document.getElementById('cookieBanner').style.visibility = 'hidden';
-        
+           
         let {gdprParagraph, gdprLink, gdprButton} = pl.gdpr; 
+            gdprShow();
             document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
             document.getElementById('gdprLink').innerHTML = gdprLink;
             document.getElementById('gdprButton').innerHTML = gdprButton;  
@@ -127,9 +125,8 @@ function changeToEn() {
         document.getElementById('en').style.color = 'rgba(255, 255, 255)';
         document.getElementById('de').style.color = 'rgba(128, 128, 128)';
 
-        gdprStatus === 'on' ? document.getElementById('cookieBanner').style.visibility = 'visible' : document.getElementById('cookieBanner').style.visibility = 'hidden';
-
         let {gdprParagraph, gdprLink, gdprButton} = en.gdpr; 
+            gdprShow();
             document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
             document.getElementById('gdprLink').innerHTML = gdprLink;
             document.getElementById('gdprButton').innerHTML = gdprButton;  
@@ -201,9 +198,8 @@ function changeToDe() {
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
         document.getElementById('de').style.color = 'rgba(255, 255, 255)';
 
-        gdprStatus === 'on' ? document.getElementById('cookieBanner').style.visibility = 'visible' : document.getElementById('cookieBanner').style.visibility = 'hidden';
-
         let {gdprParagraph, gdprLink, gdprButton} = de.gdpr; 
+            gdprShow();
             document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
             document.getElementById('gdprLink').innerHTML = gdprLink;
             document.getElementById('gdprButton').innerHTML = gdprButton;  
@@ -271,7 +267,13 @@ function changeToDe() {
 };
 
 // GDPR
-let gdprStatus = 'on';
+let gdpr;
+
+// Shows cookie banner.
+function gdprShow() {
+    gdprStatus = localStorage.getItem('gdprStatus');
+    gdprStatus === 'off' ? document.getElementById('cookieBanner').style.visibility = 'hidden' : document.getElementById('cookieBanner').style.visibility = 'visible';
+}
 
 // Hides cookie banner.
 function gdprClose() {
