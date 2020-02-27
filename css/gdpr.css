@@ -41,19 +41,20 @@
         height: 6rem;
     }
   
-    #gdprParagraph, #gdprLink {
+    #gdprParagraph, #gdprLink, #gdprButton  {
         font-size: 0.7rem;
     }
 
     #gdprButton {
         margin: 1rem 0 1rem 1rem;
+        padding: 0rem 0.5rem;
     }
     
 }
 
 @media (min-width: 427px) and (max-width: 770px) {
     
-    #gdprParagraph, #gdprLink {
+    #gdprParagraph, #gdprLink, #gdprButton {
         font-size: 0.7rem;
     }
 
@@ -65,7 +66,7 @@
         height: 4.5rem;
     }
   
-    #gdprParagraph, #gdprLink {
+    #gdprParagraph, #gdprLink, #gdprButton {
         font-size: 0.7rem;
     }
 

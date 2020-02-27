@@ -20,6 +20,347 @@ let de = {
 
     // ARTWORKS
     artworks: {
+        '0047': {
+            metaTitle: 'Bloody Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Bloody Skull',
+            paintingDataTitle: 'Bloody Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Bloody Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0047-1': 'images\0047\0047-1.jpg',
+            }
+        },
+
+        '0046': {
+            metaTitle: 'Clown Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Clown Skull',
+            paintingDataTitle: 'Clown Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Clown Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0046-1': 'images\0046\0046-1.jpg',
+            }
+        },
+
+        '0045': {
+            metaTitle: 'Copper Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Copper Skull',
+            paintingDataTitle: 'Copper Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Copper Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0045-1': 'images\0045\0045-1.jpg',
+            }
+        },
+
+        '0044': {
+            metaTitle: 'Disco Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Disco Skull',
+            paintingDataTitle: 'Disco Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Disco Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0044-1': 'images\0044\0044-1.jpg',
+            }
+        },
+
+        '0043': {
+            metaTitle: 'Earth Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Earth Skull',
+            paintingDataTitle: 'Earth Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Earth Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0043-1': 'images\0043\0043-1.jpg',
+            }
+        },
+
+        '0042': {
+            metaTitle: 'Fire Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Fire Skull',
+            paintingDataTitle: 'Fire Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Fire Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0042-1': 'images\0042\0042-1.jpg',
+            }
+        },
+
+        '0041': {
+            metaTitle: 'Golden Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Golden Skull',
+            paintingDataTitle: 'Golden Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Golden Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0041-1': 'images\0041\0041-1.jpg',
+            }
+        },
+
+        '0040': {
+            metaTitle: 'Harper Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Harper Skull',
+            paintingDataTitle: 'Harper Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Harper Skull',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0040-1': 'images\0040\0040-1.jpg',
+            }
+        },
+        
+        '0039': {
+            metaTitle: 'India Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, India Skull',
+            paintingDataTitle: 'India Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'India Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0039-1': 'images\0039\0039-1.jpg',
+            }
+        },
+
+        '0038': {
+            metaTitle: 'Lemon Brother Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Lemon Brother Skull',
+            paintingDataTitle: 'Lemon Brother Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Lemon Brother Skull',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0038-1': 'images\0038\0038-1.jpg',
+            }
+        },
+
+        '0037': {
+            metaTitle: 'Pink Bullet Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Pink Bullet Skull',
+            paintingDataTitle: 'Pink Bullet Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '29,7 cm',
+            paintingDimensionsHeight: '42 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Pink Bullet Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0037-1': 'images\0037\0037-1.jpg',
+            }
+        },
+
+        '0036': {
+            metaTitle: 'Pink Flow',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Pink Flow',
+            paintingDataTitle: 'Pink Flow',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Pink Flow',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0036-1': 'images\0036\0036-1.jpg',
+            }
+        },
+
+        '0035': {
+            metaTitle: 'Rainbow Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Rainbow Skull',
+            paintingDataTitle: 'Rainbow Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Rainbow Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0035-1': 'images\0035\0035-1.jpg',
+            }
+        },
+
+        '0034': {
+            metaTitle: 'Shoot Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Shoot Skull',
+            paintingDataTitle: 'Shoot Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Shoot Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0034-1': 'images\0034\0034-1.jpg',
+            }
+        },
+
+        '0033': {
+            metaTitle: 'Solar Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Solar Skull',
+            paintingDataTitle: 'Solar Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Solar Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0033-1': 'images\0033\0033-1.jpg',
+            }
+        },
+
+        '0032': {
+            metaTitle: 'Volatile 2',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Volatile 2',
+            paintingDataTitle: 'Volatile 2',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Volatile 2',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0032-1': 'images\0032\0032-1.jpg',
+                '0032-2': 'images\0032\0032-2.jpg',
+            }
+        },
+
+        '0031': {
+            metaTitle: 'Volatile Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Volatile Skull',
+            paintingDataTitle: 'Volatile Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Volatile Skull',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0031-1': 'images\0031\0031-1.jpg',
+            }
+        },
+
+        '0030': {
+            metaTitle: 'Wings',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Wings',
+            paintingDataTitle: 'Wings',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '50 cm',
+            paintingDimensionsHeight: '50 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Wings',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0030-1': 'images\0030\0030-1.jpg',
+            }
+        },
+
+        '0029': {
+            metaTitle: 'Dragonfly',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Dragonfly',
+            paintingDataTitle: 'Dragonfly',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Dragonfly',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0029-1': 'images\0029\0029-1.jpg',
+            }
+        },
+
+        '0028': {
+            metaTitle: 'Galactus',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Galactus',
+            paintingDataTitle: 'Galactus',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Galactus',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0028-1': 'images\0028\0028-1.jpg',
+            }
+        },
+
         '0027': {
             metaTitle: 'Wonderland',
             metaDescription: '',
