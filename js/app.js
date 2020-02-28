@@ -3,34 +3,14 @@
 // Check users browser language.
 let userBrowserLanguage = navigator.language.slice(0, 2);
 
-// Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
-function disableAutoLanguage(lang) {
-    if(lang === 'pl') {
-        userBrowserLanguage = 'pl';
-    } else if(lang === 'en') {
-        userBrowserLanguage = 'en';
-    } else if(lang === 'de') {
-        userBrowserLanguage = 'de';
-    }
+// Based on browser language/user choice specifies to language to use.
+let language;
 
-    localStorage.setItem('chosenLang', userBrowserLanguage);
-    return userBrowserLanguage;
-}
-
-userBrowserLanguage = localStorage.getItem('chosenLang');
-
-// Based on user choice/browser language specifies to language to use.
-let language = userBrowserLanguage;
-
-
-if(userBrowserLanguage === 'pl') {
-    language = 'pl';
-} else if (userBrowserLanguage === 'de') {
-    language = 'de';
+if(localStorage.getItem('chosenLang') === null) {
+    language = userBrowserLanguage;
 } else {
-    language = 'en';
+    language = localStorage.getItem('chosenLang');
 }
-
 
 // Specified language call function that displays information in this language on page.
 function changeLanguage(language) {
@@ -41,6 +21,20 @@ function changeLanguage(language) {
     } else {
         changeToEn();
     }
+}
+
+// Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
+function disableAutoLanguage(lang) {
+    if(lang === 'pl') {
+        language = lang;
+    } else if(lang === 'en') {
+        language = lang;
+    } else if(lang === 'de') {
+        language = lang;
+    } 
+    
+    localStorage.setItem('chosenLang', language);
+    return language;
 }
 
 

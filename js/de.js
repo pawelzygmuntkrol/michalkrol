@@ -20,17 +20,55 @@ let de = {
 
     // ARTWORKS
     artworks: {
-        '0047': {
-            metaTitle: 'Bloody Skull',
+        '0049': {
+            metaTitle: 'Interior Dog 1 / Interior Dog 2',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Bloody Skull',
-            paintingDataTitle: 'Bloody Skull',
+            metaKeywords: 'Structuralist, Interior, Interior Dog 1 / Interior Dog 2',
+            paintingDataTitle: 'Interior Dog 1 / Interior Dog 2',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '2 x 70 cm',
+            paintingDimensionsHeight: '2 x 50 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Interior Dog 1 / Interior Dog 2',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0049-1': 'images\0049\0049-1.jpg',
+                '0049-2': 'images\0049\0049-2.jpg',
+                '0049-3': 'images\0049\0049-3.jpg',
+                '0049-4': 'images\0049\0049-4.jpg',
+            }
+        },
+
+
+        '0048': {
+            metaTitle: 'Pinkterior',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Pinkterior',
+            paintingDataTitle: 'Pinkterior',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Bloody Skull',
-            paintingStatus: 'Vorhanden',
+            paintingTitle: 'Pinkterior',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0048-1': 'images\0048\0048-1.jpg',
+            }
+        },
+
+        '0047': {
+            metaTitle: 'Lemon Brother Skull',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Lemon Brother Skull',
+            paintingDataTitle: 'Lemon Brother Skull',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Lemon Brother Skull',
+            paintingStatus: 'Verkaufen',
             paintingDescription: 'tu tekst de',
             paintingImages: {
                 '0047-1': 'images\0047\0047-1.jpg',
@@ -38,15 +76,15 @@ let de = {
         },
 
         '0046': {
-            metaTitle: 'Clown Skull',
+            metaTitle: 'Rainbow Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Clown Skull',
-            paintingDataTitle: 'Clown Skull',
+            metaKeywords: 'Structuralist, Interior, Rainbow Skull',
+            paintingDataTitle: 'Rainbow Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Clown Skull',
+            paintingTitle: 'Rainbow Skull',
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
@@ -55,21 +93,21 @@ let de = {
         },
 
         '0045': {
-            metaTitle: 'Copper Skull',
+            metaTitle: 'Fire Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Copper Skull',
-            paintingDataTitle: 'Copper Skull',
+            metaKeywords: 'Structuralist, Interior, Fire Skull',
+            paintingDataTitle: 'Fire Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Copper Skull',
+            paintingTitle: 'Fire Skull',
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
                 '0045-1': 'images\0045\0045-1.jpg',
             }
-        },
+        },   
 
         '0044': {
             metaTitle: 'Disco Skull',
@@ -106,15 +144,15 @@ let de = {
         },
 
         '0042': {
-            metaTitle: 'Fire Skull',
+            metaTitle: 'Copper Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Fire Skull',
-            paintingDataTitle: 'Fire Skull',
+            metaKeywords: 'Structuralist, Interior, Copper Skull',
+            paintingDataTitle: 'Copper Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Fire Skull',
+            paintingTitle: 'Copper Skull',
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
@@ -155,17 +193,17 @@ let de = {
                 '0040-1': 'images\0040\0040-1.jpg',
             }
         },
-        
+
         '0039': {
-            metaTitle: 'India Skull',
+            metaTitle: 'Shoot Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, India Skull',
-            paintingDataTitle: 'India Skull',
+            metaKeywords: 'Structuralist, Interior, Shoot Skull',
+            paintingDataTitle: 'Shoot Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'India Skull',
+            paintingTitle: 'Shoot Skull',
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
@@ -174,21 +212,22 @@ let de = {
         },
 
         '0038': {
-            metaTitle: 'Lemon Brother Skull',
+            metaTitle: 'Bloody Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Lemon Brother Skull',
-            paintingDataTitle: 'Lemon Brother Skull',
+            metaKeywords: 'Structuralist, Interior, Bloody Skull',
+            paintingDataTitle: 'Bloody Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Lemon Brother Skull',
-            paintingStatus: 'Verkaufen',
+            paintingTitle: 'Bloody Skull',
+            paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
                 '0038-1': 'images\0038\0038-1.jpg',
             }
         },
+
 
         '0037': {
             metaTitle: 'Pink Bullet Skull',
@@ -225,15 +264,15 @@ let de = {
         },
 
         '0035': {
-            metaTitle: 'Rainbow Skull',
+            metaTitle: 'India Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Rainbow Skull',
-            paintingDataTitle: 'Rainbow Skull',
+            metaKeywords: 'Structuralist, Interior, India Skull',
+            paintingDataTitle: 'India Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Rainbow Skull',
+            paintingTitle: 'India Skull',
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
@@ -242,15 +281,15 @@ let de = {
         },
 
         '0034': {
-            metaTitle: 'Shoot Skull',
+            metaTitle: 'Clown Skull',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Shoot Skull',
-            paintingDataTitle: 'Shoot Skull',
+            metaKeywords: 'Structuralist, Interior, Clown Skull',
+            paintingDataTitle: 'Clown Skull',
             paintingDataAuthor: 'Interior',
             paintingDimensionsWidth: '42 cm',
             paintingDimensionsHeight: '59,4 cm',
             paintingYearOfCreation: '2019',    
-            paintingTitle: 'Shoot Skull',
+            paintingTitle: 'Clown Skull',
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
@@ -276,24 +315,6 @@ let de = {
         },
 
         '0032': {
-            metaTitle: 'Volatile 2',
-            metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Volatile 2',
-            paintingDataTitle: 'Volatile 2',
-            paintingDataAuthor: 'Interior',
-            paintingDimensionsWidth: '42 cm',
-            paintingDimensionsHeight: '59,4 cm',
-            paintingYearOfCreation: '2019',    
-            paintingTitle: 'Volatile 2',
-            paintingStatus: 'Vorhanden',
-            paintingDescription: 'tu tekst de',
-            paintingImages: {
-                '0032-1': 'images\0032\0032-1.jpg',
-                '0032-2': 'images\0032\0032-2.jpg',
-            }
-        },
-
-        '0031': {
             metaTitle: 'Volatile Skull',
             metaDescription: '',
             metaKeywords: 'Structuralist, Interior, Volatile Skull',
@@ -306,7 +327,25 @@ let de = {
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
+                '0032-1': 'images\0032\0032-1.jpg',
+            }
+        },
+
+        '0031': {
+            metaTitle: 'Volatile',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Volatile',
+            paintingDataTitle: 'Volatile',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Volatile',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
                 '0031-1': 'images\0031\0031-1.jpg',
+                '0031-2': 'images\0031\0031-2.jpg',
             }
         },
 
@@ -360,25 +399,8 @@ let de = {
                 '0028-1': 'images\0028\0028-1.jpg',
             }
         },
-
+        
         '0027': {
-            metaTitle: 'Wonderland',
-            metaDescription: '',
-            metaKeywords: 'Structuralist, Interior, Wonderland',
-            paintingDataTitle: 'Wonderland',
-            paintingDataAuthor: 'Interior',
-            paintingDimensionsWidth: '101 cm',
-            paintingDimensionsHeight: '107 cm',
-            paintingYearOfCreation: '2018',    
-            paintingTitle: 'Wonderland',
-            paintingStatus: 'Vorhanden',
-            paintingDescription: 'tu tekst de',
-            paintingImages: {
-                '0027-1': 'images\0027\0027-1.jpg',
-            }
-        },
-
-        '0026': {
             metaTitle: 'Ableton',
             metaDescription: '',
             metaKeywords: 'Structuralist, Interior, Ableton',
@@ -391,8 +413,25 @@ let de = {
             paintingStatus: 'Vorhanden',
             paintingDescription: 'tu tekst de',
             paintingImages: {
+                '0027-1': 'images\0027\0027-1.jpg',
+                '0027-2': 'images\0027\0027-2.jpg',
+            }
+        },
+
+        '0026': {
+            metaTitle: 'Wonderland',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Wonderland',
+            paintingDataTitle: 'Wonderland',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '101 cm',
+            paintingDimensionsHeight: '107 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Wonderland',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
                 '0026-1': 'images\0026\0026-1.jpg',
-                '0026-2': 'images\0026\0026-2.jpg',
             }
         },
 

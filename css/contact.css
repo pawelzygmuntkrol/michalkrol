@@ -14,7 +14,7 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-button {
+#contactEmailButton {
     position: absolute;
     left: 50%;
     top: 80%;
@@ -28,7 +28,7 @@ button {
     font-family: 'Oswald', sans-serif;
 }
 
-button:hover {
+#contactEmailButton:hover {
     color: rgba(255, 255, 255);
     transition: 0.35s;
 }
