@@ -20,6 +20,186 @@ let de = {
 
     // ARTWORKS
     artworks: {
+        '0059': {
+            metaTitle: 'Pink Teeth',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Pink Teeth',
+            paintingDataTitle: 'Pink Teeth',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '50 cm',
+            paintingDimensionsHeight: '70 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Pink Teeth',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0059-1': 'images\0059\0059-1.jpg',
+            }
+        },
+
+        '0058': {
+            metaTitle: 'Green Teeth',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Green Teeth',
+            paintingDataTitle: 'Green Teeth',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '120 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Green Teeth',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0058-1': 'images\0058\0058-1.jpg',
+            }
+        },
+
+        '0057': {
+            metaTitle: 'Blue Teeth',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Blue Teeth',
+            paintingDataTitle: 'Blue Teeth',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '50 cm',
+            paintingDimensionsHeight: '70 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Blue Teeth',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0057-1': 'images\0057\0057-1.jpg',
+            }
+        },
+
+        '0056': {
+            metaTitle: 'Dragon Flower',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Dragon Flower',
+            paintingDataTitle: 'Dragon Flower',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '',
+            paintingDimensionsHeight: '50 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Dragon Flower',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0056-1': 'images\0056\0056-1.jpg',
+                '0056-2': 'images\0056\0056-2.jpg',
+                '0056-3': 'images\0056\0056-3.jpg',
+                '0056-4': 'images\0056\0056-4.jpg',
+                '0056-5': 'images\0056\0056-5.jpg',
+            }
+        },
+
+        '0055': {
+            metaTitle: 'Space Brain',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Space Brain',
+            paintingDataTitle: 'Space Brain',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Space Brain',
+            paintingStatus: 'Verkaufen',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0055-1': 'images\0055\0055-1.jpg',
+                '0055-2': 'images\0055\0055-2.jpg',
+            }
+        },
+
+        '0054': {
+            metaTitle: 'Secret Brain',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Secret Brain',
+            paintingDataTitle: 'Secret Brain',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Secret Brain',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0054-1': 'images\0054\0054-1.jpg',
+                '0054-2': 'images\0054\0054-2.jpg',
+            }
+        },
+
+        '0053': {
+            metaTitle: 'Golden Brain',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Golden Brain',
+            paintingDataTitle: 'Golden Brain',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Golden Brain',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0053-1': 'images\0053\0053-1.jpg',
+                '0053-2': 'images\0053\0053-2.jpg',
+            }
+        },
+
+        '0052': {
+            metaTitle: 'Super Brain',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Super Brain',
+            paintingDataTitle: 'Super Brain',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Super Brain',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0052-1': 'images\0052\0052-1.jpg',
+                '0052-2': 'images\0052\0052-2.jpg',
+            }
+        },
+
+        '0051': {
+            metaTitle: 'Alien',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Alien',
+            paintingDataTitle: 'Alien',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Alien',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0051-1': 'images\0051\0051-1.jpg',
+                '0051-2': 'images\0051\0051-2.jpg',
+            }
+        },
+
+        '0050': {
+            metaTitle: 'Alarm',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Interior, Alarm',
+            paintingDataTitle: 'Alarm',
+            paintingDataAuthor: 'Interior',
+            paintingDimensionsWidth: '42 cm',
+            paintingDimensionsHeight: '59,4 cm',
+            paintingYearOfCreation: '2019',    
+            paintingTitle: 'Alarm',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0050-1': 'images\0050\0050-1.jpg',
+                '0050-2': 'images\0050\0050-2.jpg',
+            }
+        },
+
         '0049': {
             metaTitle: 'Interior Dog 1 / Interior Dog 2',
             metaDescription: '',
