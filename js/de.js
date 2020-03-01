@@ -20,6 +20,59 @@ let de = {
 
     // ARTWORKS
     artworks: {
+        '0061': {
+            metaTitle: 'Hivé',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Hivé',
+            paintingDataTitle: 'Hivé',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Hivé',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0061-1': 'images\0061\0061-1.jpg',
+                '0061-2': 'images\0061\0061-2.jpg',
+                '0061-3': 'images\0061\0061-3.jpg',
+                '0061-4': 'images\0061\0061-4.jpg',
+                '0061-5': 'images\0061\0061-5.jpg',
+                '0061-6': 'images\0061\0061-6.jpg',
+                '0061-7': 'images\0061\0061-7.jpg',
+                '0061-8': 'images\0061\0061-8.jpg',
+                '0061-9': 'images\0061\0061-9.jpg',
+            }
+        },
+
+        '0060': {
+            metaTitle: 'Freedom',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Freedom',
+            paintingDataTitle: 'Freedom',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Freedom',
+            paintingStatus: 'Vorhanden',
+            paintingDescription: 'tu tekst de',
+            paintingImages: {
+                '0060-1': 'images\0060\0060-1.jpg',
+                '0060-2': 'images\0060\0060-2.jpg',
+                '0060-3': 'images\0060\0060-3.jpg',
+                '0060-4': 'images\0060\0060-4.jpg',
+                '0060-5': 'images\0060\0060-5.jpg',
+                '0060-6': 'images\0060\0060-6.jpg',
+                '0060-7': 'images\0060\0060-7.jpg',
+                '0060-8': 'images\0060\0060-8.jpg',
+                '0060-9': 'images\0060\0060-9.jpg',
+                '0060-10': 'images\0060\0060-10.jpg',
+                '0060-11': 'images\0060\0060-11.jpg',
+                '0060-12': 'images\0060\0060-12.jpg',
+            }
+        },
+
         '0059': {
             metaTitle: 'Pink Teeth',
             metaDescription: '',

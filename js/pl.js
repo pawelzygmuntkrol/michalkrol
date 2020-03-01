@@ -20,6 +20,56 @@ let pl = {
 
     // ARTWORKS
     artworks: {
+        '0061': {
+            metaTitle: 'Hivé',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Hivé',
+            paintingDataTitle: 'Hivé',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Hivé',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Praca wykonana w charakterze structural collage. Do jej wykonania posłużyła czarna plastikowa siatka przytwierdzona do płótna za pomocą specjalistycznego kleju zalana czarną olejną farbą. Symbolizuje, ul, społeczeństwo.',
+            paintingImages: {
+                '0061-1': 'images\0061\0061-1.jpg',
+                '0061-2': 'images\0061\0061-2.jpg',
+                '0061-3': 'images\0061\0061-3.jpg',
+                '0061-4': 'images\0061\0061-4.jpg',
+                '0061-5': 'images\0061\0061-5.jpg',
+                '0061-6': 'images\0061\0061-6.jpg',
+                '0061-7': 'images\0061\0061-7.jpg',
+                '0061-8': 'images\0061\0061-8.jpg',
+                '0061-9': 'images\0061\0061-9.jpg',
+            }
+        },
+
+        '0060': {
+            metaTitle: 'Freedom',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Freedom',
+            paintingDataTitle: 'Freedom',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2018',    
+            paintingTitle: 'Freedom',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Freedom oznacza wolność artystyczną. Wolność która przedstawia poprzez zastosowanie różnych technik malarskich. Wolność w postaci abstrakcji artystyczne. Wolność w postaci otwartego umysłu na nowe. Wykonany z opiłków metalu przytwierdzonych za pomocą specjalistycznego kleju i grubo lanej farby.',
+            paintingImages: {
+                '0060-1': 'images\0060\0060-1.jpg',
+                '0060-2': 'images\0060\0060-2.jpg',
+                '0060-3': 'images\0060\0060-3.jpg',
+                '0060-4': 'images\0060\0060-4.jpg',
+                '0060-5': 'images\0060\0060-5.jpg',
+                '0060-6': 'images\0060\0060-6.jpg',
+                '0060-7': 'images\0060\0060-7.jpg',
+                '0060-8': 'images\0060\0060-8.jpg',
+                '0060-9': 'images\0060\0060-9.jpg',
+            }
+        },
+
         '0059': {
             metaTitle: 'Pink Teeth',
             metaDescription: '',
