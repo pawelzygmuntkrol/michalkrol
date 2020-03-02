@@ -15,7 +15,9 @@ let pl = {
         displayInteriorButton: 'Interior',
         exhibitionButton: 'Wystawy',
         biographyButton: 'Biografia',
-        contactButton: 'Kontakt'
+        contactButton: 'Kontakt',
+        // used only in artworkitem
+        backToMainPage: 'Powrót',
     },
 
     // ARTWORKS
@@ -1263,7 +1265,7 @@ let pl = {
                 '0001-4': 'images\0001\0001-4.jpg',
                 '0001-5': 'images\0001\0001-5.jpg',
             }
-        },
+        },        
     },
 
     // EXHIBITIONS

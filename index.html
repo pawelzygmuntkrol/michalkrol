@@ -26,7 +26,7 @@
 
 
 
-<body onload='showPopUpImg(); changeLanguage(language)' onclick='closePopUpImg()'>
+<body onload='showPopUpImg(); changeLanguage(language)' onclick='closePopUpImg()' onscroll='getScrollPosition()'>
       
 
     <div id='popUpImgContainer'>
@@ -48,7 +48,7 @@
                 <li class='name'>Michał Król</li>
                 <li class='pseudonym'>Structuralist</li>
             </a>
-            <a href='#' class='nav-right'>
+            <a href='#/' class='nav-right'>
                 <li id='menu-button' onclick='openSideMenu()'>
                     <p class='large-screens'>Menu</p>
                     <p class='small-screens'>&#9776;</p>
@@ -85,7 +85,7 @@
         </ul>
     </nav>
 
-    <main id='artworksList'>
+    <main id='artworksList' onclick='closeSideMenu()'>
        <!-- painting main photos are dynamically loaded by displayArtworkList function -->
     </main>
 

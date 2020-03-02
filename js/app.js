@@ -39,7 +39,7 @@ function disableAutoLanguage(lang) {
 
 
 // All events that take place when language is set.
-function changeToPl() {
+function changeToPl(scrollPosition) {
     language = 'pl';
         document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
         document.getElementById('en').style.color = 'rgba(128, 128, 128)';
@@ -61,7 +61,7 @@ function changeToPl() {
         let path = window.location.pathname;
         let page = path.split("/").pop();
 
-        if(page === "index.html") {
+        if(page === "index.html") {  
             let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = pl.menu;
                 document.getElementById('artworksList').innerHTML = displayArtworksList(); 
                 document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
@@ -70,6 +70,7 @@ function changeToPl() {
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if(page === "artworkitem.html") {
+            document.getElementById('backToMainPage').innerHTML = pl.menu.backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
                 document.title = metaTitle;
                 document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
@@ -83,7 +84,7 @@ function changeToPl() {
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
                 document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-                backgroundScrollEffect();
+                navigationScrollEffect();
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
@@ -143,7 +144,9 @@ function changeToEn() {
                 document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
-        } else if (page === "artworkitem.html") {
+        } else if(page === "artworkitem.html") {
+            document.getElementById('backToMainPage').innerHTML = en.menu.backToMainPage;
+            document.getElementById('backToMainPage').innerHTML = en.artworks['all'].backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
                 document.title = metaTitle;
                 document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
@@ -156,7 +159,8 @@ function changeToEn() {
                 document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
                 document.getElementById('paintingDescription').innerHTML = paintingDescription;
-            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);  
+            document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum); 
+                navigationScrollEffect();
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
@@ -217,6 +221,8 @@ function changeToDe() {
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if(page === "artworkitem.html") {
+            document.getElementById('backToMainPage').innerHTML = de.menu.backToMainPage;
+            document.getElementById('backToMainPage').innerHTML = de.artworks['all'].backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
                 document.title = metaTitle;
                 document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
@@ -230,6 +236,7 @@ function changeToDe() {
                 document.getElementById('paintingStatus').innerHTML = paintingStatus;
                 document.getElementById('paintingDescription').innerHTML = paintingDescription;
             document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+                navigationScrollEffect();
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
@@ -409,7 +416,6 @@ function displayArtworksList() {
     return result;
 }
 
-
 // SIDE MENU
 
 // Show/hide Side Menu, calculate width and hide Menu/Close button.
@@ -420,11 +426,13 @@ function openSideMenu() {
         document.getElementById('menu').style.width = '23.5rem';
     }
     document.getElementById('menu-button').style.visibility = 'hidden';
+    document.getElementById('backToMainPage').style.visibility = 'hidden';
 }
 
 function closeSideMenu() {
     document.getElementById('menu').style.width = '0';
     document.getElementById('menu-button').style.visibility = 'visible';
+    document.getElementById('backToMainPage').style.visibility = 'visible';
 }
 
 
@@ -454,18 +462,28 @@ function displayPaintings(paintingNum) {
     return result;
 }
 
-/*
-// ARTWORKITEM BACKGROUNDSCROLLEFFECT
 
-// Take the position of scroll and changes background color.
-function backgroundScrollEffect() { 
-    let divHeight = document.getElementById('paintingImages').offsetHeight;
-    if(document.documentElement.scrollTop >= divHeight) {
-        document.querySelector('img-description').style.backgroundColor = 'red';
+// ARTWORKITEM NAVIGATIONSCROLLEFFECT
+
+// Take the position of scroll and changes navigation font color.
+function navigationScrollEffect() { 
+    if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight) {
+        document.getElementById('menu-button').style.color = 'rgba(0, 0, 0)';
+        document.getElementById('backToMainPage').style.color = 'rgba(0, 0, 0)';
+        document.getElementById('name').style.color = 'rgba(0, 0, 0)';
+        document.getElementById('pseudonym').style.color = 'rgba(0, 0, 0)';
+    } else if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 200){
+        document.getElementById('img-description').style.backgroundColor = 'rgba(255, 255, 255)';
+        document.getElementById('img-description').style.transitionDuration = '1.5s'; 
+        document.getElementById('img-description').style.animationTimingFunction = 'ease-in'; 
+    } else {
+        document.getElementById('menu-button').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('backToMainPage').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('name').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('pseudonym').style.color = 'rgba(128, 128, 128)';
     }
+     
 };
-*/
-
 
 
 // Take a length of list of exhibitions to display, loops thru them and display them (on exhibitions page -> exhibitions.html).
@@ -518,4 +536,22 @@ function moveToBottom() {
 function displayEmail(language) {
     document.getElementById('contactEmailButton').innerHTML = 'kontakt@michalkrol.eu';
     document.getElementById('contactEmailButton').style.width = '10rem';
+}
+
+
+// SCROLL POSITION
+
+// Gets the scroll position to use it after 'back' button is clicked in artworkitem
+
+let scrollPosition;
+
+function getScrollPosition() {
+    scrollPosition = window.pageYOffset;
+    sessionStorage.setItem('scrollPosition', scrollPosition);  
+    return scrollPosition;
+}
+
+function returnScrollPosition() {
+    sessionStorage.getItem('scrollPosition')
+    window.scrollTo(0, scrollPosition);  
 }

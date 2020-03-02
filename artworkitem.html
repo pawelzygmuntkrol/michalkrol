@@ -29,8 +29,8 @@
 
 
 
-<body onload='changeLanguage(language)'>
-  
+<body onload='changeLanguage(language)' onscroll='navigationScrollEffect()'>
+    
     <div id='cookieBanner'>
         <div>
             <p id='gdprParagraph'><!-- text is dynamically loaded by changeLanguage function --></p>
@@ -42,10 +42,11 @@
     <nav>
         <ul>
             <a href='#' class='nav-left'>
-                <li class='name'>Michał Król</li>
-                <li class='pseudonym'>Structuralist</li>
+                <li class='name' id='name'>Michał Król</li>
+                <li class='pseudonym' id='pseudonym'>Structuralist</li>
             </a>
-            <a href='#' class='nav-right'>
+            
+            <a href='#/' class='nav-right'>
                 <li id='menu-button' onclick='openSideMenu()'>
                     <p class='large-screens'>Menu</p>
                     <p class='small-screens'>&#9776;</p>
@@ -71,9 +72,10 @@
                         <a href='https://www.instagram.com/structuralcollage/' target='_blank'><i class="fab fa-instagram"></i></a>
                         <a href='#' target='_blank'><i class="fab fa-behance-square"></i></a>
                     </div>
-                </div>
+                </div>            
             </div>
         </ul>
+        <a href='#' id='backToMainPage' onclick='history.back()'><!-- text is dynamically loaded by changeLanguage function --></a>
     </nav>
 
     <div class='artwork-data'>
@@ -86,9 +88,9 @@
         <p id='paintingDimensionsHeight'><!-- text is dynamically loaded by changeLanguage function --></p>
     </div>
 
-    <div id='paintingImages' onload='addPainting()'><!-- photos are dynamically loaded by changeLanguage function --></div>
+    <div id='paintingImages' onload='addPainting()' onclick='closeSideMenu()'><!-- photos are dynamically loaded by changeLanguage function --></div>
 
-    <div class='img-description' onscroll='backgroundScrollEffect()'>
+    <div id='img-description' onclick='closeSideMenu()'>
             <h4 id='paintingTitle'><!-- text is dynamically loaded by changeLanguage function --></h4>
             <h4 id='paintingYearOfCreation'><!-- text is dynamically loaded by changeLanguage function --></h4>
         <p id='paintingStatus'><!-- text is dynamically loaded by changeLanguage function --></p>

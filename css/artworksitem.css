@@ -35,7 +35,7 @@
     padding: 2rem 0;
 }
 
-.img-description {
+#img-description {
     display: grid;
     width: 100vw;
     min-height: 100vh;
@@ -44,7 +44,7 @@
     grid-template-rows: 3rem 1.5rem 1rem auto;
     grid-row-gap: 1rem;
     text-align: justify;
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(10, 10, 10, 0.95);
 }
     
 #paintingTitle { 
@@ -84,6 +84,13 @@
     padding: 2rem 25% 0rem;
 }
 
+#backToMainPage {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    color: rgba(128, 128, 128);
+}
+
 
 /* MOBILE */
 
@@ -99,12 +106,17 @@
         max-width: 90vw;
     }
 
-    .img-description p {
+    #img-description p {
         padding: 1.5rem 2rem 5rem;
+        font-size: 0.8rem;
     }
 
     #paintingDescription { 
         padding: 2rem 5vh 0rem;
+    }
+
+    #backToMainPage {
+        top: 3rem;
     }
 
 }
@@ -114,4 +126,28 @@
         height: 97vh;
         max-width: 90vw;
     }
+
+    #paintingTitle { 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        grid-area: 1 / 1 / 2 / 5;
+        font-size: 3rem;
+        width: 100vw;
+    }
+    
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+    #img-description {
+        grid-row-gap: 0.5rem;
+    }
+    
+    #img-description p {
+        padding: 0.5rem 2rem 0rem;
+        font-size: 0.8rem;
+    }
+
 }

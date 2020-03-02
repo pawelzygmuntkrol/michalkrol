@@ -15,7 +15,9 @@ let de = {
         displayInteriorButton: 'Interior',
         exhibitionButton: 'Ausstellungen',
         biographyButton: 'Biographie',
-        contactButton: 'Kontakt'
+        contactButton: 'Kontakt',
+        // used only in artworkitem
+        backToMainPage: 'Zurück',
     },
 
     // ARTWORKS
