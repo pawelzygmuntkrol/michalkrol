@@ -70,7 +70,6 @@ function changeToPl(scrollPosition) {
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if(page === "artworkitem.html") {
-            location.href = `https://pawelzygmuntkrol.github.io/michalkrol/artworkitem/${paintingDataTitle}`;
             document.getElementById('backToMainPage').innerHTML = pl.menu.backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
                 document.title = metaTitle;
@@ -466,7 +465,7 @@ function displayPaintings(paintingNum) {
 
 // Take the position of scroll and changes navigation font color.
 function navigationScrollEffect() { 
-    if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight) {
+    if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 100) {
         document.getElementById('menu-button').style.color = 'rgba(0, 0, 0)';
         document.getElementById('backToMainPage').style.color = 'rgba(0, 0, 0)';
         document.getElementById('name').style.color = 'rgba(0, 0, 0)';
@@ -541,16 +540,24 @@ function displayEmail(language) {
 // SCROLL POSITION
 
 // Gets the scroll position to use it after 'back' button is clicked in artworkitem
+let scrollPosition = sessionStorage.getItem('scrollPosition') || 0;
 
-let scrollPosition;
+/*
+function returnScrollPosition(scrollPosition) {
+    sessionStorage.getItem('scrollPosition')
+    window.scrollTo(0, scrollPosition);  
+    return scrollPosition;
+}
+*/
+
+
+function positionSite(scrollPosition) {
+        window.scrollTo(0, scrollPosition); 
+
+}
 
 function getScrollPosition() {
     scrollPosition = window.pageYOffset;
     sessionStorage.setItem('scrollPosition', scrollPosition);  
     return scrollPosition;
-}
-
-function returnScrollPosition() {
-    sessionStorage.getItem('scrollPosition')
-    window.scrollTo(0, scrollPosition);  
 }
