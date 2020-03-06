@@ -70,6 +70,7 @@ function changeToPl(scrollPosition) {
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
         } else if(page === "artworkitem.html") {
+            location.href = `https://pawelzygmuntkrol.github.io/michalkrol/artworkitem/${paintingDataTitle}`;
             document.getElementById('backToMainPage').innerHTML = pl.menu.backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = pl.artworks[paintingNum];
                 document.title = metaTitle;
@@ -146,7 +147,6 @@ function changeToEn() {
 
         } else if(page === "artworkitem.html") {
             document.getElementById('backToMainPage').innerHTML = en.menu.backToMainPage;
-            document.getElementById('backToMainPage').innerHTML = en.artworks['all'].backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = en.artworks[paintingNum];
                 document.title = metaTitle;
                 document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
@@ -222,7 +222,6 @@ function changeToDe() {
 
         } else if(page === "artworkitem.html") {
             document.getElementById('backToMainPage').innerHTML = de.menu.backToMainPage;
-            document.getElementById('backToMainPage').innerHTML = de.artworks['all'].backToMainPage;
             let {metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight} = de.artworks[paintingNum];
                 document.title = metaTitle;
                 document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
