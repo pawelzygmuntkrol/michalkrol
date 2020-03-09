@@ -261,7 +261,6 @@ function changeToDe() {
             let {contactHeader, contactEmailButton} = de.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
                 document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
-                displayEmail();
         } 
 };
 
