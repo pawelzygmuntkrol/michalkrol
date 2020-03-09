@@ -1,12 +1,16 @@
 /* DESKTOP */
 
 main {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 3rem 0;
 }
 
 .container {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100vw;
     min-height: 45vh;
@@ -19,11 +23,17 @@ main {
 }
 
 .poster {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 20%;
     padding-left: 0.5rem;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 img {
@@ -54,7 +64,8 @@ img {
 @media (max-width: 426px) {
 
     .container {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         height: 100vh;
     }
 

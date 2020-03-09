@@ -11,12 +11,16 @@
     opacity: 0.8;
     z-index: 2;
     overflow-x: hidden;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
     transition: 0.35s;
 }
 
 .elements-to-hover:hover {
     color: rgba(255, 255, 255);  
     -webkit-color: rgba(255, 255, 255);  
+    -webkit-transition: 0.35s;  
+    -o-transition: 0.35s;  
     transition: 0.35s;  
 }
 
@@ -28,6 +32,8 @@
 .sidemenu a:hover {
     color: rgba(255, 255, 255);
     -webkit-color: rgba(255, 255, 255);
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
     transition: 0.35s;
 }
 
@@ -42,25 +48,41 @@
 
 .sidemenu-links {
     padding-top: 25%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 4fr;
     grid-template-rows: 4fr;
     grid-row-gap: 2.5rem;
     justify-items: center;
 }
 
+.sidemenu-links > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
 .sidemenu-sorting {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
     margin-top: -1.25rem;
 }
 
 .sidemenu-language {
     width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
 }
 
@@ -71,8 +93,12 @@
 
 .sidemenu-icons {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     bottom: 3rem;
 }

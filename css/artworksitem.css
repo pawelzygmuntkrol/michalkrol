@@ -22,9 +22,15 @@
 }
 
 .img-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -36,48 +42,171 @@
 }
 
 #img-description {
+    display: -ms-grid;
     display: grid;
     width: 100vw;
     min-height: 100vh;
     padding: 10rem 0rem 5rem;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 3rem 1rem 1.5rem 1rem 1rem 1rem auto;
     grid-template-rows: 3rem 1.5rem 1rem auto;
     grid-row-gap: 1rem;
     text-align: justify;
     background-color: rgba(10, 10, 10, 0.95);
 }
+
+#img-description > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#img-description > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+#img-description > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+#img-description > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+}
+
+#img-description > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+#img-description > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+}
+
+#img-description > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+#img-description > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+}
+
+#img-description > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+#img-description > *:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+}
+
+#img-description > *:nth-child(11) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+#img-description > *:nth-child(12) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 4;
+}
+
+#img-description > *:nth-child(13) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+
+#img-description > *:nth-child(14) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+}
+
+#img-description > *:nth-child(15) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+}
+
+#img-description > *:nth-child(16) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 4;
+}
     
 #paintingTitle { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-area: 1 / 1 / 2 / 5;
     font-size: 3rem;
     width: 100vw;
 }
 
 #paintingYearOfCreation { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-area: 2 / 1 / 3 / 5; 
     font-size: 1.7rem;
     width: 100vw;
 }
 
 #paintingStatus { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-area: 3 / 1 / 4 / 5;
     font-size: 1.3rem;
     width: 100vw;
 }
 
 #paintingDescription { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-area: 4 / 1 / 5 / 5;
     width: 100vw;
     height: auto;
@@ -128,9 +257,19 @@
     }
 
     #paintingTitle { 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
         grid-area: 1 / 1 / 2 / 5;
         font-size: 3rem;
         width: 100vw;

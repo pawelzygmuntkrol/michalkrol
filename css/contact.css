@@ -11,14 +11,18 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #contactEmailButton {
     position: absolute;
     left: 50%;
     top: 80%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     height: 3rem;
     width: 7rem;
     border: none;
@@ -30,6 +34,8 @@ h1 {
 
 #contactEmailButton:hover {
     color: rgba(255, 255, 255);
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
     transition: 0.35s;
 }
 

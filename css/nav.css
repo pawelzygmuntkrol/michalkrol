@@ -10,25 +10,32 @@ nav {
 }
 
 ul {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 9fr 1fr;
     grid-template-columns: 9fr 1fr;
 }
 
 .nav-left .name {
-    justify-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
     font-size: 1.2rem;
     font-weight: 900;
 }
 
 .nav-left .pseudonym {
-    justify-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1rem;
 }
 
 .nav-right {
-    justify-self: end;
-    align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-size: 1rem;
 }
 
@@ -62,6 +69,3 @@ ul {
     }
 
 }
-
-
-
