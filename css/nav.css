@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* DESKTOP */
 
 nav {
@@ -5,7 +7,7 @@ nav {
     top: 0px;
     width: 100%;
     padding: 1rem 2rem;
-    border-bottom: red 1px solid;
+    border: none;
     z-index: 1;
 }
 

@@ -41,9 +41,9 @@ function disableAutoLanguage(lang) {
 // All events that take place when language is set.
 function changeToPl(scrollPosition) {
     language = 'pl';
-        document.getElementById('pl').style.color = 'rgba(255, 255, 255)';
-        document.getElementById('en').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('de').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('pl').style.color = 'white';
+        document.getElementById('en').style.color = 'dimgray';
+        document.getElementById('de').style.color = 'dimgray';
            
         let {gdprParagraph, gdprLink, gdprButton} = pl.gdpr; 
             gdprShow();
@@ -64,7 +64,7 @@ function changeToPl(scrollPosition) {
         if(page === "index.html") {  
             let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = pl.menu;
                 document.getElementById('artworksList').innerHTML = displayArtworksList(); 
-                document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+                document.getElementById('artworksButton').style.color = 'white';
                 document.getElementById('displayAllButton').innerHTML = displayAllButton;
                 document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
@@ -88,7 +88,7 @@ function changeToPl(scrollPosition) {
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            document.getElementById('exhibitionButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('exhibitionButton').style.color = 'white';
 
             let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = pl.exhibitions[exhibitionNum];
                 document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
@@ -98,7 +98,7 @@ function changeToPl(scrollPosition) {
                 document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster; 
 
         } else if(page === "biography.html") {
-            document.getElementById('biographyButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('biographyButton').style.color = 'white';
 
             let {biographyHeader, biographyParagraph} = pl.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
@@ -106,7 +106,7 @@ function changeToPl(scrollPosition) {
                 moveToBottom(); 
 
         } else if(page === "contact.html") {
-            document.getElementById('contactButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('contactButton').style.color = 'white';
 
             let {contactHeader, contactEmailButton} = pl.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
@@ -116,9 +116,9 @@ function changeToPl(scrollPosition) {
 
 function changeToEn() {
     language = 'en';
-        document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('en').style.color = 'rgba(255, 255, 255)';
-        document.getElementById('de').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('pl').style.color = 'dimgray';
+        document.getElementById('en').style.color = 'white';
+        document.getElementById('de').style.color = 'dimgray';
 
         let {gdprParagraph, gdprLink, gdprButton} = en.gdpr; 
             gdprShow();
@@ -139,7 +139,7 @@ function changeToEn() {
         if(page === "index.html") {
             let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = en.menu;
                 document.getElementById('artworksList').innerHTML = displayArtworksList(); 
-                document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+                document.getElementById('artworksButton').style.color = 'white';
                 document.getElementById('displayAllButton').innerHTML = displayAllButton;
                 document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
@@ -163,7 +163,7 @@ function changeToEn() {
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            document.getElementById('exhibitionButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('exhibitionButton').style.color = 'white';
 
             let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = en.exhibitions[exhibitionNum];
                 document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
@@ -173,7 +173,7 @@ function changeToEn() {
                 document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;       
 
         } else if(page === "biography.html") {
-            document.getElementById('biographyButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('biographyButton').style.color = 'white';
 
             let {biographyHeader, biographyParagraph} = en.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
@@ -181,7 +181,7 @@ function changeToEn() {
                 moveToBottom(); 
 
         } else if(page === "contact.html") {
-            document.getElementById('contactButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('contactButton').style.color = 'white';
 
             let {contactHeader, contactEmailButton} = en.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
@@ -191,9 +191,9 @@ function changeToEn() {
 
 function changeToDe() {
     language = 'de';
-        document.getElementById('pl').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('en').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('de').style.color = 'rgba(255, 255, 255)';
+        document.getElementById('pl').style.color = 'dimgray';
+        document.getElementById('en').style.color = 'dimgray';
+        document.getElementById('de').style.color = 'white';
 
         let {gdprParagraph, gdprLink, gdprButton} = de.gdpr; 
             gdprShow();
@@ -214,7 +214,7 @@ function changeToDe() {
         if(page === "index.html") {
             let {displayAllButton, displayStructuralCollageButton, displayInteriorButton} = de.menu;
                 document.getElementById('artworksList').innerHTML = displayArtworksList(); 
-                document.getElementById('artworksButton').style.color = 'rgba(255, 255, 255)';
+                document.getElementById('artworksButton').style.color = 'white';
                 document.getElementById('displayAllButton').innerHTML = displayAllButton;
                 document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
                 document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
@@ -238,7 +238,7 @@ function changeToDe() {
 
         } else if(page === "exhibitions.html") {
             document.getElementById('exhibitionData').innerHTML = displayExhibition(); 
-            document.getElementById('exhibitionButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('exhibitionButton').style.color = 'white';
 
             let {exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster} = de.exhibitions[exhibitionNum];
                 document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
@@ -248,7 +248,7 @@ function changeToDe() {
                 document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;          
 
         } else if(page === "biography.html") {
-            document.getElementById('biographyButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('biographyButton').style.color = 'white';
 
             let {biographyHeader, biographyParagraph} = de.biography;
                 document.getElementById('biographyHeader').innerHTML = biographyHeader;
@@ -256,7 +256,7 @@ function changeToDe() {
                 moveToBottom();       
 
         } else if(page === "contact.html") {
-            document.getElementById('contactButton').style.color = 'rgba(255, 255, 255)';
+            document.getElementById('contactButton').style.color = 'white';
 
             let {contactHeader, contactEmailButton} = de.contact;
                 document.getElementById('contactHeader').innerHTML = contactHeader;
@@ -331,9 +331,9 @@ function displayAll() {
     displayAllValue = 1;
     displayStructuralCollageValue = 0;
     displayInteriorValue = 0; 
-    document.getElementById('displayAllButton').style.color = 'rgba(255, 255, 255)';
-    document.getElementById('displayStructuralCollageButton').style.color = 'rgba(128, 128, 128)';
-    document.getElementById('displayInteriorButton').style.color = 'rgba(128, 128, 128)';
+    document.getElementById('displayAllButton').style.color = 'white';
+    document.getElementById('displayStructuralCollageButton').style.color = 'dimgray';
+    document.getElementById('displayInteriorButton').style.color = 'dimgray';
     return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
 }
 
@@ -341,9 +341,9 @@ function displayStructuralCollage() {
     displayAllValue = 0;
     displayStructuralCollageValue = 1;
     displayInteriorValue = 0; 
-    document.getElementById('displayAllButton').style.color = 'rgba(128, 128, 128)';
-    document.getElementById('displayStructuralCollageButton').style.color = 'rgba(255, 255, 255)';
-    document.getElementById('displayInteriorButton').style.color = 'rgba(128, 128, 128)';
+    document.getElementById('displayAllButton').style.color = 'dimgray';
+    document.getElementById('displayStructuralCollageButton').style.color = 'white';
+    document.getElementById('displayInteriorButton').style.color = 'dimgray';
     return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
 }
 
@@ -351,9 +351,9 @@ function displayInterior() {
     displayAllValue = 0;
     displayStructuralCollageValue = 0;
     displayInteriorValue = 1; 
-    document.getElementById('displayAllButton').style.color = 'rgba(128, 128, 128)';
-    document.getElementById('displayStructuralCollageButton').style.color = 'rgba(128, 128, 128)';
-    document.getElementById('displayInteriorButton').style.color = 'rgba(255, 255, 255)';
+    document.getElementById('displayAllButton').style.color = 'dimgray';
+    document.getElementById('displayStructuralCollageButton').style.color = 'dimgray';
+    document.getElementById('displayInteriorButton').style.color = 'white';
     return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
 }
 
@@ -464,20 +464,32 @@ function displayPaintings(paintingNum) {
 
 // Take the position of scroll and changes navigation font color.
 function navigationScrollEffect() { 
-    if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 100) {
-        document.getElementById('menu-button').style.color = 'rgba(0, 0, 0)';
-        document.getElementById('backToMainPage').style.color = 'rgba(0, 0, 0)';
-        document.getElementById('name').style.color = 'rgba(0, 0, 0)';
-        document.getElementById('pseudonym').style.color = 'rgba(0, 0, 0)';
-    } else if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 200){
-        document.getElementById('img-description').style.backgroundColor = 'rgba(255, 255, 255)';
+    if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight) {
+        document.getElementById('menu-button').style.color = 'black';
+        document.getElementById('backToMainPage').style.color = 'black';
+        document.getElementById('name').style.color = 'black';
+        document.getElementById('pseudonym').style.color = 'black';
+        document.getElementById('paintingDataTitle').style.color = 'black';
+        document.getElementById('paintingDataAuthor').style.color = 'black';
+        document.getElementById('paintingDimensionsWidth').style.color = 'black';
+        document.getElementById('paintingDimensionsHeight').style.color = 'black';
+
+
+    } else if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 250){
+        document.getElementById('img-description').style.backgroundColor = 'white';
         document.getElementById('img-description').style.transitionDuration = '1.5s'; 
         document.getElementById('img-description').style.animationTimingFunction = 'ease-in'; 
+
     } else {
-        document.getElementById('menu-button').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('backToMainPage').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('name').style.color = 'rgba(128, 128, 128)';
-        document.getElementById('pseudonym').style.color = 'rgba(128, 128, 128)';
+        document.getElementById('menu-button').style.color = 'dimgray';
+        document.getElementById('backToMainPage').style.color = 'dimgray';
+        document.getElementById('name').style.color = 'dimgray';
+        document.getElementById('pseudonym').style.color = 'dimgray';
+        document.getElementById('paintingDataTitle').style.color = 'dimgray';
+        document.getElementById('paintingDataAuthor').style.color = 'dimgray';
+        document.getElementById('paintingDimensionsWidth').style.color = 'dimgray';
+        document.getElementById('paintingDimensionsHeight').style.color = 'dimgray';
+
     }
      
 };

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* DESKTOP */
 
 .artwork-data {
@@ -7,6 +9,7 @@
     font-size: 0.9rem;
     color: dimgray;
 }
+
 
 .artwork-dimensions {
     position: fixed;
@@ -18,9 +21,9 @@
 
 #paintingImages {   
     background-color: black;
-    opacity: 0.95;
     padding: 0rem 0rem 10rem 0rem;
 }
+
 
 .img-item {
     display: -webkit-box;
@@ -55,7 +58,6 @@
     grid-row-gap: 1rem;
     text-align: justify;
     background-color: black;
-    opacity: 0.95;
 }
 
 #img-description > *:nth-child(1) {
@@ -221,6 +223,7 @@
     right: 2rem;
     color: dimgray;
 }
+
 
 
 /* MOBILE */
