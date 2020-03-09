@@ -5,7 +5,7 @@
     left: 2rem;
     bottom: 1rem;
     font-size: 0.9rem;
-    color: rgba(128, 128, 128);
+    color: dimgray;
 }
 
 .artwork-dimensions {
@@ -13,11 +13,12 @@
     right: 2rem;
     bottom: 1rem;
     font-size: 0.9rem;
-    color: rgba(128, 128, 128);
+    color: dimgray;
 }
 
 #paintingImages {   
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: black;
+    opacity: 0.95;
     padding: 0rem 0rem 10rem 0rem;
 }
 
@@ -53,7 +54,8 @@
     grid-template-rows: 3rem 1.5rem 1rem auto;
     grid-row-gap: 1rem;
     text-align: justify;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: black;
+    opacity: 0.95;
 }
 
 #img-description > *:nth-child(1) {
@@ -217,7 +219,7 @@
     position: absolute;
     top: 4rem;
     right: 2rem;
-    color: rgba(128, 128, 128);
+    color: dimgray;
 }
 
 

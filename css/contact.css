@@ -26,14 +26,14 @@ h1 {
     height: 3rem;
     width: 7rem;
     border: none;
-    background-color: rgba(0, 0, 0);
+    background-color: white;
     opacity: 0.8;
-    color: rgba(150, 150, 150);
+    color: dimgray;
     font-family: 'Oswald', sans-serif;
 }
 
 #contactEmailButton:hover {
-    color: rgba(255, 255, 255);
+    color: white;
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s;

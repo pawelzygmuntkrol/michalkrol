@@ -15,25 +15,25 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(0, 0, 0);
+    background-color: black;
     opacity: 0.8;
     padding: 0.5rem 2rem;
 }
 
 #gdprParagraph {
-    color: rgba(255, 255, 255);
+    color: white;
 }
 
 #gdprLink {
-    color: rgba(255, 255, 255);
+    color: white;
     text-decoration: underline;
 }
 
 #gdprButton {
-    color: rgba(0, 0, 0);
+    color: black;
     width: 7rem;
     margin: 0.5rem 0 0.5rem 1rem;
-    background-color: rgba(255, 255, 255);
+    background-color: white;
     border: none;
     font-weight: bolder;
 }
