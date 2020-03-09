@@ -14,7 +14,6 @@ body {
     visibility: visible;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.8);
-    -webkit-background-color: rgba(0, 0, 0, 0.8);
 }
 
 #popUpImg {

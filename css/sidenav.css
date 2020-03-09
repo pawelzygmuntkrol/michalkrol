@@ -7,7 +7,6 @@
     height: 100%;
     width: 0;
     background-color: rgba(0, 0, 0);
-    -webkit-background-color: rgba(0, 0, 0);
     opacity: 0.8;
     z-index: 2;
     overflow-x: hidden;
@@ -18,7 +17,6 @@
 
 .elements-to-hover:hover {
     color: rgba(255, 255, 255);  
-    -webkit-color: rgba(255, 255, 255);  
     -webkit-transition: 0.35s;  
     -o-transition: 0.35s;  
     transition: 0.35s;  
@@ -26,12 +24,10 @@
 
 .sidemenu a {
     color: rgba(128, 128, 128);
-    -webkit-color: rgba(128, 128, 128);
 }
 
 .sidemenu a:hover {
     color: rgba(255, 255, 255);
-    -webkit-color: rgba(255, 255, 255);
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s;
@@ -43,7 +39,6 @@
     right: 2rem;
     font-size: 1rem;
     color: rgba(128, 128, 128);
-    -webkit-color: rgba(128, 128, 128);
 }
 
 .sidemenu-links {
@@ -88,7 +83,6 @@
 
 #pl {
     color: rgba(255, 255, 255);
-    -webkit-color: rgba(255, 255, 255);
 }
 
 .sidemenu-icons {
@@ -110,7 +104,6 @@
 
 #displayAllButton {
     color: rgba(255, 255, 255);
-    -webkit-color: rgba(255, 255, 255);
 }
 
 
