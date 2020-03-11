@@ -82,6 +82,7 @@ function changeToPl() {
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
   } else if (page === 'artworkitem.html') {
+    setURL();
     document.getElementById('backToMainPage').innerHTML =
       pl.menu.backToMainPage;
     const {
@@ -421,6 +422,13 @@ function changeToDe() {
     ).innerHTML = contactEmailButton;
   }
 }
+
+// URL
+
+function setURL() {
+  window.history.pushState(null, null, '/new-url');
+}
+
 
 // GDPR
 let gdpr;
