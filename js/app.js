@@ -546,7 +546,7 @@ function displayArtworksList() {
   for (let i = 0; i < Object.keys(pl.artworks).length; i++) {
     if (displayStructuralCollageValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
-        str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
+        str = `<div class='img-container' onclick='getPaintingNum(${id})'>
                     <a href=`./artworksitem/${paintingNum}`>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
@@ -558,7 +558,7 @@ function displayArtworksList() {
       }
     } else if (displayInteriorValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
-        str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
+        str = `<div class='img-container' onclick='getPaintingNum(${id})'>
                     <a href=`./artworksitem/${paintingNum}`>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
@@ -569,7 +569,7 @@ function displayArtworksList() {
         str = '';
       }
     } else if (displayAllValue === 1) {
-      str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
+      str = `<div class='img-container' onclick='getPaintingNum(${id})'>
                 <a href=`./artworksitem/${paintingNum}`>
                     <img src='./images/${id}/${id}-1.jpg'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
