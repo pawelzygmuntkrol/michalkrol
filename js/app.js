@@ -434,7 +434,10 @@ function changeToDe() {
 
 function setURL() {
   const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
-  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${pl.artworks[paintingNum]}`);
+  let restURL = pl.artworks[paintingNum].paintingTitle;
+  restURL = restURL.replace(' ', '').replace(' ', '').replace(' ', '');
+
+  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${restURL}`);
 }
 
 
