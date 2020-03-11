@@ -82,7 +82,7 @@ function changeToPl() {
     document.getElementById(
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
-  } else if (page === `artworksitem/${paintingNum}`) {
+  } else if (page === 'artworksitem.html') {
     setURL();
     document.getElementById('backToMainPage').innerHTML =
       pl.menu.backToMainPage;
@@ -213,7 +213,7 @@ function changeToEn() {
     document.getElementById(
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
-  } else if (page === `artworksitem/${paintingNum}`) {
+  } else if (page === 'artworksitem.html') {
     setURL();
     document.getElementById('backToMainPage').innerHTML =
       en.menu.backToMainPage;
@@ -344,7 +344,7 @@ function changeToDe() {
     document.getElementById(
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
-  } else if (page === `artworksitem/${paintingNum}`) {
+  } else if (page === 'artworksitem.html') {
     setURL();
     document.getElementById('backToMainPage').innerHTML =
       de.menu.backToMainPage;
@@ -434,7 +434,7 @@ function changeToDe() {
 
 function setURL() {
   const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
-  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${pl.artworks[paintingNum]}`);
+  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${paintingNum}`);
 }
 
 
@@ -546,8 +546,8 @@ function displayArtworksList() {
   for (let i = 0; i < Object.keys(pl.artworks).length; i++) {
     if (displayStructuralCollageValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
-        str = `<div class='img-container' onclick='getPaintingNum(${id})'>
-                    <a href=`./artworksitem/${paintingNum}`>
+        str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
+                    <a href='./artworksitem.html'>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -558,8 +558,8 @@ function displayArtworksList() {
       }
     } else if (displayInteriorValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
-        str = `<div class='img-container' onclick='getPaintingNum(${id})'>
-                    <a href=`./artworksitem/${paintingNum}`>
+        str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
+                    <a href='./artworksitem.html'>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -569,8 +569,8 @@ function displayArtworksList() {
         str = '';
       }
     } else if (displayAllValue === 1) {
-      str = `<div class='img-container' onclick='getPaintingNum(${id})'>
-                <a href=`./artworksitem/${paintingNum}`>
+      str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
+                <a href='./artworksitem.html'>
                     <img src='./images/${id}/${id}-1.jpg'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
