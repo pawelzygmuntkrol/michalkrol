@@ -65,8 +65,9 @@ function changeToPl() {
 
   const path = window.location.pathname;
   const page = path.split('/').pop();
-
-  if (page === 'index.html') {
+  if (page === '' || page === '/' || page === '#' ) {
+    window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
+  } else if (page === 'index.html') {
     const {
       displayAllButton,
       displayStructuralCollageButton,
@@ -195,7 +196,9 @@ function changeToEn() {
   const path = window.location.pathname;
   const page = path.split('/').pop();
 
-  if (page === 'index.html') {
+  if (page === '' || page === '/' || page === '#' ) {
+    window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
+  } else if (page === 'index.html') {
     const {
       displayAllButton,
       displayStructuralCollageButton,
@@ -211,6 +214,7 @@ function changeToEn() {
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
   } else if (page === 'artworkitem.html') {
+    setURL();
     document.getElementById('backToMainPage').innerHTML =
       en.menu.backToMainPage;
     const {
@@ -323,7 +327,9 @@ function changeToDe() {
   const path = window.location.pathname;
   const page = path.split('/').pop();
 
-  if (page === 'index.html') {
+  if (page === '' || page === '/' || page === '#' ) {
+    window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
+  } else if (page === 'index.html') {
     const {
       displayAllButton,
       displayStructuralCollageButton,
@@ -339,6 +345,7 @@ function changeToDe() {
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
   } else if (page === 'artworkitem.html') {
+    setURL();
     document.getElementById('backToMainPage').innerHTML =
       de.menu.backToMainPage;
     const {
@@ -426,7 +433,8 @@ function changeToDe() {
 // URL
 
 function setURL() {
-  window.history.pushState(null, null, '/new-url');
+  const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
+  window.history.pushState('', '', `${baseURL}/${pl.artworks[paintingNum].paintingDataTitle}`);
 }
 
 
