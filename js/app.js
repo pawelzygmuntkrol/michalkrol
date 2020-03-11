@@ -547,7 +547,7 @@ function displayArtworksList() {
     if (displayStructuralCollageValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                    <a href='./artworkitem.html'>
+                    <a href=`./artworksitem/${paintingNum}`>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -559,7 +559,7 @@ function displayArtworksList() {
     } else if (displayInteriorValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                    <a href='./artworkitem.html'>
+                    <a href=`./artworksitem/${paintingNum}`>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -570,7 +570,7 @@ function displayArtworksList() {
       }
     } else if (displayAllValue === 1) {
       str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                <a href='./artworkitem.html'>
+                <a href=`./artworksitem/${paintingNum}`>
                     <img src='./images/${id}/${id}-1.jpg'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -608,7 +608,7 @@ function backToMainPage() {
   window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
 }
 
-// ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
+// ARTWORKSITEM DISPLAY IMAGES OF PAINTINGS
 
 // Get id of painting while clicked and use it to display this paintings subpage.
 let paintingNum = '0000';
@@ -620,7 +620,7 @@ function getPaintingNum(num) {
   return paintingNum;
 }
 
-// Take a length of list of paintings to display, loops thru them and display them (on sub page -> artworkitem.html).
+// Take a length of list of paintings to display, loops thru them and display them (on sub page -> artworksitem.html).
 // In this case PL is given but it does not matter, all objects (PL/EN/DE) have the same images of paintings.
 function displayPaintings(paintingNum) {
   let result = '';
@@ -638,7 +638,7 @@ function displayPaintings(paintingNum) {
   return result;
 }
 
-// ARTWORKITEM NAVIGATIONSCROLLEFFECT
+// ARTWORKSITEM NAVIGATIONSCROLLEFFECT
 
 // Take the position of scroll and changes navigation font color.
 function navigationScrollEffect() {
@@ -734,7 +734,7 @@ function displayEmail(language) {
 
 // SCROLL POSITION
 
-// Gets the scroll position to use it after 'back' button is clicked in artworkitem
+// Gets the scroll position to use it after 'back' button is clicked in artworksitem
 let scrollPosition = sessionStorage.getItem('scrollPosition') || 0;
 
 /*
