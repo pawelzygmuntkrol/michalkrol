@@ -82,7 +82,7 @@ function changeToPl() {
     document.getElementById(
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
-  } else if (page === 'artworkitem.html') {
+  } else if (page === `artworksitem/${paintingNum}`) {
     setURL();
     document.getElementById('backToMainPage').innerHTML =
       pl.menu.backToMainPage;
@@ -213,7 +213,7 @@ function changeToEn() {
     document.getElementById(
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
-  } else if (page === 'artworkitem.html') {
+  } else if (page === `artworksitem/${paintingNum}`) {
     setURL();
     document.getElementById('backToMainPage').innerHTML =
       en.menu.backToMainPage;
@@ -344,7 +344,7 @@ function changeToDe() {
     document.getElementById(
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
-  } else if (page === 'artworkitem.html') {
+  } else if (page === `artworksitem/${paintingNum}`) {
     setURL();
     document.getElementById('backToMainPage').innerHTML =
       de.menu.backToMainPage;
@@ -434,7 +434,7 @@ function changeToDe() {
 
 function setURL() {
   const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
-  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${pl.artworks[paintingNum].paintingDataTitle}`);
+  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${pl.artworks[paintingNum]}`);
 }
 
 
