@@ -434,7 +434,7 @@ function changeToDe() {
 
 function setURL() {
   const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
-  window.history.pushState('', '', `${baseURL}/${pl.artworks[paintingNum].paintingDataTitle}`);
+  window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${pl.artworks[paintingNum].paintingDataTitle}`);
 }
 
 
@@ -602,6 +602,10 @@ function closeSideMenu() {
   document.getElementById('menu').style.width = '0';
   document.getElementById('menu-button').style.visibility = 'visible';
   document.getElementById('backToMainPage').style.visibility = 'visible';
+}
+
+function backToMainPage() {
+  window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
 }
 
 // ARTWORKITEM DISPLAY IMAGES OF PAINTINGS
