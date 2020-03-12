@@ -86,10 +86,9 @@ function displayLanguage(param) {
 
 // If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
   } else if (page === 'artworksitem.html') {
-    setURL();
     document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
 
-    const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = language.artworks[paintingNum];
+    const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
       document.title = metaTitle;
       document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
       document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
@@ -103,6 +102,7 @@ function displayLanguage(param) {
       document.getElementById('paintingDescription').innerHTML = paintingDescription;
       document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
     navigationScrollEffect();
+    setURL();
 
 // If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
   } else if (page === 'exhibitions.html') {
@@ -411,7 +411,7 @@ function moveToBottom() {
 // DISPLAY EMAIL
 // On click shows e-mail address in case client couldn't handle redirection.
 
-function displayEmail(language) {
+function displayEmail() {
   document.getElementById('contactEmailButton').innerHTML = 'kontakt@michalkrol.eu';
   document.getElementById('contactEmailButton').style.width = '10rem';
 }
