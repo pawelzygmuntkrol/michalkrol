@@ -166,7 +166,7 @@ function changeToPl() {
       'contactEmailButton',
     ).innerHTML = contactEmailButton;
   } else {
-    backToMainPage();
+    page = '404.html';
   }
 }
 
