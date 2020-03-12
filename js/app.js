@@ -3,7 +3,7 @@
 // Check users browser language.
 const userBrowserLanguage = navigator.language.slice(0, 2);
 
-// Based on browser language/user choice specifies to language to use.
+// Based on browser language/user choice specifies the language to use. If wasn't set manualy - does it for user, else uses user choice.
 let language;
 
 if (localStorage.getItem('chosenLang') === null) {
@@ -37,138 +37,100 @@ function disableAutoLanguage(lang) {
   return language;
 }
 
-// All events that take place when language is set.
+// All events that take place when language is set to polish.
 function changeToPl() {
-  language = 'pl';
-  document.getElementById('pl').style.color = 'white';
-  document.getElementById('en').style.color = 'dimgray';
-  document.getElementById('de').style.color = 'dimgray';
 
+  language = 'pl';
+
+// Colors chosen language in side menu.
+    document.getElementById('pl').style.color = 'white';
+    document.getElementById('en').style.color = 'dimgray';
+    document.getElementById('de').style.color = 'dimgray';
+
+// Shows Cookie banner.    
   const { gdprParagraph, gdprLink, gdprButton } = pl.gdpr;
   gdprShow();
-  document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
-  document.getElementById('gdprLink').innerHTML = gdprLink;
-  document.getElementById('gdprButton').innerHTML = gdprButton;
+    document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
+    document.getElementById('gdprLink').innerHTML = gdprLink;
+    document.getElementById('gdprButton').innerHTML = gdprButton;
 
-  const {
-    closeButton,
-    artworksButton,
-    exhibitionButton,
-    biographyButton,
-    contactButton,
-  } = pl.menu;
-  document.getElementById('closeButton').innerHTML = closeButton;
-  document.getElementById('artworksButton').innerHTML = artworksButton;
-  document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
-  document.getElementById('biographyButton').innerHTML = biographyButton;
-  document.getElementById('contactButton').innerHTML = contactButton;
+// Loads side menu links.
+  const { closeButton, artworksButton, exhibitionButton, biographyButton, contactButton } = pl.menu;
+    document.getElementById('closeButton').innerHTML = closeButton;
+    document.getElementById('artworksButton').innerHTML = artworksButton;
+    document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+    document.getElementById('biographyButton').innerHTML = biographyButton;
+    document.getElementById('contactButton').innerHTML = contactButton;
 
+// Checks URL to display apropiate data.
   const path = window.location.pathname;
-  let page = path.split('/').pop();
-  if (page === '' || page === '/' || page === '#' ) {
-    window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
-  } else if (page === 'index.html') {
-    const {
-      displayAllButton,
-      displayStructuralCollageButton,
-      displayInteriorButton,
-    } = pl.menu;
-    document.getElementById('artworksList').innerHTML = displayArtworksList();
-    document.getElementById('artworksButton').style.color = 'white';
-    document.getElementById('displayAllButton').innerHTML = displayAllButton;
-    document.getElementById(
-      'displayStructuralCollageButton',
-    ).innerHTML = displayStructuralCollageButton;
-    document.getElementById(
-      'displayInteriorButton',
-    ).innerHTML = displayInteriorButton;
+  const page = path.split('/').pop();
+  
+// If URL is 'index.html' -> displays main page with paintings grid, colors apropriate link in side menu and show 3 sort options in side menu.
+  if (page === 'index.html') {
+    const { displayAllButton, displayStructuralCollageButton, displayInteriorButton } = pl.menu;
+      document.getElementById('artworksList').innerHTML = displayArtworksList();
+      document.getElementById('artworksButton').style.color = 'white';
+      document.getElementById('displayAllButton').innerHTML = displayAllButton;
+      document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
+      document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
+
+// If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
   } else if (page === 'artworksitem.html') {
     setURL();
-    document.getElementById('backToMainPage').innerHTML =
-      pl.menu.backToMainPage;
-    const {
-      metaTitle,
-      metaDescription,
-      metaKeywords,
-      paintingDataTitle,
-      paintingDataAuthor,
-      paintingTitle,
-      paintingYearOfCreation,
-      paintingStatus,
-      paintingDescription,
-      paintingDimensionsWidth,
-      paintingDimensionsHeight,
-    } = pl.artworks[paintingNum];
-    document.title = metaTitle;
-    document
-      .getElementsByTagName('meta')
-      .namedItem('description')
-      .setAttribute('content', metaDescription);
-    document
-      .getElementsByTagName('meta')
-      .namedItem('keywords')
-      .setAttribute('content', metaKeywords);
-    document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
-    document.getElementById(
-      'paintingDataAuthor',
-    ).innerHTML = paintingDataAuthor;
-    document.getElementById(
-      'paintingDimensionsWidth',
-    ).innerHTML = paintingDimensionsWidth;
-    document.getElementById(
-      'paintingDimensionsHeight',
-    ).innerHTML = paintingDimensionsHeight;
-    document.getElementById('paintingTitle').innerHTML = paintingTitle;
-    document.getElementById(
-      'paintingYearOfCreation',
-    ).innerHTML = paintingYearOfCreation;
-    document.getElementById('paintingStatus').innerHTML = paintingStatus;
-    document.getElementById(
-      'paintingDescription',
-    ).innerHTML = paintingDescription;
-    document.getElementById('paintingImages').innerHTML = displayPaintings(
-      paintingNum,
-    );
+    document.getElementById('backToMainPage').innerHTML = pl.menu.backToMainPage;
+
+    const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = pl.artworks[paintingNum];
+      document.title = metaTitle;
+      document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+      document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
+      document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+      document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+      document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+      document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
+      document.getElementById('paintingTitle').innerHTML = paintingTitle;
+      document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+      document.getElementById('paintingStatus').innerHTML = paintingStatus;
+      document.getElementById('paintingDescription').innerHTML = paintingDescription;
+      document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
     navigationScrollEffect();
+
+// If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
   } else if (page === 'exhibitions.html') {
     document.getElementById('exhibitionData').innerHTML = displayExhibition();
     document.getElementById('exhibitionButton').style.color = 'white';
 
-    const {
-      exhibitionHeader,
-      exhibitionDate,
-      exhibitionParagraph,
-      exhibitionLink,
-      exhibitionPoster,
-    } = pl.exhibitions[exhibitionNum];
-    document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
-    document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
-    document.getElementById(
-      'exhibitionParagraph',
-    ).innerHTML = exhibitionParagraph;
-    document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
-    document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;
+    const { exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster } = pl.exhibitions[exhibitionNum];
+      document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+      document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+      document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+      document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+      document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;
+
+// If URL is 'biography.html' -> loads all information about biography, colors apropriate link in side menu and scroll to bottom after 1 second.
   } else if (page === 'biography.html') {
     document.getElementById('biographyButton').style.color = 'white';
 
     const { biographyHeader, biographyParagraph } = pl.biography;
-    document.getElementById('biographyHeader').innerHTML = biographyHeader;
-    document.getElementById(
-      'biographyParagraph',
-    ).innerHTML = biographyParagraph;
-    moveToBottom();
+      document.getElementById('biographyHeader').innerHTML = biographyHeader;
+      document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+      moveToBottom();
+
+// If URL is 'contact.html' -> loads contact button (opens mail client on users computer) and colors apropriate link in side menu.      
   } else if (page === 'contact.html') {
     document.getElementById('contactButton').style.color = 'white';
 
     const { contactHeader, contactEmailButton } = pl.contact;
-    document.getElementById('contactHeader').innerHTML = contactHeader;
-    document.getElementById(
-      'contactEmailButton',
-    ).innerHTML = contactEmailButton;
+      document.getElementById('contactHeader').innerHTML = contactHeader;
+      document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
+
+// If URL is different than ones listed before -> redirects to main page.     
   } else {
     page = '404.html';
   }
 }
+
+
 
 function changeToEn() {
   language = 'en';
