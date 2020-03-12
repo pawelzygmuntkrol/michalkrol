@@ -165,9 +165,6 @@ function changeToPl() {
     document.getElementById(
       'contactEmailButton',
     ).innerHTML = contactEmailButton;
-  } else if (page === pl.artworks[paintingNum].paintingTitle) {
-    displayPaintings(paintingNum);
-
   } else {
     backToMainPage();
   }
