@@ -24,11 +24,6 @@ function changeLanguage(language) {
 
 // Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
 function disableAutoLanguage(param) {
-  if (lang === 'pl') {
-    language = param;
-  } else if (lang === 'en') {
-    language = param;
-  } else if (lang === 'de') {
     language = param;
   }
 
