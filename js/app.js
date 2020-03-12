@@ -634,7 +634,7 @@ function displayPaintings(paintingNum) {
   ) {
     const str = `
             <div class='img-item'>
-                <img src='./images/${paintingNum}/${paintingNum}-${i}.jpg'/>
+                <img src='https://pawelzygmuntkrol.github.io/michalkrol/images/${paintingNum}/${paintingNum}-${i}.jpg'/>
             </div>`;
     result += str;
   }

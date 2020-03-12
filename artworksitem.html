@@ -41,17 +41,16 @@
     
     <nav>
         <ul>
-            <a href='#' class='nav-left'>
-                <li class='name' id='name'>Michał Król</li>
-                <li class='pseudonym' id='pseudonym'>Structuralist</li>
-            </a>
-            
-            <a href='#/' class='nav-right'>
+            <div href='#' class='nav-left' onclick='closeSideMenu()'>
+                <li class='name'>Michał Król</li>
+                <li class='pseudonym'>Structuralist</li>
+            </div>
+            <div href='#/' class='nav-right'>
                 <li id='menu-button' onclick='openSideMenu()'>
                     <p class='large-screens'>Menu</p>
                     <p class='small-screens'>&#9776;</p>
                 </li> 
-            </a>
+            </div>
             <div id='menu' class='sidemenu'>
                 <li href='#' id="close-button" onclick='closeSideMenu()'>
                     <p class='large-screens elements-to-hover' id='closeButton'>Zamknij</p>
