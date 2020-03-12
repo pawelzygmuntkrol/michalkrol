@@ -430,7 +430,7 @@ function changeToDe() {
   }
 }
 
-// URLs
+// URL
 
 function setURL() {
   const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
