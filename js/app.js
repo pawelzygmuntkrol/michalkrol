@@ -87,7 +87,7 @@ function displayLanguage(param) {
 // If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
   } else if (page === 'artworksitem.html') {
     document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
-
+    setURL();
     const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
       document.title = metaTitle;
       document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
@@ -102,7 +102,7 @@ function displayLanguage(param) {
       document.getElementById('paintingDescription').innerHTML = paintingDescription;
       document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
     navigationScrollEffect();
-    setURL();
+    
 
 // If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
   } else if (page === 'exhibitions.html') {
