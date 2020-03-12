@@ -64,7 +64,7 @@ function changeToPl() {
   document.getElementById('contactButton').innerHTML = contactButton;
 
   const path = window.location.pathname;
-  const page = path.split('/').pop();
+  let page = path.split('/').pop();
   if (page === '' || page === '/' || page === '#' ) {
     window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
   } else if (page === 'index.html') {
@@ -165,6 +165,11 @@ function changeToPl() {
     document.getElementById(
       'contactEmailButton',
     ).innerHTML = contactEmailButton;
+  } else if (page === pl.artworks[paintingNum].paintingTitle) {
+    displayPaintings(paintingNum);
+
+  } else {
+    backToMainPage();
   }
 }
 
@@ -214,7 +219,7 @@ function changeToEn() {
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
   } else if (page === 'artworksitem.html') {
-    //setURL();
+    setURL();
     document.getElementById('backToMainPage').innerHTML =
       en.menu.backToMainPage;
     const {
@@ -345,7 +350,7 @@ function changeToDe() {
       'displayInteriorButton',
     ).innerHTML = displayInteriorButton;
   } else if (page === 'artworksitem.html') {
-    //setURL();
+    setURL();
     document.getElementById('backToMainPage').innerHTML =
       de.menu.backToMainPage;
     const {
@@ -610,6 +615,8 @@ function closeSideMenu() {
 function backToMainPage() {
   window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
 }
+
+
 
 // ARTWORKSITEM DISPLAY IMAGES OF PAINTINGS
 
