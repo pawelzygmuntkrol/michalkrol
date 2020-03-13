@@ -18,14 +18,14 @@ ul {
     grid-template-columns: 9fr 1fr;
 }
 
-.nav-left .name {
+#name {
     -ms-grid-column-align: start;
         justify-self: start;
     font-size: 1.2rem;
     font-weight: 900;
 }
 
-.nav-left .pseudonym {
+#pseudonym {
     -ms-grid-column-align: start;
         justify-self: start;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -54,11 +54,11 @@ ul {
         padding: 0.5rem 2rem;
     }
 
-    .nav-left .name {
+    #name {
         font-size: 1rem;
     }
 
-    .nav-left .pseudonym {
+    #pseudonym {
         font-size: 0.8rem;
     }
 
