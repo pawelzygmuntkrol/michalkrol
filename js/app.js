@@ -338,14 +338,6 @@ function displayPaintings(paintingNum) {
             </div>`;
     result += str;
   }
-  result += `
-  <div id='img-description' onclick='closeSideMenu()'>
-      <h4 id='paintingTitle'><!-- text is dynamically loaded by changeLanguage function --></h4>
-      <h4 id='paintingYearOfCreation'><!-- text is dynamically loaded by changeLanguage function --></h4>
-    <p id='paintingStatus'><!-- text is dynamically loaded by changeLanguage function --></p>
-    <p id='paintingDescription'><!-- text is dynamically loaded by changeLanguage function --></p>
-  </div>
-`
   return result;
 }
 
