@@ -1,12 +1,6 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 /* DESKTOP */
-.main {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
 .artwork-data {
     position: fixed;
     left: 2rem;
@@ -27,8 +21,6 @@
 #paintingImages {   
     background-color: black;
     padding: 0rem 0rem 10rem 0rem;
-    height: 100vh
-    scroll-snap-align: center;
 }
 
 
@@ -63,8 +55,6 @@
     grid-row-gap: 1rem;
     text-align: justify;
     background-color: black;
-    height: 100vh
-    scroll-snap-align: center;
 }
 
 #img-description > *:nth-child(1) {
