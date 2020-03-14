@@ -21,6 +21,9 @@
 #paintingImages {   
     background-color: black;
     padding: 0rem 0rem 10rem 0rem;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
 }
 
 
@@ -34,6 +37,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100vh;
+    scroll-snap-align: center;
 }
 
 .img-item img {
