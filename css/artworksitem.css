@@ -7,11 +7,6 @@
     scroll-snap-type: y mandatory;
 }
 
-.scroll-effect {
-    scroll-snap-align: center;
-}
-
-
 .artwork-data {
     position: fixed;
     left: 2rem;
@@ -33,6 +28,7 @@
     background-color: black;
     padding: 0rem 0rem 10rem 0rem;
     height: 100vh
+    scroll-snap-align: center;
 }
 
 
@@ -46,9 +42,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
-    height: 100vh;
-        scroll-snap-align: center;
 }
 
 .img-item img {
@@ -70,6 +63,8 @@
     grid-row-gap: 1rem;
     text-align: justify;
     background-color: black;
+    height: 100vh
+    scroll-snap-align: center;
 }
 
 #img-description > *:nth-child(1) {
