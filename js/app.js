@@ -102,6 +102,7 @@ function displayLanguage(param) {
       document.getElementById('paintingDescription').innerHTML = paintingDescription;
       document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
     navigationScrollEffect();
+    disableSmoothScroll();
     
 
 // If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
@@ -354,7 +355,6 @@ function navigationScrollEffect() {
     document.getElementById('paintingDataAuthor').style.color = 'black';
     document.getElementById('paintingDimensionsWidth').style.color = 'black';
     document.getElementById('paintingDimensionsHeight').style.color = 'black';
-      //document.getElementById('paintingDimensionsHeight').style.height = 'auto';
 } else if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 250) {
     document.getElementById('img-description').style.backgroundColor = 'white';
     document.getElementById('img-description').style.transitionDuration ='1.5s';
@@ -368,7 +368,14 @@ function navigationScrollEffect() {
     document.getElementById('paintingDataAuthor').style.color = 'dimgray';
     document.getElementById('paintingDimensionsWidth').style.color = 'dimgray';
     document.getElementById('paintingDimensionsHeight').style.color = 'dimgray';
-      //document.getElementById('paintingDimensionsHeight').style.height = '100vh';
+  }
+}
+
+function disableSmoothScroll() {
+  if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 150) {
+    document.getElementById('paintingImages').style.overflowY = 'hidden';
+  } else if (window.pageYOffset < document.getElementById('paintingImages').offsetHeight - 150) {
+    document.getElementById('paintingImages').style.overflowY = 'scroll';
   }
 }
 
