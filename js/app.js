@@ -312,7 +312,7 @@ function closeSideMenu() {
 // Redirects to main page form subpage describing certain painting.
 function backToMainPage() {
   //window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
-  window.history.go(-1);
+  window.history.go(-2);
   setScrollPosition(scrollPosition);
 }
 
@@ -338,6 +338,14 @@ function displayPaintings(paintingNum) {
             </div>`;
     result += str;
   }
+  result += `
+  <div id='img-description' onclick='closeSideMenu()'>
+      <h4 id='paintingTitle'><!-- text is dynamically loaded by changeLanguage function --></h4>
+      <h4 id='paintingYearOfCreation'><!-- text is dynamically loaded by changeLanguage function --></h4>
+    <p id='paintingStatus'><!-- text is dynamically loaded by changeLanguage function --></p>
+    <p id='paintingDescription'><!-- text is dynamically loaded by changeLanguage function --></p>
+  </div>
+`
   return result;
 }
 
