@@ -311,7 +311,8 @@ function closeSideMenu() {
 
 // Redirects to main page form subpage describing certain painting.
 function backToMainPage() {
-  window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
+  //window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
+  window.history.go(-1);
   setScrollPosition(scrollPosition);
 }
 
@@ -353,7 +354,7 @@ function navigationScrollEffect() {
     document.getElementById('paintingDataAuthor').style.color = 'black';
     document.getElementById('paintingDimensionsWidth').style.color = 'black';
     document.getElementById('paintingDimensionsHeight').style.color = 'black';
-      document.getElementById('paintingDimensionsHeight').style.height = 'auto';
+      //document.getElementById('paintingDimensionsHeight').style.height = 'auto';
 } else if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 250) {
     document.getElementById('img-description').style.backgroundColor = 'white';
     document.getElementById('img-description').style.transitionDuration ='1.5s';
@@ -367,7 +368,7 @@ function navigationScrollEffect() {
     document.getElementById('paintingDataAuthor').style.color = 'dimgray';
     document.getElementById('paintingDimensionsWidth').style.color = 'dimgray';
     document.getElementById('paintingDimensionsHeight').style.color = 'dimgray';
-      document.getElementById('paintingDimensionsHeight').style.height = '100vh';
+      //document.getElementById('paintingDimensionsHeight').style.height = '100vh';
   }
 }
 

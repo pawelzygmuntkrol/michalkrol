@@ -65,10 +65,17 @@ img {
 
 @media (max-width: 426px) {
 
+    main {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+    }
+
     .container {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         height: 100vh;
+            scroll-snap-align: center;
     }
 
     .text {
@@ -109,11 +116,15 @@ img {
 
     main {
         padding: 5rem 0;
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
     }
 
     .container {
         height: 100vh;
         margin-bottom: 5rem;
+            scroll-snap-align: center;
     }
 
     img {
