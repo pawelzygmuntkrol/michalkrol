@@ -37,12 +37,15 @@
             align-items: center;
     width: 100vw;
     height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
 }
 
 .img-item img {
     max-height: 97vh;
     max-width: 90vw;
     padding: 2rem 0;
+        scroll-snap-align: center;
 }
 
 #img-description {
