@@ -22,7 +22,8 @@
 #paintingImages {   
     background-color: black;
     padding: 0rem 0rem 10rem 0rem;
-    overflow-y: scroll;
+        height: 100vh;
+        overflow-y: scroll;
         scroll-snap-type: y mandatory;
 }
 
@@ -61,9 +62,6 @@
     grid-row-gap: 1rem;
     text-align: justify;
     background-color: black;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        scroll-snap-align: center;
 }
 
 #img-description > *:nth-child(1) {
