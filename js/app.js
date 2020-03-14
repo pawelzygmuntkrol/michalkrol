@@ -372,9 +372,9 @@ function navigationScrollEffect() {
 }
 
 function disableSmoothScroll() {
-  if (window.pageYOffset > document.getElementById('paintingImages').offsetHeight - 150) {
+  if (window.pageYOffset > document.getElementById('paintingImages').scrollHeight - 150) {
     document.getElementById('paintingImages').style.overflowY = 'hidden';
-  } else if (window.pageYOffset < document.getElementById('paintingImages').offsetHeight - 150) {
+  } else if (window.pageYOffset < document.getElementById('paintingImages').scrollHeight - 150) {
     document.getElementById('paintingImages').style.overflowY = 'scroll';
   }
 }
