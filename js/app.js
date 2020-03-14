@@ -416,12 +416,28 @@ function displayEmail() {
   document.getElementById('contactEmailButton').style.width = '10rem';
 }
 
-/*
+
 // SCROLL POSITION
 // Gets the scroll position to use it after 'back' button is clicked in artworksitem
-let scrollPosition = sessionStorage.getItem('scrollPosition') || 0;
+let scrollPosition = sessionStorage.getItem('scrollPosition');
+
+function setScrollPosition(scrollPosition) {
+  if(scrollPosition !== null) {
+    window.scrollTo(0, scrollPosition);
+  } else {
+    scrollPosition = 0;
+    window.scrollTo(0, scrollPosition);
+  }
+}
+
+function getScrollPosition() {
+  scrollPosition = window.pageYOffset;
+  sessionStorage.setItem('scrollPosition', scrollPosition);
+  return scrollPosition;
+}
 
 
+/*
 function returnScrollPosition(scrollPosition) {
     sessionStorage.getItem('scrollPosition')
     window.scrollTo(0, scrollPosition);
