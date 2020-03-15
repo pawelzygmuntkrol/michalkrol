@@ -367,7 +367,7 @@ function navigationScrollEffect() {
     document.getElementById('paintingDimensionsHeight').style.color = 'dimgray';
   }
 }
-
+/*
 function disableSmoothScroll() {
   if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight > document.getElementById('paintingImages').scrollHeight - 250) {
     document.getElementById('paintingImages').style.height = 'auto';
@@ -375,7 +375,7 @@ function disableSmoothScroll() {
     document.getElementById('paintingImages').style.height = '100vh';
   }
 }
-
+*/
 
 // EXHIBITIONS
 // Take a length of list of exhibitions to display, loops thru them and display them (on exhibitions page -> exhibitions.html).

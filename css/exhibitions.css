@@ -67,12 +67,14 @@ img {
 @media (max-width: 426px) {
 
     main {
+        padding: 0;
             height: 100vh;
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
     }
 
     .container {
+        padding: 0rem 2rem;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         height: 100vh;
@@ -116,13 +118,14 @@ img {
 @media (min-width: 427px) and (max-width: 770px) {
 
     main {
-        padding: 5rem 0;
+        padding: 0;
             height: 100vh;
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
     }
 
     .container {
+        padding: 0rem 2rem;
         height: 100vh;
         margin-bottom: 5rem;
             scroll-snap-align: center;
@@ -173,4 +176,18 @@ img {
         font-size: 0.7rem;
     }
 
+  }
+
+
+  @supports (scroll-snap-type: y mandatory) {
+    main {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+  
+    .container {
+      height: 100vh;
+      scroll-snap-align: center;
+    }
   }
