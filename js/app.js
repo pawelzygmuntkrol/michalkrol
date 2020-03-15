@@ -142,8 +142,8 @@ function displayLanguage(param) {
 // Sets unique URL for certain painting based on its title (uses 'pl' because its the same data in each language).
 function setURL() {
   const baseURL = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
-  let restURL = pl.artworks[paintingNum].paintingTitle;
-  restURL = restURL.replace(' ', '').replace(' ', '').replace(' ', '');
+  let restURL = pl.artworks[paintingNum].paintingUrlNum;
+  //restURL = restURL.replace(' ', '').replace(' ', '').replace(' ', '');
   window.history.pushState('https://pawelzygmuntkrol.github.io/michalkrol', '', `${baseURL}/${restURL}`);
 }
 

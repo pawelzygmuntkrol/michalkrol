@@ -26,6 +26,7 @@ let pl = {
             metaTitle: 'Hive',
             metaDescription: '',
             metaKeywords: 'Structuralist, Structural Collage, Hive',
+            paintingUrlNum: '0061',
             paintingDataTitle: 'Hive',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: '70 cm',
