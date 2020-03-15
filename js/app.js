@@ -73,7 +73,6 @@ function displayLanguage(param) {
 
 // Checks URL to display apropiate data.
   const path = window.location.pathname;
-  //const page = path.split('/').pop();
   
 // If URL is 'index.html' -> displays main page with paintings grid, colors apropriate link in side menu and show 3 sort options in side menu.
   if (path.includes('index') === true) {
@@ -372,7 +371,7 @@ function navigationScrollEffect() {
 }
 
 function disableSmoothScroll() {
-  if (document.getElementById('paintingImages').scrollTop > document.getElementById('paintingImages').scrollHeight - document.getElementById('paintingImages').offsetHeight - document.getElementById('paintingImages').offsetHeight) {
+  if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight > document.getElementById('paintingImages').scrollHeight - 250) {
     document.getElementById('paintingImages').style.overflowY = 'hidden';
   } /*else if (document.getElementById('paintingImages').scrollTop < document.getElementById('paintingImages').scrollHeight - 150) {
     document.getElementById('paintingImages').style.overflowY = 'scroll';
