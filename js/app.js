@@ -101,9 +101,7 @@ function displayLanguage(param) {
       document.getElementById('paintingDescription').innerHTML = paintingDescription;
       document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
     navigationScrollEffect();
-    disableSmoothScroll();
     
-
 // If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
   } else if (path.includes('exhibitions') === true) {
     document.getElementById('exhibitionData').innerHTML = displayExhibition();
@@ -372,10 +370,10 @@ function navigationScrollEffect() {
 
 function disableSmoothScroll() {
   if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight > document.getElementById('paintingImages').scrollHeight - 250) {
-    document.getElementById('paintingImages').scrollIntoView;
-  } /*else if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight < document.getElementById('paintingImages').scrollHeight - 250) {
+    document.getElementById('paintingImages').style.height = 'auto';
+  } else if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight < document.getElementById('paintingImages').scrollHeight - 250) {
     document.getElementById('paintingImages').style.height = '100vh';
-  }*/
+  }
 }
 
 
