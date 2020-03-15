@@ -86,7 +86,7 @@ function displayLanguage(param) {
 // If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
   } else if (path.includes('artworksitem') === true) {
     document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
-    //setURL();
+    setURL();
     const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
       document.title = metaTitle;
       document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
@@ -132,17 +132,17 @@ function displayLanguage(param) {
       document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
-  } else {
+  } /*else {
     const path = window.location.pathname;
     const page = path.split('/').pop();
 
     if(Object.keys(pl.artworks).includes(page)) {
       getPaintingNum(page);
       displayPaintings(page);
-    } else {
+    } */else {
       path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html';
     }   
-  }
+  /*}*/
 }
 
 
@@ -257,7 +257,7 @@ function displayArtworksList() {
     if (displayStructuralCollageValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                    <a href='./artworksitem/${id}'>
+                    <a href='./artworksitem.html'>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -269,7 +269,7 @@ function displayArtworksList() {
     } else if (displayInteriorValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                    <a href='./artworksitem/${id}'>
+                    <a href='./artworksitem.html'>
                         <img src='./images/${id}/${id}-1.jpg'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -280,7 +280,7 @@ function displayArtworksList() {
       }
     } else if (displayAllValue === 1) {
       str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                <a href='./artworksitem/${id}'>
+                <a href='./artworksitem.html'>
                     <img src='./images/${id}/${id}-1.jpg'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
