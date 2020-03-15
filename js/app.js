@@ -73,10 +73,10 @@ function displayLanguage(param) {
 
 // Checks URL to display apropiate data.
   const path = window.location.pathname;
-  const page = path.split('/').pop();
+  //const page = path.split('/').pop();
   
 // If URL is 'index.html' -> displays main page with paintings grid, colors apropriate link in side menu and show 3 sort options in side menu.
-  if (page === 'index.html') {
+  if (path.includes('index') === true) {
     const { displayAllButton, displayStructuralCollageButton, displayInteriorButton } = usedLanguage.menu;
       document.getElementById('artworksList').innerHTML = displayArtworksList();
       document.getElementById('artworksButton').style.color = 'white';
@@ -85,7 +85,7 @@ function displayLanguage(param) {
       document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
 
 // If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
-  } else if (page === 'artworksitem.html') {
+  } else if (path.includes('artworksitem') === true) {
     document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
     setURL();
     const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
@@ -106,7 +106,7 @@ function displayLanguage(param) {
     
 
 // If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
-  } else if (page === 'exhibitions.html') {
+  } else if (path.includes('exhibitions') === true) {
     document.getElementById('exhibitionData').innerHTML = displayExhibition();
     document.getElementById('exhibitionButton').style.color = 'white';
 
@@ -118,7 +118,7 @@ function displayLanguage(param) {
       document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;
 
 // If URL is 'biography.html' -> loads all information about biography, colors apropriate link in side menu and scroll to bottom after 1 second.
-  } else if (page === 'biography.html') {
+  } else if (path.includes('biography') === true) {
     document.getElementById('biographyButton').style.color = 'white';
 
     const { biographyHeader, biographyParagraph } = usedLanguage.biography;
@@ -127,7 +127,7 @@ function displayLanguage(param) {
       moveToBottom();
 
 // If URL is 'contact.html' -> loads contact button (opens mail client on users computer) and colors apropriate link in side menu.      
-  } else if (page === 'contact.html') {
+  } else if (path.includes('contact') === true) {
     document.getElementById('contactButton').style.color = 'white';
 
     const { contactHeader, contactEmailButton } = usedLanguage.contact;
@@ -136,7 +136,7 @@ function displayLanguage(param) {
 
 // If URL is different than ones listed before -> sets URL to 404 which redirects to main page.     
   } else {
-    page = '404.html';
+    path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html';
   }
 }
 
