@@ -133,7 +133,9 @@ function displayLanguage(param) {
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
   } else {
-    page = path.split('/').pop();
+    let path = window.location.pathname;
+    let page = path.split('/').pop();
+    
     getPaintingNum(page);
     redirectToCertainUrl();
   }
