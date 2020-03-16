@@ -132,11 +132,7 @@ function displayLanguage(param) {
       document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
-  } else {
-    let extractedId = window.location.pathname.split('/').pop()
-    getPaintingNum(extractedId);
-    redirectToCertainUrl(extractedId);
-  }
+  } 
 }
 
 
@@ -447,7 +443,8 @@ function getScrollPosition() {
 }
 
 
-
+// URL TO CERTAIN PAINTING
+// Checks if link fits to any of the paintings and if yes redirects to this painting, else redirect to main page.
 function redirectToCertainUrl(extractedId) {
   if(Object.keys(pl.artworks).includes(extractedId) === true) {
     window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';

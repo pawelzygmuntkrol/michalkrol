@@ -23,8 +23,8 @@
 	</head>
 
 
-  <body onload='getPaintingNum(page); redirectToCertainUrl()'>
-	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
+  <body onload='getPaintingNum(window.location.pathname.split(`/`).pop()); redirectToCertainUrl(window.location.pathname.split(`/`).pop())'>
+	<!-- Function either redirects to certain painting subpage or to main page -->
   </body>
 
 
