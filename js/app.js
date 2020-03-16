@@ -458,21 +458,6 @@ if(Object.keys(pl.artworks).includes(page) === true) {
 
 
 
-
-path = window.location.pathname;
-page = path.split('/').pop();
-
-if(Object.keys(pl.artworks).includes(page) === true) {
-  getPaintingNum(page);
-  path = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
-}
-
-
-
-
-
-
-
 /*
 function returnScrollPosition(scrollPosition) {
     sessionStorage.getItem('scrollPosition')

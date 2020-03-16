@@ -25,10 +25,34 @@
 		<meta name="keywords" content=""/>
 	</head>
 
-	
+
   <body onload='redirectToCertainUrl()'>
 	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
   </body>
 
+
+  <script>
+
+
+
+function redirectToCertainUrl() {
+path = window.location.pathname;
+page = path.split('/').pop();
+
+if(Object.keys(pl.artworks).includes(page) === true) {
+  getPaintingNum(page);
+  path = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
+  } else {
+  path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html'
+  }
+}
+	  
+function getPaintingNum(num) {
+  paintingNum = num;
+  localStorage.setItem('paintingId', paintingNum);
+  return paintingNum;
+}
+
+  </script>
 
 </html>
