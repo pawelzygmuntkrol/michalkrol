@@ -133,11 +133,12 @@ function displayLanguage(param) {
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
   } else {
-    page = path.split('/').pop();
+    const path = window.location.pathname;
+    const page = path.split('/').pop();
 
-    if(Object.keys(pl.artworks).includes(page)) {
-      displayPaintings(page);
-
+    if(Object.keys(pl.artworks).includes(page) === true) {
+      getPaintingNum(page);
+      path = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
     } /*else {
       path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html';
     }   */
