@@ -6,15 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting</title>
   </head>
-  <body onload="redirect()">
+  <body onload='redirectToCertainUrl()'>
 	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
-	<script>/*
+	<script>
+	/*
 	  function redirect() {
 		setTimeout(function(){ 
 				window.location.replace('https://pawelzygmuntkrol.github.io/michalkrol/index.html');
 			}
 			, 100);	
 		}
-	*/</script>
+	*/
+
+const path = window.location.pathname;
+const page = path.split('/').pop();
+
+if(Object.keys(pl.artworks).includes(page) === true) {
+  getPaintingNum(page);
+  path = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
+} /*else {
+  path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html';
+}   */
+
+
+
+	
+	</script>
   </body>
 </html>
