@@ -133,11 +133,9 @@ function displayLanguage(param) {
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
   } else {
-    let path = window.location.pathname;
-    let page = path.split('/').pop();
-    
-    getPaintingNum(page);
-    redirectToCertainUrl();
+    let extractedId = window.location.pathname.split('/').pop()
+    getPaintingNum(extractedId);
+    redirectToCertainUrl(extractedId);
   }
 }
 
@@ -450,8 +448,8 @@ function getScrollPosition() {
 
 
 
-function redirectToCertainUrl() {
-  if(Object.keys(pl.artworks).includes(page) === true) {
+function redirectToCertainUrl(extractedId) {
+  if(Object.keys(pl.artworks).includes(extractedId) === true) {
     window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
   } else {
     window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
