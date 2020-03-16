@@ -132,17 +132,31 @@ function displayLanguage(param) {
       document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
-  } /*else {
+  } else {
     const path = window.location.pathname;
     const page = path.split('/').pop();
 
     if(Object.keys(pl.artworks).includes(page)) {
       getPaintingNum(page);
-      displayPaintings(page);
-    } */else {
+      document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
+      const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
+        document.title = metaTitle;
+        document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+        document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
+        document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+        document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+        document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+        document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
+        document.getElementById('paintingTitle').innerHTML = paintingTitle;
+        document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+        document.getElementById('paintingStatus').innerHTML = paintingStatus;
+        document.getElementById('paintingDescription').innerHTML = paintingDescription;
+        document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+      navigationScrollEffect();
+    } else {
       path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html';
     }   
-  /*}*/
+  }
 }
 
 

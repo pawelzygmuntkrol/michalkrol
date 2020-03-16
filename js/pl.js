@@ -23,16 +23,16 @@ let pl = {
     // ARTWORKS
     artworks: {
         '0061': {
-            metaTitle: 'Hive',
+            metaTitle: 'Hivé',
             metaDescription: '',
-            metaKeywords: 'Structuralist, Structural Collage, Hive',
+            metaKeywords: 'Structuralist, Structural Collage, Hivé',
             paintingUrlNum: '0061',
-            paintingDataTitle: 'Hive',
+            paintingDataTitle: 'Hivé',
             paintingDataAuthor: 'Structural Collage',
             paintingDimensionsWidth: '70 cm',
             paintingDimensionsHeight: '100 cm',
             paintingYearOfCreation: '2018',    
-            paintingTitle: 'Hive',
+            paintingTitle: 'Hivé',
             paintingStatus: 'Dostępny',
             paintingDescription: 'Praca wykonana w charakterze structural collage. Do jej wykonania posłużyła czarna plastikowa siatka przytwierdzona do płótna za pomocą specjalistycznego kleju zalana czarną olejną farbą. Symbolizuje, ul, społeczeństwo.',
             paintingImages: {
