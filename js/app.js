@@ -132,7 +132,11 @@ function displayLanguage(param) {
       document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
 
 // If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
-  } //deleted
+  } else {
+    page = path.split('/').pop();
+    getPaintingNum(page);
+    redirectToCertainUrl();
+  }
 }
 
 
@@ -443,15 +447,12 @@ function getScrollPosition() {
 }
 
 
-function redirectToCertainUrl() {
-path = window.location.pathname;
-page = path.split('/').pop();
 
-if(Object.keys(pl.artworks).includes(page) === true) {
-  getPaintingNum(page);
-  path = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
+function redirectToCertainUrl() {
+  if(Object.keys(pl.artworks).includes(page) === true) {
+    window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/artworksitem';
   } else {
-  path = 'https://pawelzygmuntkrol.github.io/michalkrol/404.html'
+    window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
   }
 }
 
