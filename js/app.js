@@ -11,130 +11,6 @@ if (localStorage.getItem('chosenLang') === null) {
   language = localStorage.getItem('chosenLang');
 }
 
-// Specified language call function that displays information in this language on page.
-function changeLanguage(language) {
-  if (language === 'pl') {
-    displayLanguage(pl);
-  } else if (language === 'de') {
-    displayLanguage(de);
-  } else {
-    displayLanguage(en);
-  }
-}
-
-// Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
-function disableAutoLanguage(param) {
-  if (param === 'pl') {
-    language = param;
-  } else if (param === 'en') {
-    language = param;
-  } else if (param === 'de') {
-    language = param;
-  }
-
-  localStorage.setItem('chosenLang', language);
-  return language;
-}
-
-// All events that take place when language is set to polish.
-function displayLanguage(param) {
-
-  usedLanguage = param;
-
-// Colors chosen language in side menu.
-  if (usedLanguage === pl) {
-      document.getElementById('pl').style.color = 'white';
-      document.getElementById('en').style.color = 'dimgray';
-      document.getElementById('de').style.color = 'dimgray';
-  } else if (usedLanguage === de) {
-      document.getElementById('pl').style.color = 'dimgray';
-      document.getElementById('en').style.color = 'dimgray';
-      document.getElementById('de').style.color = 'white';
-  } else {
-      document.getElementById('pl').style.color = 'dimgray';
-      document.getElementById('en').style.color = 'white';
-      document.getElementById('de').style.color = 'dimgray';
-  }
-
-// Shows Cookie banner.    
-  const { gdprParagraph, gdprLink, gdprButton } = usedLanguage.gdpr;
-  gdprShow();
-    document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
-    document.getElementById('gdprLink').innerHTML = gdprLink;
-    document.getElementById('gdprButton').innerHTML = gdprButton;
-
-// Loads side menu links.
-  const { closeButton, artworksButton, exhibitionButton, biographyButton, contactButton } = usedLanguage.menu;
-    document.getElementById('closeButton').innerHTML = closeButton;
-    document.getElementById('artworksButton').innerHTML = artworksButton;
-    document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
-    document.getElementById('biographyButton').innerHTML = biographyButton;
-    document.getElementById('contactButton').innerHTML = contactButton;
-
-// Checks URL to display apropiate data.
-  const path = window.location.pathname;
-  
-// If URL is 'index.html' -> displays main page with paintings grid, colors apropriate link in side menu and show 3 sort options in side menu.
-  if (path.includes('index') === true) {
-    const { displayAllButton, displayStructuralCollageButton, displayInteriorButton } = usedLanguage.menu;
-      document.getElementById('artworksList').innerHTML = displayArtworksList();
-      document.getElementById('artworksButton').style.color = 'white';
-      document.getElementById('displayAllButton').innerHTML = displayAllButton;
-      document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
-      document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
-
-// If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
-  } else if (path.includes('artworksitem') === true) {
-    document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
-    setURL();
-    const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
-      document.title = metaTitle;
-      document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
-      document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
-      document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
-      document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
-      document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
-      document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
-      document.getElementById('paintingTitle').innerHTML = paintingTitle;
-      document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
-      document.getElementById('paintingStatus').innerHTML = paintingStatus;
-      document.getElementById('paintingDescription').innerHTML = paintingDescription;
-      document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
-    navigationScrollEffect();
-    
-// If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
-  } else if (path.includes('exhibitions') === true) {
-    document.getElementById('exhibitionData').innerHTML = displayExhibition();
-    document.getElementById('exhibitionButton').style.color = 'white';
-
-    const { exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster } = usedLanguage.exhibitions[exhibitionNum];
-      document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
-      document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
-      document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
-      document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
-      document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;
-
-// If URL is 'biography.html' -> loads all information about biography, colors apropriate link in side menu and scroll to bottom after 1 second.
-  } else if (path.includes('biography') === true) {
-    document.getElementById('biographyButton').style.color = 'white';
-
-    const { biographyHeader, biographyParagraph } = usedLanguage.biography;
-      document.getElementById('biographyHeader').innerHTML = biographyHeader;
-      document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
-      moveToBottom();
-
-// If URL is 'contact.html' -> loads contact button (opens mail client on users computer) and colors apropriate link in side menu.      
-  } else if (path.includes('contact') === true) {
-    document.getElementById('contactButton').style.color = 'white';
-
-    const { contactHeader, contactEmailButton } = usedLanguage.contact;
-      document.getElementById('contactHeader').innerHTML = contactHeader;
-      document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
-
-// If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
-  } 
-}
-
 
 // URL
 // Sets unique URL for certain painting based on its title (uses 'pl' because its the same data in each language).
@@ -451,6 +327,131 @@ function redirectToCertainUrl(extractedId) {
   } else {
     window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
   }
+}
+
+
+// Specified language call function that displays information in this language on page.
+function changeLanguage(language) {
+  if (language === 'pl') {
+    displayLanguage(pl);
+  } else if (language === 'de') {
+    displayLanguage(de);
+  } else {
+    displayLanguage(en);
+  }
+}
+
+// Disables automatic language choice if user click pl/en/de in side menu and remembers the choice.
+function disableAutoLanguage(param) {
+  if (param === 'pl') {
+    language = param;
+  } else if (param === 'en') {
+    language = param;
+  } else if (param === 'de') {
+    language = param;
+  }
+
+  localStorage.setItem('chosenLang', language);
+  return language;
+}
+
+// All events that take place when language is set to polish.
+function displayLanguage(param) {
+
+  usedLanguage = param;
+
+// Colors chosen language in side menu.
+  if (usedLanguage === pl) {
+      document.getElementById('pl').style.color = 'white';
+      document.getElementById('en').style.color = 'dimgray';
+      document.getElementById('de').style.color = 'dimgray';
+  } else if (usedLanguage === de) {
+      document.getElementById('pl').style.color = 'dimgray';
+      document.getElementById('en').style.color = 'dimgray';
+      document.getElementById('de').style.color = 'white';
+  } else {
+      document.getElementById('pl').style.color = 'dimgray';
+      document.getElementById('en').style.color = 'white';
+      document.getElementById('de').style.color = 'dimgray';
+  }
+
+// Shows Cookie banner.    
+  const { gdprParagraph, gdprLink, gdprButton } = usedLanguage.gdpr;
+  gdprShow();
+    document.getElementById('gdprParagraph').innerHTML = gdprParagraph;
+    document.getElementById('gdprLink').innerHTML = gdprLink;
+    document.getElementById('gdprButton').innerHTML = gdprButton;
+
+// Loads side menu links.
+  const { closeButton, artworksButton, exhibitionButton, biographyButton, contactButton } = usedLanguage.menu;
+    document.getElementById('closeButton').innerHTML = closeButton;
+    document.getElementById('artworksButton').innerHTML = artworksButton;
+    document.getElementById('exhibitionButton').innerHTML = exhibitionButton;
+    document.getElementById('biographyButton').innerHTML = biographyButton;
+    document.getElementById('contactButton').innerHTML = contactButton;
+
+// Checks URL to display apropiate data.
+  const path = window.location.pathname;
+  
+// If URL is 'index.html' -> displays main page with paintings grid, colors apropriate link in side menu and show 3 sort options in side menu.
+  if (path.includes('index') === true) {
+    const { displayAllButton, displayStructuralCollageButton, displayInteriorButton } = usedLanguage.menu;
+      document.getElementById('artworksList').innerHTML = displayArtworksList();
+      document.getElementById('artworksButton').style.color = 'white';
+      document.getElementById('displayAllButton').innerHTML = displayAllButton;
+      document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
+      document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
+
+// If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
+  } else if (path.includes('artworksitem') === true) {
+    document.getElementById('backToMainPage').innerHTML = usedLanguage.menu.backToMainPage;
+    setURL();
+    const { metaTitle, metaDescription, metaKeywords, paintingDataTitle, paintingDataAuthor, paintingTitle, paintingYearOfCreation, paintingStatus, paintingDescription, paintingDimensionsWidth, paintingDimensionsHeight } = usedLanguage.artworks[paintingNum];
+      document.title = metaTitle;
+      document.getElementsByTagName('meta').namedItem('description').setAttribute('content', metaDescription);
+      document.getElementsByTagName('meta').namedItem('keywords').setAttribute('content', metaKeywords);
+      document.getElementById('paintingDataTitle').innerHTML = paintingDataTitle;
+      document.getElementById('paintingDataAuthor').innerHTML = paintingDataAuthor;
+      document.getElementById('paintingDimensionsWidth').innerHTML = paintingDimensionsWidth;
+      document.getElementById('paintingDimensionsHeight').innerHTML = paintingDimensionsHeight;
+      document.getElementById('paintingTitle').innerHTML = paintingTitle;
+      document.getElementById('paintingYearOfCreation').innerHTML = paintingYearOfCreation;
+      document.getElementById('paintingStatus').innerHTML = paintingStatus;
+      document.getElementById('paintingDescription').innerHTML = paintingDescription;
+      document.getElementById('paintingImages').innerHTML = displayPaintings(paintingNum);
+    navigationScrollEffect();
+    
+// If URL is 'exhibitions.html' -> loads all information and images about exhibitions and colors apropriate link in side menu.
+  } else if (path.includes('exhibitions') === true) {
+    document.getElementById('exhibitionData').innerHTML = displayExhibition();
+    document.getElementById('exhibitionButton').style.color = 'white';
+
+    const { exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink, exhibitionPoster } = usedLanguage.exhibitions[exhibitionNum];
+      document.getElementById('exhibitionHeader').innerHTML = exhibitionHeader;
+      document.getElementById('exhibitionDate').innerHTML = exhibitionDate;
+      document.getElementById('exhibitionParagraph').innerHTML = exhibitionParagraph;
+      document.getElementById('exhibitionLink').innerHTML = exhibitionLink;
+      document.getElementById('exhibitionPoster').innerHTML = exhibitionPoster;
+
+// If URL is 'biography.html' -> loads all information about biography, colors apropriate link in side menu and scroll to bottom after 1 second.
+  } else if (path.includes('biography') === true) {
+    document.getElementById('biographyButton').style.color = 'white';
+
+    const { biographyHeader, biographyParagraph } = usedLanguage.biography;
+      document.getElementById('biographyHeader').innerHTML = biographyHeader;
+      document.getElementById('biographyParagraph').innerHTML = biographyParagraph;
+      moveToBottom();
+
+// If URL is 'contact.html' -> loads contact button (opens mail client on users computer) and colors apropriate link in side menu.      
+  } else if (path.includes('contact') === true) {
+    document.getElementById('contactButton').style.color = 'white';
+
+    const { contactHeader, contactEmailButton } = usedLanguage.contact;
+      document.getElementById('contactHeader').innerHTML = contactHeader;
+      document.getElementById('contactEmailButton').innerHTML = contactEmailButton;
+
+// If URL is different than ones listed before -> opens page with certain painting or sets URL to 404 which redirects to main page.     
+  } 
 }
 
 
