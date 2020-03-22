@@ -21,6 +21,12 @@
     padding: 0.5rem 2rem;
 }
 
+.cookie-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 #gdprParagraph {
     color: white;
 }
@@ -28,6 +34,7 @@
 #gdprLink {
     color: white;
     text-decoration: underline;
+    margin-top: 0.2rem;
 }
 
 #gdprButton {
