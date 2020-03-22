@@ -65,11 +65,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-justify-content: center;        
     margin-top: -1.25rem;
+    padding: 0 2rem;
 }
 
 .sidemenu-language {
@@ -77,14 +78,19 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-justify-content: center;  
+    padding: 0 2rem;      
 }
 
 #pl {
     color: white;
+}
+
+#pl, #en, #de {
+    padding: 0 0.7rem;
 }
 
 .sidemenu-icons {
@@ -95,6 +101,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-justify-content: center;        
     position: absolute;
     bottom: 3rem;
 }
@@ -106,6 +113,10 @@
 
 #displayAllButton {
     color: white;
+}
+
+#displayAllButton, #displayStructuralCollageButton, #displayInteriorButton {
+    padding: 0 0.7rem;
 }
 
 
