@@ -65,7 +65,7 @@ function showPopUpImg() {
 
 // Helper function to the one before. Closes pop up image and display main list of paintings.
 function closePopUpImg() {
-  document.getElementById('artworksList').innerHTML = displayArtworksList();
+  //document.getElementById('artworksList').innerHTML = displayArtworksList();
   document.getElementById('popUpImgContainer').style.transitionDuration = '0.8s';
   document.getElementById('popUpImgContainer').style.animationTimingFunction ='ease-in';
   document.getElementById('popUpImgContainer').style.opacity = '0';
@@ -124,7 +124,7 @@ function displayArtworksList() {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
                     <a href='./artworksitem.html'>
-                        <img src='./images/${id}/${id}-1.jpg'>
+                        <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
                     </a>
@@ -206,7 +206,7 @@ function displayPaintings(paintingNum) {
   for (let i = 1; i <= Object.keys(pl.artworks[paintingNum].paintingImages).length; i++) {
     const str = `
             <div class='img-item'>
-                <img src='https://pawelzygmuntkrol.github.io/michalkrol/images/${paintingNum}/${paintingNum}-${i}.jpg'/>
+                <img src='https://pawelzygmuntkrol.github.io/michalkrol/images/${paintingNum}/${paintingNum}-${i}.jpg' loading='lazy'/>
             </div>`;
     result += str;
   }
@@ -270,7 +270,7 @@ function displayExhibition() {
                       <a id="exhibitionLink3" href="${exhibitionLink3}">${exhibitionLink3}</a><br>
                     </div>
                     <div class='poster'>
-                      <img id="exhibitionPoster" src="${exhibitionPoster}" alt="">
+                      <img id="exhibitionPoster" src="${exhibitionPoster}" alt="" loading='lazy'>
                     </div>
                   </div>`;
     result = str.concat(result);
