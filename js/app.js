@@ -136,7 +136,7 @@ function displayArtworksList() {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
                     <a href='./artworksitem.html'>
-                        <img src='./images/${id}/${id}-1.jpg'>
+                        <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
                     </a>
@@ -147,7 +147,7 @@ function displayArtworksList() {
     } else if (displayAllValue === 1) {
       str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
                 <a href='./artworksitem.html'>
-                    <img src='./images/${id}/${id}-1.jpg'>
+                    <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
                 </a>
