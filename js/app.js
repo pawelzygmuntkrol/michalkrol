@@ -65,7 +65,7 @@ function showPopUpImg() {
 
 // Helper function to the one before. Closes pop up image and display main list of paintings.
 function closePopUpImg() {
-  //document.getElementById('artworksList').innerHTML = displayArtworksList();
+  document.getElementById('artworksList').innerHTML = displayArtworksList();
   document.getElementById('popUpImgContainer').style.transitionDuration = '0.8s';
   document.getElementById('popUpImgContainer').style.animationTimingFunction ='ease-in';
   document.getElementById('popUpImgContainer').style.opacity = '0';
