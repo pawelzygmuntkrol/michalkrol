@@ -22,6 +22,31 @@ let pl = {
 
     // ARTWORKS
     artworks: {
+        '0062': {
+            metaTitle: 'Toxic',
+            metaDescription: '',
+            metaKeywords: 'Structuralist, Structural Collage, Toxic',
+            paintingUrlNum: '0062',
+            paintingDataTitle: 'Toxic',
+            paintingDataAuthor: 'Structural Collage',
+            paintingDimensionsWidth: '70 cm',
+            paintingDimensionsHeight: '100 cm',
+            paintingYearOfCreation: '2020',    
+            paintingTitle: 'Toxic',
+            paintingStatus: 'Dostępny',
+            paintingDescription: 'Praca symbolizuje „coś” toksycznego, trującego, substancję która budzi niepokój, zielony trujący gaz i jest czymś nieznanym, dzikim i nieodkrytym. Powoli wydobywa się na powierzchnię by opanować cały świat. Praca powstała pod wpływem narastającej epidemii COVID-19.',
+            paintingImages: {
+                '0062-1': 'images\0062\0062-1.jpg',
+                '0062-2': 'images\0062\0062-2.jpg',
+                '0062-3': 'images\0062\0062-3.jpg',
+                '0062-4': 'images\0062\0062-4.jpg',
+                '0062-5': 'images\0062\0062-5.jpg',
+                '0062-6': 'images\0062\0062-6.jpg',
+                '0062-7': 'images\0062\0062-7.jpg',
+                '0062-8': 'images\0062\0062-8.jpg',
+            }
+        },
+
         '0061': {
             metaTitle: 'Hivé',
             metaDescription: '',
