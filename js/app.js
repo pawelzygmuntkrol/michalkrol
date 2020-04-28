@@ -259,7 +259,7 @@ function displayExhibition() {
   let id = '0001';
   let lastNumofId = 1;
   for (let i = 0; i < Object.keys(pl.exhibitions).length; i++) {
-    const { exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink1, exhibitionLink2, exhibitionLink3, exhibitionPoster } = pl.exhibitions[id];
+    const { exhibitionHeader, exhibitionDate, exhibitionParagraph, exhibitionLink1, exhibitionLink2, exhibitionLink3, exhibitionPoster } = usedLanguage.exhibitions[id];
     const str =  `<div class='container'>
                     <div class='text'>
                       <h1 id='exhibitionHeader'>${exhibitionHeader}</h1>

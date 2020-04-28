@@ -85,7 +85,7 @@ let pl = {
             paintingYearOfCreation: '2018',    
             paintingTitle: 'Freedom',
             paintingStatus: 'Dostępny',
-            paintingDescription: 'Freedom oznacza wolność artystyczną. Wolność która przedstawia poprzez zastosowanie różnych technik malarskich. Wolność w postaci abstrakcji artystyczne. Wolność w postaci otwartego umysłu na nowe. Wykonany z opiłków metalu przytwierdzonych za pomocą specjalistycznego kleju i grubo lanej farby.',
+            paintingDescription: 'Freedom: oznacza wolność artystyczną. Wolność poprzez zastosowanie różnych technik malarskich. Wolność w postaci abstrakcji artystycznej. Wolność w postaci otwartego umysłu na nowe. Wykonany z opiłków metalu przytwierdzonych za pomocą specjalistycznego kleju i grubo lanej farby. Obraz zamalowany po bokach nie wymaga ramy, sygnowany i podpisany na odwrocie.',
             paintingImages: {
                 '0060-1': 'images\0060\0060-1.jpg',
                 '0060-2': 'images\0060\0060-2.jpg',
@@ -805,7 +805,7 @@ let pl = {
             paintingYearOfCreation: '2018',    
             paintingTitle: 'Interior',
             paintingStatus: 'Sprzedany',
-            paintingDescription: 'Interior to część pomalowanych zdjęć rentgenowskich które każde z osobna stanowi odrębne dzieło, abstrakcyjna wariacje. Jako całość występuje pod instalacją "SIEĆ". Interior cykl prac czerpiący inspiracje że zdjęć rentgenowskich.',
+            paintingDescription: 'Praca z cyklu „Interior”.',
             paintingImages: {
                 '0022-1': 'images\0022\0022-1.jpg',
                 '0022-2': 'images\0022\0022-2.jpg',
@@ -1443,7 +1443,7 @@ let pl = {
         biographyParagraph: `
         Urodzony w 1984 r. pochodzi z Kujaw. Tytuł magistra uzyskał kończąc studia na wydziale Pedagogiki i Psychologii w Katedrze Filozofii Edukacji i Pedagogiki Kultury Uniwersytetu Kazimierza Wielkiego w Bydgoszczy. Dotychczas prace były realizowane w dwóch sektorach : STRUCTURAL COLLAGE z wykorzystaniem maszyn industrialnych, dzięki którym mogły powstać obrazy strukturalne oraz INTERIOR czyli wgląd do wnętrza dosłownie i w przenośni dzięki zdjęciom rentgenowskim  oraz pochodzącym z rezonansu magnetycznego.
         Inspiracje do swojej twórczości czerpał z pracy w bydgoskich fabrykach, w których pracował w wolnym czasie i okresie studenckim. Stamtąd pochodzą także elementy wykorzystywane w jego twórczości. Posługuje się głównie asamblażem i kolażem. Pokazuje, że elementy konstrukcyjne różnych rzeczy lub ubytki w procesie produkcyjnym mogą zaistnieć na nowo, nowym życiem, jako obraz posiadający w sobie ducha przeszłości, a jednocześnie nową artystyczną drogę przyszłości.
-        Inspiruje go głównie strukturalizm i industrializm oraz wszelkie ich wytwory w życiu nas otaczającym. Jednak  przede wszystkim malarstwo strukturalne, fascynacja Alberto Burri. Dzięki temu może realizować jak to określa                          „kolaż strukturalny„. Po odbytych wizytach w Australii, Szwajcarii, Niemczech czy Wielkiej Brytanii obecnie mieszka i tworzy w Poznaniu.
+        Inspiruje go głównie strukturalizm i industrializm oraz wszelkie ich wytwory w życiu nas otaczającym. Jednak przede wszystkim malarstwo strukturalne, fascynacja takimi artystami jak: Alberto Burri, Piotr Łakomy, Andy Warhol czy Hans Rudolf Giger. Dzięki temu może realizować jak to określa                          „kolaż strukturalny„. Po odbytych wizytach w Australii, Szwajcarii, Niemczech czy Wielkiej Brytanii obecnie mieszka i tworzy w Poznaniu.
         `
     },
 
