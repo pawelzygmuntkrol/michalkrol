@@ -37,9 +37,10 @@
 }
 
 .img-item img {
-    max-height: 97vh;
+    max-height: 95vh;
     max-width: 90vw;
     padding: 2rem 0;
+    overflow: hidden;
 }
 
 #img-description {

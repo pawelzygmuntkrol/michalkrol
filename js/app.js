@@ -123,7 +123,7 @@ function displayArtworksList() {
     if (displayStructuralCollageValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                    <a href='./artworksitem.html'>
+                    <a href='./artworksitem/${id}'>
                         <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -135,7 +135,7 @@ function displayArtworksList() {
     } else if (displayInteriorValue === 1) {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                    <a href='./artworksitem.html'>
+                    <a href='./artworksitem/${id}'>
                         <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
                         <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                         <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
@@ -146,7 +146,7 @@ function displayArtworksList() {
       }
     } else if (displayAllValue === 1) {
       str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                <a href='./artworksitem.html'>
+                <a href='./artworksitem/${id}'>
                     <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
                     <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
