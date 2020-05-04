@@ -24,10 +24,12 @@ function setURL() {
 
 // GDPR
 // Checks local storage and if user didn't click 'understood' button -> shows cookie banner.
-let gdpr;
+let gdprStatus;
+
 function gdprShow() {
-  gdprStatus = localStorage.getItem('gdprStatus');
+  gdprStatus = localStorage.getItem('gdprStatus') || 'on';
   gdprStatus === 'off' ? (document.getElementById('cookieBanner').style.visibility = 'hidden') : (document.getElementById('cookieBanner').style.visibility = 'visible');
+  
 }
 
 // Hides cookie banner if user clicked 'understood' button and remembers users decision.
