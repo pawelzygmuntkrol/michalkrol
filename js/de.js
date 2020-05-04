@@ -1357,9 +1357,9 @@ let de = {
         // EXHIBITIONS
         exhibitions: {
             '0006': {
-                exhibitionHeader: 'Wystawa sztuki współczesnej z kolekcji Piotra Fajkisa w Kopalni Ignacy w Rybniku',
-                exhibitionDate: 'styczeń 2020 – luty 2020',
-                exhibitionParagraph: `Zgromadzone dzieła na wystawie prezentuję polskich artystów młodego pokolenia takich jak Paweł Baśnik, Patryk Różycki, Piotr Owczarek, czy Paweł Tymcio, ale nie tylko. W jego kolekcji znajdują się również starsi, dojrzali twórcy, jak choćby Kazimierz Rafalik, Piotr Młodożeniec, Wilhelm Sasnal, Iza Staręga, Dorota Nieznalska lub Norman Leto. Zaprezentowana została także praca Michała Króla „Sieć” .`,
+                exhibitionHeader: 'Ausstellung moderner Kunst aus der Sammlung von Piotr Fajkis in der Ignacy Mine in der Stadt Rybnik, Polen',
+                exhibitionDate: 'der Januar 2020 – der Februar 2020',
+                exhibitionParagraph: `Sammlung von Werken junger und älterer Künstler, mit der Präsentation von Michał Król’s Arbeit mit dem Titel „Das Netzwerk”.`,
                 exhibitionLink1: 'https://www.rybnik.com.pl/wiadomosci,wystawa-sztuki-wspolczesnej-na-ignacym,wia5-3267-43345.html',
                 exhibitionLink2: '',
                 exhibitionLink3: '',
@@ -1367,9 +1367,9 @@ let de = {
             },
     
             '0005': {
-                exhibitionHeader: 'Jasinski&friends VII - wystawa sztuki w Galerii Przy Teatrze w Warszawie',
-                exhibitionDate: 'listopad 2019 – styczeń 2020',
-                exhibitionParagraph: `Siódma edycja zbiorowej wystawy sztuki Jasinski&friends. Organizowana przez Dominika Jasińskiego wraz z Galerią Przy Teatrze Narodowym w Warszawie. Zaprezentowano prace 26 - ciu polskich artystów, od malarstwa przez grafikę po fotografię. Na wystawie można było zobaczyć trzy prace autorstwa Michała Króla pt. „Earth Skull”, „Golden Skul” „Copper Skull”.`,
+                exhibitionHeader: 'Jasinski & friends VII – Kunstausstellung in der Galerie „Przy Teatrze Narodowym” in Warschau',
+                exhibitionDate: 'der November 2019 – der Januar 2020',
+                exhibitionParagraph: `The 7th edition of Jasinski & friends kollektive Kunstausstellung wurde von Dominik Jasinski in Zusammenarbeit mit der Galerie„Przy Teatrze Narodowym” in Warschau organisiert. Die insgesamt 26 Werke polnischer Künstler enthielten Gemälde, Grafiken und Fotografien. Drei Arbeiten von Michał Król mit den Titeln „Erdschädel”, “Goldschädel” und “Kupferschädel” waren dabei.`,
                 exhibitionLink1: 'https://www.facebook.com/events/3070138143000323/',
                 exhibitionLink2: '',
                 exhibitionLink3: '',
@@ -1377,29 +1377,9 @@ let de = {
             },
     
             '0004': {
-                exhibitionHeader: '„INTERIOR” - Wernisaż prac w galerii Popartgaleria w Poznaniu',
+                exhibitionHeader: 'Vernisage von „Innenarbeiten” in der Popart Galerie in Poznan.',
                 exhibitionDate: '28.10.2018 – 8.11.2018',
-                exhibitionParagraph: `
-                    - rentgen pokazuje nam coś niewidocznego,<br>
-                    - naszą wewnętrzną powłokę,<br>
-                    - strukturę,<br>
-                    - materię organiczną ukazaną przez maszynę,<br>
-                    - jest metaforą INTERIORU czyli WNĘTRZA,<br>
-                    - nie chodzi o fizyczne wnętrze, ono jest tylko pretekstem,<br>
-                    - ale wnętrze emocjonalne,<br>
-                    - ukazane pod postacią barw,<br>
-                    - różnego rodzaju,<br>
-                    - wynikłych z doznań,<br>
-                    - i doświadczeń,<br>
-                    - emocjonalnych , muzycznych, fizycznych , erotycznych,<br>
-                    - które są w naszym wnętrzu osadzone,<br>
-                    - jak plamy koloru nałożone na tych zdjęciach,<br>
-                    - jest to też hołd złożony muzyce elektronicznej, techno,<br>
-                    - która niesie cząstkę futuryzmu, mroku, nowoczesności,<br>
-                    - oraz techniczności i surowości jak maszyna RTG,<br>
-                    - która stała się narzędziem diagnostycznym działania, 
-                    artystycznego.
-                `,
+                exhibitionParagraph: ` Das Röntgenbild zeigt alles unsichtbare für das bloße Auge:: unsere innere Schale, Struktur, organische Materie als Sinnbild für das Innere, eine emotionale Landschaft illustriert mit Farben, die für unsere Gefühle, musikalisches, physisches und erotisches Empfinden stehen. Es ist aber auch ein Tribut an elektronische Technomusik, welches Teile von Futurismus, Finsternis, Modernität, ebenso technisch wie ein Röntgengerät als diagnostisches Mittel für künstlerisches Schaffen.`,
                 exhibitionLink1: 'https://www.facebook.com/events/254804431892324/',
                 exhibitionLink2: '',
                 exhibitionLink3: '',
@@ -1407,9 +1387,9 @@ let de = {
             },
     
             '0003': {
-                exhibitionHeader: 'XXI Międzynarodowy Kongres Ochrony Środowiska Envicon Environment',
-                exhibitionDate: 'październik 2017 – październik 2017',
-                exhibitionParagraph: `Tematy poruszane podczas ENVICON-u oraz informacje i wiedza na najwyższym poziomie merytorycznym co roku przyciągają około pół tysiąca uczestników. Kongres to sprawdzone forum, w którym udział biorą najważniejsi reprezentanci administracji rządowej i samorządowej, przedstawiciele polskich i zagranicznych przedsiębiorstw, eksperci w dziedzinach gospodarki odpadami i gospodarki wodno-ściekowej, a także wykorzystywania surowców wtórnych i rozsądnego zarządzania środowiskiem i ekologią. W ramach wykorzystania surowców wtórnych oraz w nawiązaniu do tematyki ZERO WASTE projekt STUKTURAL COLLAGE został poproszony o pokazanie możliwości wykorzystania produktów ubocznych procesów produkcyjnych w ujęciu artystycznym. Tym samym można było dostrzec, iż tematyka ZERO WASTE & ART mogą być ze sobą tożsame.`,
+                exhibitionHeader: '21. Internation Kongress Umweltschutz Envicon Environment auf der MTP Poznań Expo',
+                exhibitionDate: 'der Oktober 2017 – der Oktober 2017',
+                exhibitionParagraph: `Dieser Kongress ist ein Forum für die wichtigsten Repräsentanten der Landes- und Lokalregierung/Administration, einheimische und internationale Vertreter von Firmen und Experten im Bereich Abfallmanagement, sowie Wasserversorgung und Material-Wiederverwertung. Als Teil des Recycling in Relation mit dem “Zero Waste” Trend, wurden dort Strukturelle Kollagen präsentiert, die zeigten, wie industrielle Reste kunstvoll aufbereitet werden können, indem Zero Waste und Kunst in Verbindung gebracht wird.`,
                 exhibitionLink1: 'https://www.facebook.com/events/1413554982060525/',
                 exhibitionLink2: 'https://www.facebook.com/envicon.abrys/posts/1851582358193016',
                 exhibitionLink3: '',
@@ -1417,9 +1397,9 @@ let de = {
             },
     
             '0002': {
-                exhibitionHeader: 'Wernisaż pt. STRUCTURAL COLLAGE w Geranium Caffe w Poznaniu',
-                exhibitionDate: 'czerwiec 2017 – wrzesień 2017',
-                exhibitionParagraph: `Wernisaż odbył się w jednej z bardziej interesujących kawiarni i restauracji Poznania Geranium Caffe Vege Kuchnia. Kawiarnia będąca zdecydowanie jedną z ulubienic mieszkańców Jeżyc, stawia przede wszystkim na siły natury w swojej kuchni oraz filozofii kulinarnej, jednocześnie prezentując pełne przyrody i harmonii wnętrza. Zgodziła się zaprezentować prace będące w pewien sposób zaprzeczeniem procesów natury, a stanowiące raczej abstrakcyjne twory powstałe przy współdziałaniu maszyny z człowiekiem. W ten sposób postawiła sobie jedną poprzeczkę wyżej, celowo uwrażliwiając swoich gości, często stałych bywalców, na inny wymiar rzeczywistości, w którym toporny świat maszyn, miesza się z abstrakcyjnym myśleniem człowieka. Stając się jednocześnie przestrzenią, która tak jak kuchnia non stop się zmienia.`,
+                exhibitionHeader: 'Vernissage STRUCTURAL COLLAGE im Geranium Caffe in Poznań',
+                exhibitionDate: 'der Juni 2017 – der September 2017',
+                exhibitionParagraph: `Die Vernissage fand in einem der beliebtesten Restaurants in Poznań statt - Geranium Caffe Vege Cousine, mit Arbeiten, die die natürlichen Prozesse einen anderen Kontext setzten, indem abstrakte Kreationen die Beziehung von Mensch und Maschine darstellten.`,
                 exhibitionLink1: 'https://www.facebook.com/events/1910549632553265/',
                 exhibitionLink2: '',
                 exhibitionLink3: '',
@@ -1427,9 +1407,9 @@ let de = {
             },
     
             '0001': {
-                exhibitionHeader: 'Wystawa i happening pt. STRUCTURAL COLLAGE w Bydgoszczy',
-                exhibitionDate: 'marzec 2017 – maj 2017',
-                exhibitionParagraph: `Wystawa odbyła się w XIV filii Wojewódzkiej i Miejskiej Biblioteki Publicznej w Bydgoszczy położonej przy jednej z głównych ulic. Zamierzeniem projektu było wyjście ze sztuką do zwykłych obywateli miasta i obcowanie z nią „twarzą w twarz”, a także „wciągnięcie” obywateli w projekt tworzenia wielkiego kolażu kuturowo – społecznego: biblioteka-sztuka-ulica. Użyta została do tego ogromna witryna okienna biblioteki, w której rozmieszczone zostały wyróżniające się kolorystycznie prace, których celem było zwrócenie uwagi zwykłego pieszego i zachęcenie go do zatrzymania się i obcowania ze sztuką, która poniekąd wychodzi do niego na przeciw. Jednocześnie zachęcając zwykłych obywateli do przestąpienia progów biblioteki. Wystawa prac była jednocześnie happeningiem mającym na celu zwrócenie uwagi zwykłych mieszkańców na sztukę, spotkaną na swojej drodze, zachęcenie ich do poznania jej bliżej, a w dalszej konsekwencji obcowania z kulturą poprzez swoją obecność w bibliotece.`,
+                exhibitionHeader: 'Ausstellung und Veranstaltung „STRUCTURAL COLLAGE” in Bydgoszcz',
+                exhibitionDate: 'der März 2017 – der Mai 2017',
+                exhibitionParagraph: `Diese Ausstellung fand an der Nationalbibliothek Nr. 14 in Bydgoszcz statt. Die Intention war es, moderne Kunst dem gewöhnlichen Publikum nahezubringen und mit dieser spielerisch zu interagieren. Die Besucher waren eingeladen an einer “sozialen Collage” teilzunehmen. Die Bibliothek stellte hierfür ihr großes Fenster zur Verfügung, wo ein Farbenspiel die Besucher in ihren Bann ziehen sollte.`,
                 exhibitionLink1: 'https://www.facebook.com/events/290218671399627/',
                 exhibitionLink2: '',
                 exhibitionLink3: '',
@@ -1441,40 +1421,8 @@ let de = {
     biography: {
         biographyHeader: 'Biografie',
         biographyParagraph: `
-            DEDEDE Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Perspiciatis pariatur corporis porro. Sunt tempora incidunt 
-            ea hic nisi, sed culpa laboriosam laudantium non unde odit 
-            omnis ducimus temporibus perspiciatis quaerat! Lorem ipsum 
-            dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur 
-            corporis porro. Sunt tempora incidunt ea hic nisi, sed culpa 
-            laboriosam laudantium non unde odit omnis ducimus temporibus 
-            perspiciatis quaerat! Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Perspiciatis pariatur corporis porro. Sunt 
-            tempora incidunt ea hic nisi, sed culpa laboriosam laudantium 
-            non unde odit omnis ducimus temporibus perspiciatis quaerat!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Perspiciatis pariatur corporis porro. Sunt tempora incidunt 
-            ea hic nisi, sed culpa laboriosam laudantium non unde odit 
-            omnis ducimus temporibus perspiciatis quaerat! Lorem ipsum 
-            dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur 
-            corporis porro. Sunt tempora incidunt ea hic nisi, sed culpa 
-            laboriosam laudantium non unde odit omnis ducimus temporibus 
-            perspiciatis quaerat! Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Perspiciatis pariatur corporis porro. Sunt 
-            tempora incidunt ea hic nisi, sed culpa laboriosam laudantium 
-            non unde odit omnis ducimus temporibus perspiciatis quaerat!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Perspiciatis pariatur corporis porro. Sunt tempora incidunt 
-            ea hic nisi, sed culpa laboriosam laudantium non unde odit 
-            omnis ducimus temporibus perspiciatis quaerat! Lorem ipsum 
-            dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur 
-            corporis porro. Sunt tempora incidunt ea hic nisi, sed culpa 
-            laboriosam laudantium non unde odit omnis ducimus temporibus 
-            perspiciatis quaerat! Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Perspiciatis pariatur corporis porro. Sunt 
-            tempora incidunt ea hic nisi, sed culpa laboriosam laudantium 
-            non unde odit omnis ducimus temporibus perspiciatis quaerat!
-            `
+        Geboren in 1984 in der Region Kujawy und Absolvent eines Masterstudiengangs  in Pädagogik an der Kazimierz Wielki Universität in Bydgoszcz, Polen. Seine Arbeiten lassen sich derzeit in zwei Kategorien einteilen: Struktur-Kollage, die mit Hilfe von Maschinen seine strukturellen Gemälde entstehen lässt, und Interior, welches einen Einblick ins Innere gibt, sowohl wörtlich als auch figürlich, mit Hilfe von Röntgen- und Magnetresonanzbildern. Seine Inspiration schöpfte er aus Fabriken in Bydgoszcz, wo er neben dem Studium gejobbt hatte. Von dort hatte er verschiedene Industriematerialien zu Kunstwerken zusammengesetzt. Seine charakteristischen Collagen und Gemälde sollen vermitteln, dass Materialien wiederverwertet werden können und in einen neuen, einzigartigen und lebendigen Kontext sein können. Sein Stil ist inspiriert von Strukturalismus und Industrialismus, welche die Schönheit der Dinge unseres Lebens darstellen. Seine Vorbilder sind Alberto Burri und Hans Rudolf Giger, wessen Arbeiten ihm dazu inspirierten seine eigene strukturelle Collage zu kreieren. Er hat bereits viele Länder bereist, u. A. Australien, Schweiz, Deutschland und Großbritannien. Zur Zeit lebt und arbeitet er in Poznań, Polen. 
+        `
     },
 
     // CONTACT
