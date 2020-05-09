@@ -77,10 +77,10 @@ function closePopUpImg() {
 
 // MAIN PAINTINGS
 // Sets value to side menu sort options used in main page to color displayAllButton.
-let displayAllValue = 1;
-let displayStructuralCollageValue = 0;
+//let displayAllValue = 1;
+let displayStructuralCollageValue = 1;
 let displayInteriorValue = 0;
-
+/*
 function displayAll() {
   displayAllValue = 1;
   displayStructuralCollageValue = 0;
@@ -90,27 +90,37 @@ function displayAll() {
   document.getElementById('displayInteriorButton').style.color = 'dimgray';
   return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
 }
-
+*/
 // Sets value to side menu sort options used in main page to color displayStructuralCollageButton.
 function displayStructuralCollage() {
-  displayAllValue = 0;
+  //displayAllValue = 0;
   displayStructuralCollageValue = 1;
   displayInteriorValue = 0;
-  document.getElementById('displayAllButton').style.color = 'dimgray';
+  //document.getElementById('displayAllButton').style.color = 'dimgray';
   document.getElementById('displayStructuralCollageButton').style.color = 'white';
   document.getElementById('displayInteriorButton').style.color = 'dimgray';
-  return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
+  document.getElementById('changeDisplayedSeries').innerHTML = `<p onclick='displayInterior()'>Interior →</p>`;
+  return [/*displayAllValue,*/ displayStructuralCollageValue, displayInteriorValue];
 }
 
 // Sets value to side menu sort options used in main page to color displayInteriorButton.
 function displayInterior() {
-  displayAllValue = 0;
+  //displayAllValue = 0;
   displayStructuralCollageValue = 0;
   displayInteriorValue = 1;
-  document.getElementById('displayAllButton').style.color = 'dimgray';
+  //document.getElementById('displayAllButton').style.color = 'dimgray';
   document.getElementById('displayStructuralCollageButton').style.color = 'dimgray';
   document.getElementById('displayInteriorButton').style.color = 'white';
-  return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
+  document.getElementById('changeDisplayedSeries').innerHTML = `<p onclick='displayStructuralCollage()'>Structural Collage →</p>`;
+  return [/*displayAllValue,*/ displayStructuralCollageValue, displayInteriorValue];
+}
+
+function redirectToAnotherSeries() {
+  if(displayStructuralCollageValue === 1 ) {
+    document.getElementById('changeDisplayedSeries').innerHTML = `<p onclick='displayInterior()'>Interior →</p>`;
+  } else if (displayStructuralCollageValue === 0 ) {
+    document.getElementById('changeDisplayedSeries').innerHTML = `<p onclick='displayStructuralCollage()'>Structural Collage →</p>`;
+  }
 }
 
 // Take a length of list of paintings to display, loops thru them and display them (on main page -> index.html).
@@ -146,7 +156,7 @@ function displayArtworksList() {
       } else {
         str = '';
       }
-    } else if (displayAllValue === 1) {
+    } /*else if (displayAllValue === 1) {
       str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
                 <a href='./artworksitem/${id}'>
                     <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
@@ -154,7 +164,7 @@ function displayArtworksList() {
                     <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
                 </a>
             </div>`;
-    }
+    }*/
     result = str.concat(result);
     lastNumofId++;
     id = `0000${lastNumofId}`;
@@ -397,12 +407,13 @@ function displayLanguage(param) {
   
 // If URL is 'index.html' -> displays main page with paintings grid, colors apropriate link in side menu and show 3 sort options in side menu.
   if (path.includes('index') === true) {
-    const { displayAllButton, displayStructuralCollageButton, displayInteriorButton } = usedLanguage.menu;
+    const { /*displayAllButton,*/ displayStructuralCollageButton, displayInteriorButton } = usedLanguage.menu;
       document.getElementById('artworksList').innerHTML = displayArtworksList();
       document.getElementById('artworksButton').style.color = 'white';
-      document.getElementById('displayAllButton').innerHTML = displayAllButton;
+      //document.getElementById('displayAllButton').innerHTML = displayAllButton;
       document.getElementById('displayStructuralCollageButton').innerHTML = displayStructuralCollageButton;
       document.getElementById('displayInteriorButton').innerHTML = displayInteriorButton;
+      redirectToAnotherSeries(usedLanguage);
 
 // If URL is 'artworksitem.html' -> changes its URL to be unique, shows 'back' button, sets meta data, loads all information and images about chosen painting and sets background scroll effect.
   } else if (path.includes('artworksitem') === true) {

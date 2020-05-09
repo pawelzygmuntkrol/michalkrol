@@ -54,13 +54,16 @@
                 <li id='name'>Michał Król</li>
                 <li id='pseudonym'>Structuralist</li>
             </div>
+            <div class='nav-mid' onclick='closeSideMenu()'>
+                <li id='changeDisplayedSeries'><!-- text is dynamically loaded by changeLanguage function --></li>
+            </div>
             <div href='#/' class='nav-right'>
                 <li id='menu-button' onclick='openSideMenu()'>
                     <p class='large-screens'>Menu</p>
                     <p class='small-screens'>&#9776;</p>
                 </li> 
             </div>
-            <div id='menu' class='sidemenu'>
+            <div id='menu' class='sidemenu' onclick='closeSideMenu()'>
                 <li href='#' id="close-button" onclick='closeSideMenu()'>
                     <p class='large-screens elements-to-hover' id='closeButton'></p>
                     <p class='small-screens elements-to-hover'>&times;</p>
@@ -68,7 +71,7 @@
                 <div class='sidemenu-links'>
                     <a href='https://pawelzygmuntkrol.github.io/michalkrol/index.html' id='artworksButton' active><!-- text is dynamically loaded by changeLanguage function --></a>
                     <div class='sidemenu-sorting'>
-                        <a href='#' id='displayAllButton' onclick='displayAll()'><!-- text is dynamically loaded by changeLanguage function --></a>
+                        <!-- <a href='#' id='displayAllButton' onclick='displayAll()'> text is dynamically loaded by changeLanguage function </a> -->
                         <a href='#' id='displayStructuralCollageButton' onclick='displayStructuralCollage()'><!-- text is dynamically loaded by changeLanguage function --></a>
                         <a href='#' id='displayInteriorButton' onclick='displayInterior()'><!-- text is dynamically loaded by changeLanguage function --></a>
                     </div>

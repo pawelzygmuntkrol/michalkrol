@@ -109,11 +109,11 @@
     font-size: 1.3rem;
 }
 
-#displayAllButton {
+#displayStructuralCollageButton {
     color: white;
 }
 
-#displayAllButton, #displayStructuralCollageButton, #displayInteriorButton {
+/*#displayAllButton,*/ #displayStructuralCollageButton, #displayInteriorButton {
     padding: 0 0.7rem;
 }
 

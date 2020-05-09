@@ -8,9 +8,13 @@ let en = {
 
     // SIDEBAR MENU
     menu: {
+        goToStructuralCollage: 'Structural Collage →',
+        goToInterior: 'Interior →',
+
         closeButton: 'Close',
         artworksButton: 'Artworks',
-        displayAllButton: 'All',
+        // displayAllButton: 'All',
+        // used only in index
         displayStructuralCollageButton: 'Structural Collage',
         displayInteriorButton: 'Interior',
         exhibitionButton: 'Exhibitions',
