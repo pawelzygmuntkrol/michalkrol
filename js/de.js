@@ -38,7 +38,7 @@ let de = {
                 paintingYearOfCreation: '2020',    
                 paintingTitle: 'Toxic',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca symbolizuje „coś” toksycznego, trującego, substancję która budzi niepokój, zielony trujący gaz i jest czymś nieznanym, dzikim i nieodkrytym. Powoli wydobywa się na powierzchnię by opanować cały świat. Praca powstała pod wpływem narastającej epidemii COVID-19.',
+                paintingDescription: '',
                 paintingImages: {
                     '0062-1': 'images\0062\0062-1.jpg',
                     '0062-2': 'images\0062\0062-2.jpg',
@@ -63,7 +63,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Hivé',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca wykonana w charakterze structural collage. Do jej wykonania posłużyła czarna plastikowa siatka przytwierdzona do płótna za pomocą specjalistycznego kleju zalana czarną olejną farbą. Symbolizuje, ul, społeczeństwo.',
+                paintingDescription: '',
                 paintingImages: {
                     '0061-1': 'images\0061\0061-1.jpg',
                     '0061-2': 'images\0061\0061-2.jpg',
@@ -89,7 +89,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Freedom',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Freedom: oznacza wolność artystyczną. Wolność poprzez zastosowanie różnych technik malarskich. Wolność w postaci abstrakcji artystycznej. Wolność w postaci otwartego umysłu na nowe. Wykonany z opiłków metalu przytwierdzonych za pomocą specjalistycznego kleju i grubo lanej farby. Obraz zamalowany po bokach nie wymaga ramy, sygnowany i podpisany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0060-1': 'images\0060\0060-1.jpg',
                     '0060-2': 'images\0060\0060-2.jpg',
@@ -115,7 +115,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Pink Teeth',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca z cyklu Interior nawiązująca do zdjęcia rentgenowskiego oraz wystawy Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0059-1': 'images\0059\0059-1.jpg',
                 }
@@ -133,7 +133,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Green Teeth',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca z cyklu Interior nawiązująca do zdjęcia rentgenowskiego oraz wystawy Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0058-1': 'images\0058\0058-1.jpg',
                 }
@@ -151,7 +151,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Blue Teeth',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca z cyklu Interior nawiązująca do zdjęcia rentgenowskiego oraz wystawy Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0057-1': 'images\0057\0057-1.jpg',
                 }
@@ -169,7 +169,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Dragon Flower',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Instalacja artystyczna wykonana z papieru. Imitującą liście roślinne, przypominające jednocześnie smocze skrzydła i roślinę egzotyczną.',
+                paintingDescription: '',
                 paintingImages: {
                     '0056-1': 'images\0056\0056-1.jpg',
                     '0056-2': 'images\0056\0056-2.jpg',
@@ -191,7 +191,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Space Brain',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca powstała w nawiązaniu do zdjęcia z rezonansu magnetycznego. Ukazując abstrakcyjnamą wizję mózgu. Będąc odniesieniem do cyklu Interior lecz z wykorzystaniem rezonansu magnetycznego.',
+                paintingDescription: '',
                 paintingImages: {
                     '0055-1': 'images\0055\0055-1.jpg',
                     '0055-2': 'images\0055\0055-2.jpg',
@@ -210,7 +210,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Secret Brain',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca powstała w nawiązaniu do zdjęcia z rezonansu magnetycznego. Ukazując abstrakcyjnamą wizję mózgu. Będąc odniesieniem do cyklu Interior lecz z wykorzystaniem rezonansu magnetycznego.',
+                paintingDescription: '',
                 paintingImages: {
                     '0054-1': 'images\0054\0054-1.jpg',
                     '0054-2': 'images\0054\0054-2.jpg',
@@ -229,7 +229,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Golden Brain',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca powstała w nawiązaniu do zdjęcia z rezonansu magnetycznego. Ukazując abstrakcyjnamą wizję mózgu. Będąc odniesieniem do cyklu Interior lecz z wykorzystaniem rezonansu magnetycznego.',
+                paintingDescription: '',
                 paintingImages: {
                     '0053-1': 'images\0053\0053-1.jpg',
                     '0053-2': 'images\0053\0053-2.jpg',
@@ -248,7 +248,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Super Brain',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca powstała w nawiązaniu do zdjęcia z rezonansu magnetycznego. Ukazując abstrakcyjnamą wizję mózgu. Będąc odniesieniem do cyklu Interior lecz z wykorzystaniem rezonansu magnetycznego.',
+                paintingDescription: '',
                 paintingImages: {
                     '0052-1': 'images\0052\0052-1.jpg',
                     '0052-2': 'images\0052\0052-2.jpg',
@@ -267,7 +267,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Alien',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca powstała inspirując się zdjęciem powstałym podczas badania rezonansem magnetycznym. W nawiązaniu do obcych.',
+                paintingDescription: '',
                 paintingImages: {
                     '0051-1': 'images\0051\0051-1.jpg',
                     '0051-2': 'images\0051\0051-2.jpg',
@@ -286,7 +286,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Alarm',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca powstała inspirując się zdjęciem powstałym podczas badania rezonansem magnetycznym. W nawiązaniu do obcych.',
+                paintingDescription: '',
                 paintingImages: {
                     '0050-1': 'images\0050\0050-1.jpg',
                     '0050-2': 'images\0050\0050-2.jpg',
@@ -305,7 +305,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Interior Dog 1 / Interior Dog 2',
                 paintingStatus: 'Sprzedane',
-                paintingDescription: 'Prace powstałe w wyniku inspiracji cyklem Interior nawiązując do zdjęcia rentgenowskiego psa.',
+                paintingDescription: '',
                 paintingImages: {
                     '0049-1': 'images\0049\0049-1.jpg',
                     '0049-2': 'images\0049\0049-2.jpg',
@@ -327,7 +327,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Pinkterior',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0048-1': 'images\0048\0048-1.jpg',
                 }
@@ -345,7 +345,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Lemon Brother Skull',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0047-1': 'images\0047\0047-1.jpg',
                 }
@@ -363,7 +363,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Rainbow Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0046-1': 'images\0046\0046-1.jpg',
                 }
@@ -381,7 +381,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Fire Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0045-1': 'images\0045\0045-1.jpg',
                 }
@@ -399,7 +399,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Disco Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0044-1': 'images\0044\0044-1.jpg',
                 }
@@ -417,7 +417,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Earth Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0043-1': 'images\0043\0043-1.jpg',
                 }
@@ -435,7 +435,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Copper Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0042-1': 'images\0042\0042-1.jpg',
                 }
@@ -453,7 +453,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Golden Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0041-1': 'images\0041\0041-1.jpg',
                 }
@@ -471,7 +471,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Harper Skull',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0040-1': 'images\0040\0040-1.jpg',
                 }
@@ -489,7 +489,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Shoot Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0039-1': 'images\0039\0039-1.jpg',
                 }
@@ -507,7 +507,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Bloody Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0038-1': 'images\0038\0038-1.jpg',
                 }
@@ -526,7 +526,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Pink Bullet Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0037-1': 'images\0037\0037-1.jpg',
                 }
@@ -544,7 +544,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Pink Flow',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0036-1': 'images\0036\0036-1.jpg',
                 }
@@ -562,7 +562,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'India Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0035-1': 'images\0035\0035-1.jpg',
                 }
@@ -580,7 +580,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Clown Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0034-1': 'images\0034\0034-1.jpg',
                 }
@@ -598,7 +598,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Solar Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0033-1': 'images\0033\0033-1.jpg',
                 }
@@ -616,7 +616,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Volatile Skull',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior. Druga część dyptyku z serii "Volatile".',
+                paintingDescription: '',
                 paintingImages: {
                     '0032-1': 'images\0032\0032-1.jpg',
                 }
@@ -634,7 +634,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Volatile',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior.',
+                paintingDescription: '',
                 paintingImages: {
                     '0031-1': 'images\0031\0031-1.jpg',
                     '0031-2': 'images\0031\0031-2.jpg',
@@ -653,7 +653,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Wings',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior. Zainspirowany anielskimi skrzydłami.',
+                paintingDescription: '',
                 paintingImages: {
                     '0030-1': 'images\0030\0030-1.jpg',
                 }
@@ -671,7 +671,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Dragonfly',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior. Zainspirowany owadem ważką oraz pokazem Aleksandra McQueena  Plato\'s Atlantis.',
+                paintingDescription: '',
                 paintingImages: {
                     '0029-1': 'images\0029\0029-1.jpg',
                 }
@@ -689,7 +689,7 @@ let de = {
                 paintingYearOfCreation: '2019',    
                 paintingTitle: 'Galactus',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca zainspirowana zdjęciem rentgenowskim wykonana akrylem na papierze w nawiązaniu do wystawy i cyklu Interior. Zainspirowany zdjęciem kosmosu.',
+                paintingDescription: '',
                 paintingImages: {
                     '0028-1': 'images\0028\0028-1.jpg',
                 }
@@ -707,7 +707,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Ableton',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Ableton jest pracą wykonaną na wystawę Interior. Za inspirację do wykonania pracy posłużyło zdjęcie rentgenowskie czaszki, które stało się abstrakcyjną wariacją oryginału. Ableton to pewnego rodzaju sprzęt muzyczny, oprogramowanie,  wykorzystywane w muzyce elektronicznej, techno do mixowania dźwięków. Praca jest pewnego rodzaju hołdem dla muzyki techno, poniekąd jak cała wystawa Interio. Praca zalaminowana przez odpowiednie oświetlenie uzyskuje wymiar trójwymiarowy.',
+                paintingDescription: '',
                 paintingImages: {
                     '0027-1': 'images\0027\0027-1.jpg',
                     '0027-2': 'images\0027\0027-2.jpg',
@@ -726,7 +726,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Wonderland',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca Wonderland jest wykonana również na wystawę Interior. Zainspirowana jest główną pracą i zdjęciem plakatowym, będącym motywem przewodnim wystawy. Symbolizuje cudowny, magiczny, życzeniowy świat. Jest zalaminowana, co przy odpowiednim oświetleniu daje efekt trójwymiarowości.',
+                paintingDescription: '',
                 paintingImages: {
                     '0026-1': 'images\0026\0026-1.jpg',
                 }
@@ -744,7 +744,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Smoq',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca powstała specjalnie na wystawę Interior. Słowo smoq to gra słów można ją interpretować jako: "Smoq" mistyczne zwierzę przedstawione z lotu ptaka. "Smoq" zielony dym  którym niejednokrotnie ludzkość  wypełniała swoje płuca. Projekt zainspirowany zdjęciem rentgenowskim płuc. Zalaminowany, odpowiednio oświetlony sprawia wrażenie lekko trójwymiarowego.',
+                paintingDescription: '',
                 paintingImages: {
                     '0025-1': 'images\0025\0025-1.jpg',
                     '0025-2': 'images\0025\0025-2.jpg',
@@ -763,7 +763,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'DNA',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Instalacja artystyczna pod tytułem DNA. Nawiązującą swoim charakterem do cyklu Interior. Stanowiąca metaforyczne odniesienie do dna czyli symbolicznego kodu w którym wszystko jest zapisane.',
+                paintingDescription: '',
                 paintingImages: {
                     '0024-1': 'images\0024\0024-1.jpg',
                     '0024-2': 'images\0024\0024-2.jpg',
@@ -789,7 +789,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Sieć',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Instalacja artystyczna pod tytułem Sieć. Składająca się z pomalowanych pojedynczych zdjęć rentgenowskich łącznie stanowiących całość. Praca będąca metaforą doznań, przeżyć, uczuć, muzycznych, wizualnych, erotycznych stanowiących wewnętrzny interior nas samych.',
+                paintingDescription: '',
                 paintingImages: {
                     '0023-1': 'images\0023\0023-1.jpg',
                     '0023-2': 'images\0023\0023-2.jpg',
@@ -809,7 +809,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Interior',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca z cyklu „Interior”.',
+                paintingDescription: '',
                 paintingImages: {
                     '0022-1': 'images\0022\0022-1.jpg',
                     '0022-2': 'images\0022\0022-2.jpg',
@@ -851,7 +851,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'EGGistence',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Obraz wykonany techniką kolażu z wykorzystaniem opiłków metalu, płótna i farby olejnej. Opiłki metalu przytwierdzone za pośrednictwem specjalistycznego kleju. Pracę charakteryzują różnorodne struktury farby Abstrakcyjne ujęcie jaja, bytu biologicznego oraz abstrakcji, która w nim zachodzi. Obraz podpisany zamalowany po bokach nie wymaga ramy.',
+                paintingDescription: '',
                 paintingImages: {
                     '0021-1': 'images\0021\0021-1.jpg',
                     '0021-2': 'images\0021\0021-2.jpg',
@@ -877,7 +877,7 @@ let de = {
                 paintingYearOfCreation: '2018',    
                 paintingTitle: 'Monstrancja',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Obraz fakturowy wykonany techniką kolażu z wykorzystaniem opiłków metalu, płótna i farby olejnej. Opiłki metalu pochodzą z procesu skrawania ze skrawarki i przytwierdzone są do płótna za pomocą specjalistycznego kleju. Użyto farby olejnej oraz werniksu zabezpieczającego. Boki obrazu są pomalowane więc obraz nadaje się do powieszenia i nie wymaga ramy. Obraz jest matowy z błyszczącymi elementami. Praca jest sygnowana i podpisana na odwrocie. Abstrakcyjne ujęcie przedmiotu  wykorzystywanego w Kościele jakim jest Monstrancja, który pomimo blasku pozostaje ciemny i pełen cieni w środku. Fotografia robiona z lampą błyskową.',
+                paintingDescription: '',
                 paintingImages: {
                     '0020-1': 'images\0020\0020-1.jpg',
                     '0020-2': 'images\0020\0020-2.jpg',
@@ -902,7 +902,7 @@ let de = {
                 paintingYearOfCreation: '2017',    
                 paintingTitle: 'Czarny miód',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca wykonana techniką mieszaną, z wykorzystaniem farby olejnej, papieru oraz płótna. Obraz abstrakcyjny stanowi kolaż bądź asamblaż stworzony z różnych elementów. Nawiązuje do plastra miodu ukazanego w symbolicznym, mrocznym, apokaliptycznym, ujęciu, będącym jednocześnie przestrogą braku poszanowania życia z naturą jak i abstrakcyjną wariacją na temat struktury plastra miodu. Praca jest sygnowana na odwrocie, boki ma częściowo zamalowane i nie wymaga ramy, zawerniksowana.',
+                paintingDescription: '',
                 paintingImages: {
                     '0019-1': 'images\0019\0019-1.jpg',
                     '0019-2': 'images\0019\0019-2.jpg',
@@ -927,7 +927,7 @@ let de = {
                 paintingYearOfCreation: '2017',    
                 paintingTitle: 'Czaszki',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Czaszki to projekt zainspirowany zdjęciem rentgenowskim, otrzymanym po prześwietleniu głowy. Maszyna do wykonywania rentgena stała się kolejnym sprzętem, który mogłem przełożyć na działania artystyczne, tym samym dołączając do ją do grona, wtryskarek, skrawarek, tokarek. Otworzyło to także nowy rozdział w zainteresowaniach artystycznych - popartem i zapoczątkowało cykl Interior. Zdjęcie autobiograficzne.',
+                paintingDescription: '',
                 paintingImages: {
                     '0018-1': 'images\0018\0018-1.jpg',
                     '0018-2': 'images\0018\0018-2.jpg',
@@ -954,7 +954,7 @@ let de = {
                 paintingYearOfCreation: '2017',    
                 paintingTitle: 'Źródło',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Obraz fakturowy wykonany z opiłków metalu pochodzących ze skrawarki z procesu skrawania, grubo lanej czarnej farby olejnej oraz farb olejnych sztalugowych. Czarny element pracy jest nawiązaniem z do mistycznego źródła, otchłani, przejścia. Jest tez pewnym symbolem niepokoju łączącego wszystkie obrazy, w których czarny element występuje. Podpisany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0017-1': 'images\0017\0017-1.jpg',
                     '0017-2': 'images\0017\0017-2.jpg',
@@ -981,7 +981,7 @@ let de = {
                 paintingYearOfCreation: '2017',    
                 paintingTitle: 'Filtry',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Filtry to praca kolaż na którą składają się 4 odrębne prace. Składają się na nią prostokątne tekturowe podkładki, które były wykorzystywane jako podkładki na farbę przy malowaniu  obrazów strukturalnych oraz filtry fotograficzne otrzymane od jednego z operatorów na Camerimage w Bydgoszczy przytwierdzone za pomocą kleju. Praca podpisana na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0016-1': 'images\0016\0016-1.jpg',
                     '0016-2': 'images\0016\0016-2.jpg',
@@ -1008,7 +1008,7 @@ let de = {
                 paintingYearOfCreation: '2016',    
                 paintingTitle: 'Embrion',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Obraz fakturowy, wykonany techniką kolażu. Składa się z plastikowych elementów pochodzących z wtryskarki jednej z fabryk bydgoskich. Elementy zostały przytwierdzone za pośrednictwem specjalistycznego kleju i zabezpieczone werniksem. Poza tym została użyta grubo lana farba olejna. Tytułowy embrion jest ukazany jako symboliczny twór,  który niezależnie od wszystkiego kształtuje się we własnym królestwie. Praca sygnowana podpisana na odwrocie bez możliwości wykonania kopii.',
+                paintingDescription: '',
                 paintingImages: {
                     '0015-1': 'images\0015\0015-1.jpg',
                     '0015-2': 'images\0015\0015-2.jpg',
@@ -1035,7 +1035,7 @@ let de = {
                 paintingYearOfCreation: '2016',    
                 paintingTitle: 'Insomnia',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Insomnia oznacza stan niewystarczającej długości snu lub niezadowalającej jego jakość. Jest to bezsenność. Jest to ciemność z przebłyskami światła. Na obraz składa się masa plastyczna przypominająca wosk, a w rzeczywistości  jest to masa powstała jako ubytek tworzywa z wtryskarek w jednej z bydgoskich fabryk. Elementy plastikowe zostały przytwierdzone do płótna za pomocą specjalistycznego kleju.  Elementy plastikowe zostały zabezpieczone lakierem. Na obraz została naniesiona gruba warstwa czarnej farby olejnej i polakierowana. Praca ma zamalowane boki i nie wymaga ramy.  Jest sygnowana i podpisana na odwrocie. ',
+                paintingDescription: '',
                 paintingImages: {
                     '0014-1': 'images\0014\0014-1.jpg',
                     '0014-2': 'images\0014\0014-2.jpg',
@@ -1062,7 +1062,7 @@ let de = {
                 paintingYearOfCreation: '2016',    
                 paintingTitle: 'Brainboom',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Brainboom jest nawiązaniem do pracy Heartboom. Jest to wybuch mózgu, a raczej,  personifikacja fantazji, wyobraźni, którą ten mózg tworzy. Obraz symbolizujący zmianę, radość pozytywną ekspresję. Praca jest wykonana z wielu elementów industrialnych pochodzących z procesów skrawania oraz wtryskarek, a także materiałów organicznych jak zasuszone owoce i kości. Praca sygnowana podpisana na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0013-1': 'images\0013\0013-1.jpg',
                     '0013-2': 'images\0013\0013-2.jpg',
@@ -1087,7 +1087,7 @@ let de = {
                 paintingYearOfCreation: '2015',    
                 paintingTitle: 'Nenufary',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Wariacja na temat obrazów Clouda Moneta o tematyce "Nenufary" i interpretacja utworu Björk "Black Lake". Obraz fakturowy wykonany techniką mieszaną za pomocą kolażu. Składa się z opiłków metal pochodzących z procesu skrawania, przytwierdzonych do płótna za pomocą specjalistycznego kleju, zasuszonych części australijskiej rośliny, Przytwierdzonych również za pomocą specjalistycznego kleju, grubo lanej czarnej farby olejnej oraz werniksu zabezpieczającego obraz. Boki obrazu są zamalowane co sprawia, iż nie potrzebuje on ramy. Praca jest sygnowana i podpisana na odwrocie. Obraz jest  lekko połyskujący z błyszczącymi elementami. Podświetlony od tyłu ukazuje inne kolory niż w normalnej odsłonie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0012-1': 'images\0012\0012-1.jpg',
                     '0012-2': 'images\0012\0012-2.jpg',
@@ -1115,7 +1115,7 @@ let de = {
                 paintingYearOfCreation: '2015',    
                 paintingTitle: 'Czarny świt',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: '"Czarny świt w krwistej barwie coraz mocniej mnie przeraża..." Autor nieznany<br><br>Najlepszy do charakteryzacji tej pracy jest powyższy opis, na który natrafiłem przypadkowo w internecie", który poprzez swoją wyrazistość stał się podwaliną do powstania pracy. Obraz fakturowy wykonany na płótnie ma zamalowane boki dzięki czemu nie wymaga ramy. Jest wykonany z opiłków metalu pochodzących z procesu skrawania ze skrawarki, przytwierdzonych do płótna za pomocą specjalistycznego kleju. Poza tym użyta została farba olejna oraz werniks zabezpieczający. Praca sygnowana i  podpisana na odwrocie obrazu. Powierzchnia matowa  z połyskliwymi elementami. Asamblaż, structural collage.',
+                paintingDescription: '',
                 paintingImages: {
                     '0011-1': 'images\0011\0011-1.jpg',
                     '0011-2': 'images\0011\0011-2.jpg',
@@ -1139,7 +1139,7 @@ let de = {
                 paintingYearOfCreation: '2014',    
                 paintingTitle: 'Heartboom',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Heartboom oznacza dosłownie wybuch serca pod wpływem pewnych doznań, uczuć, emocji, przeżyć. Jest to pewien rodzaj wyzwolenia emocjonalnego. Obraz jest wykonany techniką asamblażu. Składa się z masy plastycznej przypominającej wosk, a będącej w rzeczywistości wypływem plastikowego tworzywa z wtryskarek, pochodzących z jednej z bydgoskich fabryk. Obraz jest sygnowany, podpisany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0010-1': 'images\0010\0010-1.jpg',
                     '0010-2': 'images\0010\0010-2.jpg',
@@ -1164,7 +1164,7 @@ let de = {
                 paintingYearOfCreation: '2014',    
                 paintingTitle: 'Ant(y)-man',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca wykonana techniką kolażu. Zastosowana została srebrna farba olejna grubo kładziona oraz przymocowane ulane elementy, pochodzące z maszyny wtryskarka. Obraz posiada elementy wypukłe 3D przedstawionej postaci. Nawiązuje do początków swojego powstania czyli  fabryki która współcześnie często odczłowiecza naszą naturę sprowadzając nas do istot człeko - podobnych, robotów lub w tym wypadku mrówek pracujących jak w gnieździe. Obraz podpisany sygnowany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0009-1': 'images\0009\0009-1.jpg',
                     '0009-2': 'images\0009\0009-2.jpg',
@@ -1187,7 +1187,7 @@ let de = {
                 paintingYearOfCreation: '2013',    
                 paintingTitle: 'Anturium ',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Obraz fakturowy, kolaż, a właściwie asamblaż. Do wykonania pracy został użyty czarny siateczkowaty materiał, fioletowy kruszony metal pochodzący z procesu skrawania oraz czarna i fioletowa farba olejna. Elementy  zostały przytwierdzone za pomocą specjalistycznego kleju do płótna. Symboliką nawiązuje do Anturium. Kruszony materiał pochodzi z bydgoskiej fabryki jest symbolicznym sercem obrazu, dzięki któremu czarny organizm żyje. Obraz sygnowany podpisany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0008-1': 'images\0008\0008-1.jpg',
                     '0008-2': 'images\0008\0008-2.jpg',
@@ -1211,7 +1211,7 @@ let de = {
                 paintingYearOfCreation: '2008',    
                 paintingTitle: 'Aberracja',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Obraz powstał w starej fabryce-lakierni w Bydgoszczy w której kiedyś pracowałem podczas farbowania i lakierowania innych przedmiotów. Kolaż powstał z połączenia płyty kartonowej wykorzystywanej jako podkładka w lakierni, ciętego kruszonego metalu i farby olejnej oraz płótna. Na powierzchni pracy można doszukać się wiele śladów z przeszłości w postaci plam, chlapnięć, zadrapań. Łączy w sobie ducha przeszłości, w której się narodził oraz przyszłości stając się współczesnym obrazem. Obraz jest sygnowany i podpisany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0007-1': 'images\0007\0007-1.jpg',
                     '0007-2': 'images\0007\0007-2.jpg',
@@ -1236,7 +1236,7 @@ let de = {
                 paintingYearOfCreation: '2008',    
                 paintingTitle: 'Dion',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Historia obrazu jest iście industrialna gdyż powstał on w starej fabryce-lakierni w Bydgoszczy w której kiedyś pracowałem podczas farbowania i lakierowania innych przedmiotów. Praca powstała z dwóch części: płyty kartonowej oraz płótna. Dodatkowo została wykorzystana farba olejna w różnych kolorach i warstwach na płycie kartonowej. Udział swój w powstaniu pracy miała maszyna wykorzystywana do mieszania farby. Mieszając farbę dokonywała rozbryzgu na podkładkę, która teraz stanowi główny trzon obrazu. Na pracy widać ślady lakieru, będącego jednym z podstawowych materiałów stosowanych w lakierni.',
+                paintingDescription: '',
                 paintingImages: {
                     '0006-1': 'images\0006\0006-1.jpg',
                     '0006-2': 'images\0006\0006-2.jpg',
@@ -1258,7 +1258,7 @@ let de = {
                 paintingYearOfCreation: '2008',    
                 paintingTitle: 'RCD 500',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Kolaż powstały podczas pracy w fabryce - lakierni w Bydgoszczy. Część kartonowa wykorzystywana także podczas lakierowania i malowania detali w lakierni przytwierdzona do płótna i pokryta warstwami farby olejnej i pastelami. Obraz zmienia częściowo barwy w zależności od rodzaju oświetlenia. Wyrażenie RCD 500 symbolicznie nawiązuję do podkładek kartonowych wykorzystywanych w lakierni ale równie dobrze może oznaczać daleką, nieodkrytą nam jeszcze galaktykę. Obraz sygnowany podpisany na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0005-1': 'images\0005\0005-1.jpg',
                     '0005-2': 'images\0005\0005-2.jpg',
@@ -1281,7 +1281,7 @@ let de = {
                 paintingYearOfCreation: '2007',    
                 paintingTitle: 'SM',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'SM oznacza Something mechanical, Stright maschine, strange material. Historia obrazu nawiązuje do klimatu industrialnego, gdyż elementy, które zawiera pochodzą z fabryki. Składa się z opiłków metalu pochodzących ze skrawarki z procesu skrawania oraz ciętego kruszonego fioletowego metalu, przytwierdzonego za pośrednictwem specjalistycznego kleju do drewnianej płyty pilśniowej. Płyta ma nierówny kształt, grubość około 8 mm, poza opiłkami metalu składa się z grubo lanej warstwy srebrnej farby olejnej na tło oraz smoły z procesu smołowania dachu w środku obrazu. Ostre elementy, ciemne barwy jak i nierówne krawędzie pracy nadają jej surowego charakteru. Praca jest sygnowana na odwrocie.',
+                paintingDescription: '',
                 paintingImages: {
                     '0004-1': 'images\0004\0004-1.jpg',
                     '0004-2': 'images\0004\0004-2.jpg',
@@ -1303,7 +1303,7 @@ let de = {
                 paintingYearOfCreation: '2006',    
                 paintingTitle: 'Flora',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca wykonana techniką mieszaną przy użyciu kolażu. Zastosowane zostały organiczne materiały roślinne, gruba warstwa farby olejnej, sprayu i kleju. Praca została zrobiona na starej płycie pilśniowej. Roślinne elementy postaci zostały, zawerniksowane i zabezpieczone przed uszkodzeniem, następnie pomalowane i przytwierdzone za pomocą specjalistycznego kleju do płyty pilśniowej. Boki zamalowane o grubości 8 mm. Obraz ukazuje roślinny charakter postaci będącej jednocześnie personifikacją natury, roślinnej bogini. Siły, jaką natura posiada z jednej strony niezwykłej, z drugiej strony szokującej i przerażającej. Sygnowany i podpisany na odwrocie. Bez możliwości wykonania kopii.',
+                paintingDescription: '',
                 paintingImages: {
                     '0003-1': 'images\0003\0003-1.jpg',
                     '0003-2': 'images\0003\0003-2.jpg',
@@ -1326,7 +1326,7 @@ let de = {
                 paintingYearOfCreation: '2006',    
                 paintingTitle: 'Krata',
                 paintingStatus: 'Ausverkauft ',
-                paintingDescription: 'Praca wykonana techniką kolażu. Na jej elementy składa się lekko krzywa płyta pilśniowa, sprężyna od starego łóżka przedstawiająca ową kratę, przytwierdzona za pomocą kleju oraz kładzione grubą warstwą farby olejne. Praca zawerniksowana, sygnowana na odwrocie. Puste pola stanowiące przestrzenie po przetarciu się nakładających się na siebie sprężyn symbolizują pewien błąd, wyrwany z kontekstu rzeczywistości. Inspirowana dokumentem  o obozie koncentracyjnym Auschwitz-Birkenau.',
+                paintingDescription: '',
                 paintingImages: {
                     '0002-1': 'images\0002\0002-1.jpg',
                     '0002-2': 'images\0002\0002-2.jpg',
@@ -1347,7 +1347,7 @@ let de = {
                 paintingYearOfCreation: '2006',    
                 paintingTitle: 'Czarna kobieta',
                 paintingStatus: 'Erhältlich',
-                paintingDescription: 'Praca wykonana na płycie pilśniowej pochodzącej ze starych mebli. Obraz wykonany z tkaniny jutowej znalezionej na strychu w połączeniu z czarnym kruszonym szkłem wykorzystywanym w procesie spawania oraz przyklejonym pyłem pochodzącym ze szlifowania starych ponad 100- letnich dachówek ceramicznych. Elementy przytwierdzone do płyty za pomocą odpowiedniego kleju i zabezpieczone werniksem. Całość pokryta czarną smolistą farbą oraz czerwoną farbą olejną. Wszystkie elementy przedstawione na obrazie łączy zamierzchła przeszłość i przyszłość w postaci wizerunku kobiety. Obraz sygnowany, podpisany na odwrocie. Bez możliwości wykonania kopii.',
+                paintingDescription: '',
                 paintingImages: {
                     '0001-1': 'images\0001\0001-1.jpg',
                     '0001-2': 'images\0001\0001-2.jpg',
