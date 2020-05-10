@@ -63,7 +63,7 @@ let en = {
             paintingYearOfCreation: '2018',    
             paintingTitle: 'Hivé',
             paintingStatus: 'Available ',
-            paintingDescription: 'Praca wykonana w charakterze structural collage. Do jej wykonania posłużyła czarna plastikowa siatka przytwierdzona do płótna za pomocą specjalistycznego kleju zalana czarną olejną farbą. Symbolizuje, ul, społeczeństwo.',
+            paintingDescription: '',
             paintingImages: {
                 '0061-1': 'images\0061\0061-1.jpg',
                 '0061-2': 'images\0061\0061-2.jpg',
@@ -89,7 +89,7 @@ let en = {
             paintingYearOfCreation: '2018',    
             paintingTitle: 'Freedom',
             paintingStatus: 'Available ',
-            paintingDescription: 'Freedom: oznacza wolność artystyczną. Wolność poprzez zastosowanie różnych technik malarskich. Wolność w postaci abstrakcji artystycznej. Wolność w postaci otwartego umysłu na nowe. Wykonany z opiłków metalu przytwierdzonych za pomocą specjalistycznego kleju i grubo lanej farby. Obraz zamalowany po bokach nie wymaga ramy, sygnowany i podpisany na odwrocie.',
+            paintingDescription: '',
             paintingImages: {
                 '0060-1': 'images\0060\0060-1.jpg',
                 '0060-2': 'images\0060\0060-2.jpg',
