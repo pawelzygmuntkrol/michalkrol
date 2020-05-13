@@ -78,8 +78,24 @@ function closePopUpImg() {
 // MAIN PAINTINGS
 // Sets value to side menu sort options used in main page to color displayAllButton.
 //let displayAllValue = 1;
-let displayStructuralCollageValue = 1;
-let displayInteriorValue = 0;
+let displayStructuralCollageValue = localStorage.getItem('displayStructuralCollageValue') || '1';
+let displayInteriorValue = localStorage.getItem('displayInteriorValue') || '0';
+/*
+let displayStructuralCollageValue;
+let displayInteriorValue;
+
+if(displayStructuralCollageValue === undefined) {
+  displayStructuralCollageValue = 1;
+} else {
+  localStorage.getItem('displayStructuralCollageValue')
+}
+
+if(displayInteriorValue === undefined) {
+  displayInteriorValue = 0;
+} else {
+  localStorage.getItem('displayInteriorValue')
+}
+*/
 /*
 function displayAll() {
   displayAllValue = 1;
@@ -94,8 +110,10 @@ function displayAll() {
 // Sets value to side menu sort options used in main page to color displayStructuralCollageButton.
 function displayStructuralCollage() {
   //displayAllValue = 0;
-  displayStructuralCollageValue = 1;
-  displayInteriorValue = 0;
+  displayStructuralCollageValue = '1';
+  localStorage.setItem('displayStructuralCollageValue', displayStructuralCollageValue);
+  displayInteriorValue = '0';
+  localStorage.setItem('displayInteriorValue', displayInteriorValue);
   //document.getElementById('displayAllButton').style.color = 'dimgray';
   document.getElementById('displayStructuralCollageButton').style.color = 'white';
   document.getElementById('displayInteriorButton').style.color = 'dimgray';
@@ -106,8 +124,10 @@ function displayStructuralCollage() {
 // Sets value to side menu sort options used in main page to color displayInteriorButton.
 function displayInterior() {
   //displayAllValue = 0;
-  displayStructuralCollageValue = 0;
-  displayInteriorValue = 1;
+  displayStructuralCollageValue = '0';
+  localStorage.setItem('displayStructuralCollageValue', displayStructuralCollageValue);
+  displayInteriorValue = '1';
+  localStorage.setItem('displayInteriorValue', displayInteriorValue);
   //document.getElementById('displayAllButton').style.color = 'dimgray';
   document.getElementById('displayStructuralCollageButton').style.color = 'dimgray';
   document.getElementById('displayInteriorButton').style.color = 'white';
@@ -116,9 +136,9 @@ function displayInterior() {
 }
 
 function redirectToAnotherSeries() {
-  if(displayStructuralCollageValue === 1 ) {
+  if(displayStructuralCollageValue === '1' ) {
     document.getElementById('changeDisplayedSeries').innerHTML = `<p onclick='displayInterior()'>Interior →</p>`;
-  } else if (displayStructuralCollageValue === 0 ) {
+  } else if (displayStructuralCollageValue === '0' ) {
     document.getElementById('changeDisplayedSeries').innerHTML = `<p onclick='displayStructuralCollage()'>Structural Collage →</p>`;
   }
 }
@@ -132,7 +152,7 @@ function displayArtworksList() {
   let lastNumofId = 1;
   let str = '';
   for (let i = 0; i < Object.keys(pl.artworks).length; i++) {
-    if (displayStructuralCollageValue === 1) {
+    if (displayStructuralCollageValue === '1') {
       if (pl.artworks[id].paintingDataAuthor === 'Structural Collage') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
                     <a href='./artworksitem/${id}'>
@@ -144,7 +164,7 @@ function displayArtworksList() {
       } else {
         str = '';
       }
-    } else if (displayInteriorValue === 1) {
+    } else if (displayInteriorValue === '1') {
       if (pl.artworks[id].paintingDataAuthor === 'Interior') {
         str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
                     <a href='./artworksitem/${id}'>
@@ -195,8 +215,8 @@ function closeSideMenu() {
 
 // Redirects to main page form subpage describing certain painting.
 function backToMainPage() {
-  //window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
-  window.history.go(-2);
+  window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
+  //window.history.go(-2);
   setScrollPosition(scrollPosition);
 }
 
