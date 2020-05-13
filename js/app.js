@@ -217,7 +217,7 @@ function closeSideMenu() {
 function backToMainPage() {
   window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
   //window.history.go(-2);
-  //setScrollPosition(scrollPosition);
+  setScrollPosition(scrollPosition);
 }
 
 
@@ -333,7 +333,7 @@ function displayEmail() {
 
 // SCROLL POSITION
 // Gets the scroll position to use it after 'back' button is clicked in artworksitem
-let scrollPosition = sessionStorage.getItem('scrollPosition');
+let scrollPosition = localStorage.getItem('scrollPosition');
 
 function setScrollPosition(scrollPosition) {
   if(scrollPosition !== null) {
@@ -346,7 +346,7 @@ function setScrollPosition(scrollPosition) {
 
 function getScrollPosition() {
   scrollPosition = window.pageYOffset;
-  sessionStorage.setItem('scrollPosition', scrollPosition);
+  localStorage.setItem('scrollPosition', scrollPosition);
   return scrollPosition;
 }
 
