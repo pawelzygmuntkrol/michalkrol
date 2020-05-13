@@ -213,11 +213,11 @@ function closeSideMenu() {
   document.getElementById('backToMainPage').style.visibility = 'visible';
 }
 
-// Redirects to main page form subpage describing certain painting.
+// Redirects to main page from subpage describing certain painting.
 function backToMainPage() {
   window.location.href = 'https://pawelzygmuntkrol.github.io/michalkrol/index.html';
   //window.history.go(-2);
-  setScrollPosition(scrollPosition);
+  //setScrollPosition(scrollPosition);
 }
 
 
