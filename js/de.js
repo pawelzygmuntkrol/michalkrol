@@ -13,7 +13,6 @@ let de = {
 
         closeButton: 'Schließen',
         artworksButton: 'Arbeiten',
-        // displayAllButton: 'Alle',
         // used only in index
         displayStructuralCollageButton: 'Structural Collage',
         displayInteriorButton: 'Interior',
