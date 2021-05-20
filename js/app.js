@@ -80,33 +80,7 @@ function closePopUpImg() {
 //let displayAllValue = 1;
 let displayStructuralCollageValue = localStorage.getItem('displayStructuralCollageValue') || '1';
 let displayInteriorValue = localStorage.getItem('displayInteriorValue') || '0';
-/*
-let displayStructuralCollageValue;
-let displayInteriorValue;
 
-if(displayStructuralCollageValue === undefined) {
-  displayStructuralCollageValue = 1;
-} else {
-  localStorage.getItem('displayStructuralCollageValue')
-}
-
-if(displayInteriorValue === undefined) {
-  displayInteriorValue = 0;
-} else {
-  localStorage.getItem('displayInteriorValue')
-}
-*/
-/*
-function displayAll() {
-  displayAllValue = 1;
-  displayStructuralCollageValue = 0;
-  displayInteriorValue = 0;
-  document.getElementById('displayAllButton').style.color = 'white';
-  document.getElementById('displayStructuralCollageButton').style.color = 'dimgray';
-  document.getElementById('displayInteriorButton').style.color = 'dimgray';
-  return [displayAllValue, displayStructuralCollageValue, displayInteriorValue];
-}
-*/
 // Sets value to side menu sort options used in main page to color displayStructuralCollageButton.
 function displayStructuralCollage() {
   //displayAllValue = 0;
@@ -176,15 +150,7 @@ function displayArtworksList() {
       } else {
         str = '';
       }
-    } /*else if (displayAllValue === 1) {
-      str = `<div class='img-container' onclick='getPaintingNum("${id}")'>
-                <a href='./artworksitem/${id}'>
-                    <img src='./images/${id}/${id}-1.jpg' loading='lazy'>
-                    <p class='author'>${pl.artworks[id].paintingDataAuthor}</p>
-                    <p class='title'>${pl.artworks[id].paintingDataTitle}</p>
-                </a>
-            </div>`;
-    }*/
+    }
     result = str.concat(result);
     lastNumofId++;
     id = `0000${lastNumofId}`;
@@ -273,15 +239,6 @@ function navigationScrollEffect() {
     document.getElementById('paintingDimensionsHeight').style.color = 'dimgray';
   }
 }
-/*
-function disableSmoothScroll() {
-  if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight > document.getElementById('paintingImages').scrollHeight - 250) {
-    document.getElementById('paintingImages').style.height = 'auto';
-  } else if (document.getElementById('paintingImages').scrollTop + document.getElementById('paintingImages').offsetHeight < document.getElementById('paintingImages').scrollHeight - 250) {
-    document.getElementById('paintingImages').style.height = '100vh';
-  }
-}
-*/
 
 // EXHIBITIONS
 // Take a length of list of exhibitions to display, loops thru them and display them (on exhibitions page -> exhibitions.html).
