@@ -13,7 +13,6 @@ let pl = {
 
         closeButton: 'Zamknij',
         artworksButton: 'Prace',
-        //displayAllButton: 'Wszystkie',
         // used only in index
         displayStructuralCollageButton: 'Structural Collage',
         displayInteriorButton: 'Interior',
